@@ -1,0 +1,12 @@
+localsettings.json
+.DS_Store
+/node_modules
+npm-debug.log
+.idea/dictionaries
+.idea/workspace.xml
+.idea/watcherTasks.xml
+.idea/libraries
+/dist/build/
+server.bundle.js
+.env
+/temp
