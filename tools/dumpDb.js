@@ -14,12 +14,6 @@ toolSet.login(sourceEndpoint, user, pwd, database)
   .then(function (result) {
     return toolSet.dumpDb(sourceEndpoint, result['user-id'], result.signature, result.database, 'dbExport/dump.tar.gz')
   })
-  // .then(function (result) {
-  //   return toolSet.login(destinationEndpoint, user, pwd, database)
-  // })
-  // .then(function (result) {
-  //   return toolSet.restoreDb(destinationEndpoint, result['user-id'], result.signature, result.database, 'dbExport/dump_fixed.json')
-  // })
   .catch(function (ex) {
     console.error(ex);
     reject(ex)
