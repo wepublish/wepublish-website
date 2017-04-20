@@ -1,0 +1,159 @@
+[
+  {
+    "id": "dummyArticleMicroServices",
+    "target": "{{ModelArticle}}",
+    "definition": {
+      "blockName": "EN Micro Services",
+      "title": "Micro Services",
+      "description": "Description Home",
+      "tags": [
+        "Micro Services",
+        "duda group"
+      ],
+      "shareImage": "{{dummyDocumentFooterLogo}}",
+      "contents": [
+        {
+          "blockHeader": "{{dummyBlockHeader}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockMicroServicesTitle}}"
+        },
+        {
+          "blockTeaserSpot": "{{dummyBlockTeaserSpot}}"
+        },
+        {
+          "blockRichText": "{{dummyBlockRichText}}"
+        }
+      ],
+      "navigationNode": "{{naviNodeMicroServices}}",
+      "publishDate": 0,
+      "expiryDate": 0,
+      "isLive": true
+    }
+  },
+  {
+    "id": "dummyArticleBigData",
+    "target": "{{ModelArticle}}",
+    "definition": {
+      "blockName": "EN Big Data",
+      "title": "Big Data",
+      "description": "Description Home",
+      "tags": [
+        "Big Data",
+        "duda group"
+      ],
+      "shareImage": "{{dummyDocumentFooterLogo}}",
+      "contents": [
+        {
+          "blockHeader": "{{dummyBlockHeader}}"
+        },
+        {
+          "blockImageSlider": "{{dummyBlockSlider}}"
+        },
+        {
+          "blockRichText": "{{dummyBlockRichText}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockBigData}}"
+        }
+      ],
+      "navigationNode": "{{naviNodeBigData}}",
+      "publishDate": 0,
+      "expiryDate": 0,
+      "isLive": true
+    }
+  },
+  {
+    "id": "dummyArticleHybridConsulting",
+    "target": "{{ModelArticle}}",
+    "definition": {
+      "blockName": "EN Hybrid Consulting",
+      "title": "Hybrid Consulting",
+      "description": "Description Home",
+      "tags": [
+        "Hybrid Consulting",
+        "duda group"
+      ],
+      "shareImage": "{{dummyDocumentFooterLogo}}",
+      "contents": [
+        {
+          "blockHeader": "{{dummyBlockHeader}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockHybridConsulting}}"
+        },
+        {
+          "blockRichText": "{{dummyBlockRichText}}"
+        }
+      ],
+      "navigationNode": "{{naviNodeHybridConsulting}}",
+      "publishDate": 0,
+      "expiryDate": 0,
+      "isLive": true
+    }
+  },
+  {
+    "id": "dummyArticleAbout",
+    "target": "{{ModelArticle}}",
+    "definition": {
+      "blockName": "EN About",
+      "title": "About",
+      "description": "Description Home",
+      "tags": [
+        "About",
+        "duda group"
+      ],
+      "shareImage": "{{dummyDocumentFooterLogo}}",
+      "contents": [
+        {
+          "blockHeader": "{{dummyBlockHeader}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockAbout}}"
+        },
+        {
+          "blockTeaserSpot": "{{dummyBlockTeaserSpot}}"
+        }
+      ],
+      "navigationNode": "{{naviNodeAbout}}",
+      "publishDate": 0,
+      "expiryDate": 0,
+      "isLive": true
+    }
+  },
+  {
+    "id": "dummyArticleContact",
+    "target": "{{ModelArticle}}",
+    "definition": {
+      "blockName": "EN Contact",
+      "title": "Contact",
+      "description": "Description Home",
+      "tags": [
+        "Contact",
+        "duda group"
+      ],
+      "shareImage": "{{dummyDocumentFooterLogo}}",
+      "contents": [
+        {
+          "blockHeader": "{{dummyBlockHeader}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockContact}}"
+        },
+        {
+          "blockImageSlider": "{{dummyBlockSlider}}"
+        },
+        {
+          "blockRichText": "{{dummyBlockRichText}}"
+        },
+        {
+          "blockTeaserSpot": "{{dummyBlockTeaserSpot}}"
+        }
+      ],
+      "navigationNode": "{{naviNodeContact}}",
+      "publishDate": 0,
+      "expiryDate": 0,
+      "isLive": true
+    }
+  }
+]

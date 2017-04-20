@@ -1,0 +1,1173 @@
+[
+  {
+    "id": "viewContextModelBlockHeader",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModBlockHeader}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "backgroundImage": {
+              "ref": {
+                "allowInlineEditing": true,
+                "description": "Grösse: 1920 x 1080px",
+                "label": "Background Image",
+                "maxDepth": 3
+              }
+            },
+            "title": {
+              "richText": {
+                "label": "Title",
+                "controls": [
+                  "h1",
+                  "h2",
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundImage"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "title"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Header",
+      "slug": "header"
+    }
+  },
+  {
+    "id": "viewContextModelBlockTitle",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModBlockTitle}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "title": {
+              "richText": {
+                "label": "Title",
+                "controls": [
+                  "h3",
+                  "h4",
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "subtitle": {
+              "richText": {
+                "label": "Subtitle",
+                "controls": [
+                  "h6",
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "title"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "subtitle"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Title",
+      "slug": "title"
+    }
+  },
+  {
+    "id": "viewContextModelBlockRichText",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModBlockRichText}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "title": {
+              "richText": {
+                "label": "Title",
+                "controls": [
+                  "h5",
+                  "h6",
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "textRight": {
+              "richText": {
+                "label": "Text Right",
+                "controls": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "textLeft": {
+              "richText": {
+                "label": "Text Left",
+                "controls": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "title"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "textLeft"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "textRight"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "RichText",
+      "slug": "richText"
+    }
+  },
+  {
+    "id": "viewContextModelBlockTeaserSpot",
+    "target": "scOLBohZPju",
+    "definition": {
+
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "contentTypeId": "{{ModBlockTeaserSpot}}",
+      "field": {
+        "fieldset": {
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "list"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "textBlock"
+                  }
+                }
+              ]
+            }
+          },
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "list": {
+              "repeater": {
+                "label": "Teaser List",
+                "description": "min. 404x404px",
+                "maxDepth": 3,
+                "field": {
+                  "fieldset": {
+                    "fields": {
+                      "image": {
+                        "ref": {
+                          "label": "Image",
+                          "description": "Image Dimension: 1920x864",
+                          "maxDepth": 3,
+                          "allowInlineEditing": true
+                        }
+                      },
+                      "imageLink": {
+                        "picker": {
+                          "label": "Link",
+                          "fields": [
+                            {
+                              "key": "document",
+                              "label": "Document",
+                              "icon": "insert_drive_file",
+                              "type": {
+                                "ref": {
+                                  "maxDepth": 3,
+                                  "allowInlineEditing": false
+                                }
+                              }
+                            },
+                            {
+                              "key": "navigationNode",
+                              "label": "Navigation Node",
+                              "icon": "device_hub",
+                              "type": {
+                                "ref": {
+                                  "maxDepth": 3,
+                                  "allowInlineEditing": false
+                                }
+                              }
+                            },
+                            {
+                              "key": "url",
+                              "label": "URL",
+                              "icon": "http",
+                              "type": {
+                                "text": {}
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "textBlock": {
+                        "richText": {
+                          "label": "Text",
+                          "controls": [
+                            "h5",
+                            "h6",
+                            "bold",
+                            "italic",
+                            "underline",
+                            "unorderedList",
+                            "orderedList"
+                          ],
+                          "linkTypes": [
+                            {
+                              "key": "url",
+                              "label": "URL",
+                              "icon": "insert_drive_file",
+                              "type": {
+                                "text": {}
+                              }
+                            },
+                            {
+                              "key": "document",
+                              "label": "Document",
+                              "icon": "device_hub",
+                              "type": {
+                                "ref": {}
+                              }
+                            },
+                            {
+                              "key": "navigationNode",
+                              "label": "Navigation Node",
+                              "icon": "http",
+                              "type": {
+                                "ref": {}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "layout": {
+                      "group": {
+                        "direction": "column",
+                        "layouts": [
+                          {
+                            "field": {
+                              "key": "image"
+                            }
+                          },
+                          {
+                            "field": {
+                              "key": "imageLink"
+                            }
+                          },
+                          {
+                            "field": {
+                              "key": "textBlock"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "name": "Teaser Spot",
+      "slug": "teaser-spot"
+    }
+  },
+  {
+    "id": "viewContextModelBlockImageSlider",
+    "target": "scOLBohZPju",
+    "definition": {
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "contentTypeId": "{{ModBlockImageSlider}}",
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "list": {
+              "repeater": {
+                "label": "Slide List",
+                "description": "1 Image: Image Block, Multiple Images: Slider Block",
+                "maxDepth": 3,
+                "field": {
+                  "fieldset": {
+                    "layout": {
+                      "group": {
+                        "direction": "column",
+                        "layouts": [
+                          {
+                            "field": {
+                              "key": "image"
+                            }
+                          },
+                          {
+                            "field": {
+                              "key": "text"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "fields": {
+                      "image": {
+                        "ref": {
+                          "label": "Image",
+                          "description": "Image Dimension: 1920x864",
+                          "maxDepth": 3,
+                          "allowInlineEditing": true
+                        }
+                      },
+                      "text": {
+                        "text": {
+                          "label": "Text"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "list"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Image Slider",
+      "slug": "image-slider"
+    }
+  },
+  {
+    "id": "viewContextModelBlockSpacer",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModBlockSpacer}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "value": {
+              "number": {
+                "label": "Space (px)"
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "value"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Spacer",
+      "slug": "spacer"
+    }
+  },
+  {
+    "id": "viewContextModelArticles",
+    "target": "scOLBohZPju",
+    "definition": {
+      "name": "Article",
+      "slug": "article",
+      "contentTypeId": "{{ModelArticle}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ],
+        [
+          "title"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "title": {
+              "text": {
+                "label": "Page Title"
+              }
+            },
+            "description": {
+              "text": {
+                "label": "Description (SEO)"
+              }
+            },
+            "expiryDate": {
+              "date": {
+                "label": "Expiry Date"
+              }
+            },
+            "publishDate": {
+              "date": {
+                "label": "Publish Date"
+              }
+            },
+            "isLive": {
+              "checkbox": {
+                "label": "Live"
+              }
+            },
+            "navigationNode": {
+              "ref": {
+                "allowInlineEditing": false,
+                "label": "Navigation Node",
+                "maxDepth": 3
+              }
+            },
+            "tags": {
+              "repeater": {
+                "field": {
+                  "text": {}
+                },
+                "label": "Keywords (SEO)",
+                "maxDepth": 3
+              }
+            },
+            "shareImage": {
+              "ref": {
+                "allowInlineEditing": true,
+                "description": "1200x630px",
+                "label": "Share Image",
+                "maxDepth": 3
+              }
+            },
+            "contents": {
+              "repeater": {
+                "field": {
+                  "picker": {
+                    "fields": [
+                      {
+                        "key": "blockSpacer",
+                        "icon": "border_clear",
+                        "label": "Spacer",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockHeader",
+                        "icon": "vertical_align_top",
+                        "label": "Header",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockTitle",
+                        "icon": "title",
+                        "label": "Title",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockRichText",
+                        "icon": "dashboard",
+                        "label": "RichText",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockTeaserSpot",
+                        "icon": "filter 3",
+                        "label": "TeaserSpot",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockImageSlider",
+                        "icon": "photo_library",
+                        "label": "Image Slider",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      }
+                    ],
+                    "label": "Block"
+                  }
+                },
+                "label": "Contents",
+                "maxDepth": 3
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "group": {
+                    "direction": "row",
+                    "layouts": [
+                      {
+                        "group": {
+                          "direction": "column",
+                          "layouts": [
+                            {
+                              "field": {
+                                "key": "title"
+                              }
+                            },
+                            {
+                              "field": {
+                                "key": "description"
+                              }
+                            },
+                            {
+                              "field": {
+                                "key": "navigationNode"
+                              }
+                            },
+                            {
+                              "field": {
+                                "key": "shareImage"
+                              }
+                            },
+                            {
+                              "field": {
+                                "key": "isLive"
+                              }
+                            },
+                            {
+                              "field": {
+                                "key": "publishDate"
+                              }
+                            },
+                            {
+                              "field": {
+                                "key": "expiryDate"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "field": {
+                          "key": "tags"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "field": {
+                    "key": "contents"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "viewContextModelNavigationNode",
+    "target": "scOLBohZPju",
+    "definition": {
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ],
+        [
+          "label"
+        ]
+      ],
+      "contentTypeId": "{{ModelNavigationNode}}",
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "label": {
+              "text": {
+                "label": "Label"
+              }
+            },
+            "slug": {
+              "text": {
+                "label": "Slug"
+              }
+            },
+            "children": {
+              "repeater": {
+                "label": "Child Navigation Nodes",
+                "maxDepth": 3,
+                "field": {
+                  "ref": {
+                    "maxDepth": 3,
+                    "allowInlineEditing": false
+                  }
+                }
+              }
+            },
+            "showInMenu": {
+              "checkbox": {
+                "label": "Show in Menu"
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "label"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "slug"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "children"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "showInMenu"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Navigation Nodes",
+      "slug": "navigation-nodes"
+    }
+  },
+  {
+    "id": "viewContextModelBlockFooter",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModBlockFooter}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "backgroundImage": {
+              "ref": {
+                "allowInlineEditing": true,
+                "description": "Grösse: 1920 x 1080px",
+                "label": "Background Image",
+                "maxDepth": 3
+              }
+            },
+            "text": {
+              "richText": {
+                "label": "Title",
+                "controls": [
+                  "h6",
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "logo": {
+              "ref": {
+                "allowInlineEditing": true,
+                "label": "Logo",
+                "maxDepth": 3
+              }
+            },
+            "logoLink": {
+              "picker": {
+                "label": "Link",
+                "fields": [
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "http",
+                    "type": {
+                      "text": {}
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundImage"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "text"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "logo"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "logoLink"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Footer",
+      "slug": "footer"
+    }
+  },
+  {
+    "id": "viewContextModelDocuments",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModelDocuments}}",
+      "descriptionKeyPaths": [
+        []
+      ],
+      "field": {
+        "cloudinary": {
+          "cloudName": "karmarun",
+          "folder": "duda-website",
+          "preset": "iue6ge8o",
+          "thumbnailTransformName": "caas-frontend"
+        }
+      },
+      "name": "Media",
+      "slug": "media"
+    }
+  }
+]

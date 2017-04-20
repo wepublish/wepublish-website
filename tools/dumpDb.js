@@ -4,7 +4,7 @@ var fs = require('fs');
 // create a localsettings.json file -> content {"pwd": "..."} which should not added to version control
 var settings = require('../localsettings.json');
 
-const database = 'dudagroup3';
+const database = 'dudagroup4';
 const sourceEndpoint = 'https://staging-api.karma.run';
 const destinationEndpoint = 'https://staging-api.karma.run';
 const user = 'admin';
@@ -14,6 +14,7 @@ toolSet.login(sourceEndpoint, user, pwd, database)
   .then(function (result) {
     return toolSet.dumpDb(sourceEndpoint, result['user-id'], result.signature, result.database, 'dbExport/dump.tar.gz')
   })
+
   .catch(function (ex) {
     console.error(ex);
     reject(ex)

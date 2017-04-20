@@ -1,0 +1,138 @@
+[
+  {
+    "id": "navigationNodeRoot",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "root",
+      "label": "root",
+      "slug": "",
+      "showInMenu": true,
+      "children": [
+        "{{navigationNodeDE}}",
+        "{{navigationNodeEN}}"
+      ]
+    }
+  },
+  {
+    "id": "navigationNodeDE",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "DE Root",
+      "label": "DE",
+      "slug": "de",
+      "showInMenu": true,
+      "children": [
+        "{{naviNodeMicroServices}}",
+        "{{naviNodeBigData}}",
+        "{{naviNodeHybridConsulting}}",
+        "{{naviNodeAbout}}",
+        "{{naviNodeContact}}",
+        "{{naviNodeFooterDE}}"
+      ]
+    }
+  },
+  {
+    "id": "navigationNodeEN",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN Root",
+      "label": "EN",
+      "slug": "en",
+      "showInMenu": true,
+      "children": [
+        "{{naviNodeMicroServices}}",
+        "{{naviNodeBigData}}",
+        "{{naviNodeHybridConsulting}}",
+        "{{naviNodeAbout}}",
+        "{{naviNodeContact}}",
+        "{{naviNodeFooterEN}}"
+      ]
+    }
+  },
+  {
+    "id": "naviNodeMicroServices",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN Micro Services",
+      "label": "Micro Services",
+      "slug": "microservices",
+      "showInMenu": true,
+      "children": [
+      ]
+    }
+  },
+  {
+    "id": "naviNodeBigData",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN Big Data",
+      "label": "Big Data",
+      "slug": "bigdata",
+      "showInMenu": true,
+      "children": [
+      ]
+    }
+  },
+  {
+    "id": "naviNodeHybridConsulting",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN Hybrid Consulting",
+      "label": "Hybrid Consulting",
+      "slug": "hybridconsulting",
+      "showInMenu": true,
+      "children": [
+      ]
+    }
+  },
+  {
+    "id": "naviNodeAbout",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN About",
+      "label": "About",
+      "slug": "about",
+      "showInMenu": true,
+      "children": [
+      ]
+    }
+  },
+  {
+    "id": "naviNodeContact",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN Contact",
+      "label": "Contact",
+      "slug": "contact",
+      "showInMenu": true,
+      "children": [
+      ]
+    }
+  },
+  {
+    "id": "naviNodeFooterEN",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "EN Footer",
+      "label": "Footer",
+      "slug": "footer",
+      "showInMenu": true,
+      "children": [
+        "{{dummyFooterEN}}"
+      ]
+    }
+  },
+  {
+    "id": "naviNodeFooterDE",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "DE Footer",
+      "label": "Footer",
+      "slug": "footer",
+      "showInMenu": true,
+      "children": [
+        "{{dummyFooterDE}}"
+      ]
+    }
+  }
+]

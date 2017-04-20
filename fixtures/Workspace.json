@@ -1,0 +1,56 @@
+[
+  {
+    "id": "workspaceArticles",
+    "target": "cCXthPAzIku",
+    "definition": {
+      "icon": "description",
+      "name": "Articles",
+      "slug": "articles",
+      "viewContexts": [
+        "{{viewContextModelArticles}}"
+      ]
+    }
+  },
+  {
+    "id": "workspaceBlocks",
+    "target": "cCXthPAzIku",
+    "definition": {
+      "icon": "view_module",
+      "name": "Blocks",
+      "slug": "blocks",
+      "viewContexts": [
+        "{{viewContextModelBlockHeader}}",
+        "{{viewContextModelBlockTitle}}",
+        "{{viewContextModelBlockRichText}}",
+        "{{viewContextModelBlockTeaserSpot}}",
+        "{{viewContextModelBlockImageSlider}}",
+        "{{viewContextModelBlockSpacer}}"
+      ]
+    }
+  },
+  {
+    "id": "workspaceNavigation",
+    "target": "cCXthPAzIku",
+    "definition": {
+      "icon": "navigation",
+      "name": "Navigation",
+      "slug": "navigation",
+      "viewContexts": [
+        "{{viewContextModelNavigationNode}}",
+        "{{viewContextModelBlockFooter}}"
+      ]
+    }
+  },
+  {
+    "id": "workspaceMedia",
+    "target": "cCXthPAzIku",
+    "definition": {
+      "icon": "image",
+      "name": "Media",
+      "slug": "media",
+      "viewContexts": [
+        "{{viewContextModelDocuments}}"
+      ]
+    }
+  }
+]
