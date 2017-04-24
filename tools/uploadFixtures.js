@@ -4,8 +4,8 @@ var fs = require('fs');
 // create a localsettings.json file -> content {"pwd": "..."} which should not added to version control
 var settings = require('../localsettings.json');
 
-const database = 'dudagroup4';
-const endpoint = 'https://staging-api.karma.run';
+const database = 'dudagroup3';
+const endpoint = 'https://api.karma.run';
 const user = 'admin';
 const pwd = settings.pwd;
 

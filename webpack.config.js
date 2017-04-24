@@ -54,7 +54,8 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'file?name=[name].[ext]!img?minimize&optimizationLevel=5&progressive=true'
+        // loader: 'file?name=[name].[ext]!img?minimize&optimizationLevel=5&progressive=true'
+        loader: 'file'
       },
       {
         test: /\.font\.(js|json)$/,
@@ -83,7 +84,8 @@ function getPlugins(production) {
       KARMA_ENDPOINT: `'${process.env.KARMA_ENDPOINT}'`,
       KARMA_DATABASE: `'${process.env.KARMA_DATABASE}'`,
       KARMA_PWD: `'${process.env.KARMA_PWD}'`,
-      KARMA_USER: `'${process.env.KARMA_USER}'`
+      KARMA_USER: `'${process.env.KARMA_USER}'`,
+      RECAPTCHA_SITEKEY: `'${process.env.RECAPTCHA_SITEKEY}'`
     }
   })
 

@@ -52,7 +52,7 @@ var config = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'file?name=[name].[ext]!img?minimize&optimizationLevel=5&progressive=true'
+        loader: 'file'
       }
     ]
   },
