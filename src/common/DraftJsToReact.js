@@ -1,6 +1,6 @@
 import React from 'react'
 import {Entity, CharacterMetadata} from 'draft-js'
-import ModAnchorTag from 'components/common/ModAnchorTag'
+import ModAnchorTag from '../components/common/ModAnchorTag'
 import {OrderedSet, is, List} from 'immutable';
 
 const BLOCK_TYPE = {

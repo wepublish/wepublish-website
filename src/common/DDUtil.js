@@ -1,5 +1,5 @@
 import React from 'react'
-import {searchNavigationNodeById} from 'caas/CaasHelper'
+import {searchNavigationNodeById} from '../caas/CaasHelper'
 
 
 /**

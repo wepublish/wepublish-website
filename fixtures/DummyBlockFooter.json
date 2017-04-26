@@ -75,7 +75,8 @@
       "logo": "{{dummyDocumentFooterLogo}}",
       "logoLink": {
         "navigationNode": "{{naviNodeMicroServices}}"
-      }
+      },
+      "navigationNode": "{{naviNodeFooterDE}}"
     }
   },
   {
@@ -154,7 +155,8 @@
       "logo": "{{dummyDocumentFooterLogo}}",
       "logoLink": {
         "navigationNode": "{{naviNodeMicroServices}}"
-      }
+      },
+      "navigationNode": "{{naviNodeFooterEN}}"
     }
   }
 ]

@@ -1,9 +1,9 @@
 import React from 'react'
-import {Route} from 'react-router'
+import {Route, IndexRoute} from 'react-router'
 import ModApp from './ModApp'
 
 module.exports = (
-  <Route path="/" component={ModApp}>
+  <Route path="/">
     <Route path="*" component={ModApp}/>
   </Route>
 )

@@ -13,7 +13,7 @@ export default function VoConfig () {
   this.contentTypeBlockTeaserSpot = null;
   this.contentTypeBlockImageSlider = null;
   this.contentTypeBlockSpacer = null;
-  this.contentTypeBlockFooter = null;
+  this.contentTypeFooter = null
 
   // SOME ROOT ENTITIES
   this.rootNavigationEntityId = null;
@@ -21,4 +21,3 @@ export default function VoConfig () {
   // USER SESSION
   this.userSession = null;
 }
-

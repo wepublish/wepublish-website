@@ -116,10 +116,8 @@
       "blockName": "EN Footer",
       "label": "Footer",
       "slug": "footer",
-      "showInMenu": true,
-      "children": [
-        "{{dummyFooterEN}}"
-      ]
+      "showInMenu": false,
+      "children": []
     }
   },
   {
@@ -129,10 +127,8 @@
       "blockName": "DE Footer",
       "label": "Footer",
       "slug": "footer",
-      "showInMenu": true,
-      "children": [
-        "{{dummyFooterDE}}"
-      ]
+      "showInMenu": false,
+      "children": []
     }
   }
 ]

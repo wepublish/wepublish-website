@@ -1110,6 +1110,12 @@
                   }
                 ]
               }
+            },
+            "navigationNode": {
+              "ref": {
+                "allowInlineEditing": false,
+                "maxDepth": 3
+              }
             }
           },
           "layout": {
@@ -1139,6 +1145,11 @@
                 {
                   "field": {
                     "key": "logoLink"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "navigationNode"
                   }
                 }
               ]

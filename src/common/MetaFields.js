@@ -1,4 +1,4 @@
-import {hasContent} from 'common/DDUtil'
+import {hasContent} from '../common/DDUtil'
 
 export function createMetaFields (content) {
   const fields = {

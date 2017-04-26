@@ -151,6 +151,7 @@ export default function SaasHelper () {
   }
 
 
+
   /**
    * fetch footer
    * @param navigationTree
@@ -162,13 +163,17 @@ export default function SaasHelper () {
       `${voConfig.contentTypeNavigationNodes}<-${voConfig.contentTypeFooter}`,
       `${voConfig.contentTypeFooter}->${voConfig.contentTypeMedia}`
     ]
+
     const url = getUrl() + "/" + voConfig.contentTypeNavigationNodes + "/" + footerNavigationNodeId + "?flow=" + encodeURIComponent(JSON.stringify(query))
     log("CaasHelper.fetchFooter: " + url)
+
     return await fetch(url, getFetchOptions(voConfig))
       .then(status)
       .then(json)
       .then(response)
       .then(function (footerResult) {
+        console.log(navigationTree)
+        console.log(footerResult)
         return parseFooter(navigationTree, footerResult)
       })
       .catch(function (ex) {
@@ -194,11 +199,13 @@ export default function SaasHelper () {
         if (footerPool.hasOwnProperty(footerId)) {
           let footer = footerPool[footerId]
 
-
           footer.backgroundImage = getMediaObjectById(mediaPool, footer.backgroundImage)
           footer.text = addLinkObjectToRichText(navigationTree, mediaPool, footer.text)
           footer.logo = getMediaObjectById(mediaPool, footer.logo)
           footer.logoLink = addLinkObject(navigationTree, mediaPool, footer.logoLink)
+
+
+
 
           return footer
         }
@@ -207,15 +214,16 @@ export default function SaasHelper () {
     return null
   }
 
-
   /**
    * fetch content and return a the result
    * @param navigationTree
    * @param navigationNodeId
    * @param callback
    */
-  this.fetchContentByNavigationNodeId = function (navigationTree, navigationNodeId, callback) {
 
+  console.log(voConfig)
+
+  this.fetchContentByNavigationNodeId = function (navigationTree, navigationNodeId, callback) {
     const query = [
       `${voConfig.contentTypeNavigationNodes}<-${voConfig.contentTypeArticle}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockHeader}`,
@@ -274,7 +282,7 @@ export default function SaasHelper () {
     for (let key in mediaPool) {
       if (mediaPool.hasOwnProperty(key)) {
         let media = mediaPool[key]
-        media.url = `http://${config.mediaDomain}/image/upload/v${Math.round(media.version)}/${media.publicId}.${media.format}`
+        media.url = `${config.mediaDomain}/image/upload/v${Math.round(media.version)}/${media.publicId}.${media.format}`
       }
     }
     return mediaPool
@@ -305,7 +313,6 @@ export default function SaasHelper () {
           let key2
 
           // Validate Block Objects
-
           node.content.id = entityId
 
 
@@ -585,7 +592,7 @@ async function fetchRootCategoryNode (voConfig) {
 /**
  * Fetch all model types,
  */
-async function fetchModelTypes(voConfig) {
+async function fetchModelTypes (voConfig) {
   let url = getUrl()
   log("CaasHelper.fetchModelTypes: " + url)
   return await fetch(url, getFetchOptions(voConfig))
@@ -641,10 +648,16 @@ async function fetchModelTypes(voConfig) {
               voConfig.contentTypeBlockSpacer = model.contentTypeId
               break
             case "blockFooter":
-              voConfig.contentTypeBlockFooter = model.contentTypeId
+              voConfig.contentTypeFooter = model.contentTypeId
+             break
           }
         })
 
+        // if (!(hasContent(voConfig.contentTypeNavigationNodes) &&
+        //   hasContent(voConfig.contentTypeArticle) &&
+        //   hasContent(voConfig.contentTypeBlockRichText))) {
+        //   throw new InvalidConfigException("some default settings are missing")
+        // }
 
         if (!(hasContent(voConfig.contentTypeNavigationNodes) &&
           hasContent(voConfig.contentTypeArticle))) {
@@ -659,15 +672,16 @@ async function fetchModelTypes(voConfig) {
     })
 }
 
-function response(response) {
+
+function response (response) {
   return response.response
 }
 
-function json(response) {
+function json (response) {
   return response.json()
 }
 
-function status(response) {
+function status (response) {
   if (response.status >= 200 && response.status < 300) {
     return Promise.resolve(response)
   }
