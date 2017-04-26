@@ -34,14 +34,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /(\.jsw)$/,
-        loader: 'worker-loader',
-        query: {
-          name: '[name].worker.js'
-        }
-      },
-      {
-        test: /(\.js)|(\.jsw)$/, exclude: /node_modules/,
+        test: /\.js$/, exclude: /node_modules/,
         loader: 'babel-loader?presets[]=es2015&presets[]=react'
       },
       {
@@ -54,8 +47,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        // loader: 'file?name=[name].[ext]!img?minimize&optimizationLevel=5&progressive=true'
-        loader: 'file'
+        loader: 'file?name=[name].[ext]!img?minimize&optimizationLevel=5&progressive=true'
       },
       {
         test: /\.font\.(js|json)$/,
@@ -69,7 +61,7 @@ module.exports = {
   }
 }
 
-function getPlugins(production) {
+function getPlugins (production) {
   var result = production ? [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -81,11 +73,7 @@ function getPlugins(production) {
     WEBPACK_FRONTEND_BUILD: true,
     'process.env': {
       NODE_ENV: `'${process.env.NODE_ENV}'`,
-      KARMA_ENDPOINT: `'${process.env.KARMA_ENDPOINT}'`,
-      KARMA_DATABASE: `'${process.env.KARMA_DATABASE}'`,
-      KARMA_PWD: `'${process.env.KARMA_PWD}'`,
-      KARMA_USER: `'${process.env.KARMA_USER}'`,
-      RECAPTCHA_SITEKEY: `'${process.env.RECAPTCHA_SITEKEY}'`
+      SERVER_ENV: `'${process.env.SERVER_ENV}'`
     }
   })
 
