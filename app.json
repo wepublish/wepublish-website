@@ -1,0 +1,43 @@
+{
+  "name": "Karma.run spa demo project",
+  "description": "This is a demonstration project for a Karma.run based single page application",
+  "repository": "https://github.com/dudagroup/karma-demo-website-.git",
+  "logo": "http://karma-promo.herokuapp.com/android-chrome-192x192.png",
+  "keywords": [
+    "node",
+    "express",
+    "spa"
+  ],
+  "env": {
+    "KARMA_ENDPOINT": {
+      "description": "Karma endpoint",
+      "value": "https://beta-api.karma.run",
+      "required": true
+    },
+    "KARMA_DATABASE": {
+      "description": "Karma database name",
+      "value": "",
+      "required": true
+    },
+    "KARMA_USER": {
+      "description": "Karma user name",
+      "value": "public",
+      "required": true
+    },
+    "KARMA_PWD": {
+      "description": "Public users don't have a password. Keep this empty",
+      "value": "",
+      "required": false
+    },
+    "GA_PROPERTY": {
+      "description": "Google analytics property",
+      "value": "",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "memcachier:dev"
+    }
+  ]
+}
