@@ -5,6 +5,7 @@ import ModBlockTitle from "./ModBlockTitle";
 import ModBlockTeaserSpot from "./ModBlockTeaserSpot";
 import ModBlockImageSlider from "./ModBlockImageSlider";
 import ModBlockImage from "./ModBlockImage";
+import ModBlockSpacer from "./ModBlockSpacer";
 
 
 export default class ModArticle extends React.Component {
@@ -28,6 +29,8 @@ export default class ModArticle extends React.Component {
         case config.contentTypeBlockTitle:
           return <ModBlockTitle key={index}
                                    content={item.content}/>
+        case config.contentTypeBlockSpacer:
+          return <ModBlockSpacer key={index} content={item.content}/>
         case config.contentTypeBlockTeaserSpot:
           return <ModBlockTeaserSpot key={index}
                                    content={item.content}/>

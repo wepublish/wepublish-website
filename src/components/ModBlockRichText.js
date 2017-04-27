@@ -6,13 +6,20 @@ export default class ModBlockRichText extends React.Component {
   render() {
     const {content} = this.props
 
-    console.log(content)
-
     return (
       <div className="richText-wrapper">
-        <ModRichText richText={content.title}/>
-        <ModRichText richText={content.textRight}/>
-        <ModRichText richText={content.textLeft}/>
+        <div className="richText-title">
+          <ModRichText richText={content.title}/>
+        </div>
+
+        <div className="richText-content">
+          <div className="richText-block left">
+            <ModRichText richText={content.textRight}/>
+          </div>
+          <div className="richText-block right">
+            <ModRichText richText={content.textLeft}/>
+          </div>
+        </div>
       </div>
     )
   }

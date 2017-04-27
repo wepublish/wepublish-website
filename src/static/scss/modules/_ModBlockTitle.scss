@@ -1,0 +1,27 @@
+$title-wrapper-padding-top: 53.5px;
+$title-padding-top: 25px;
+$title-padding-bottom: 21px;
+$subtitle-padding-top: 31.5px;
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: $title-wrapper-padding-top;
+}
+
+.title {
+  padding-top: $title-padding-top;
+  padding-bottom: $title-padding-bottom;
+}
+
+.title-border-bottom {
+  width: 118px;
+  border-bottom: 1.75px solid black;
+}
+
+.subtitle {
+  padding-top: $subtitle-padding-top;
+}
+

@@ -1,0 +1,95 @@
+$modal-transparency: 0.9;
+$modal-video-aspect-height: 56.25%;
+$modal-close-padding: 4px;
+
+$col-modal-bg: $theme-col-real-black;
+$col-modal-close: $theme-col-white;
+
+$content-min-height: 600px;
+
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba($theme-col-real-black, $modal-transparency);
+  z-index: $layer10;
+
+  .modal-content {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .vimeo-player {
+      position: relative;
+      padding-bottom: $modal-video-aspect-height;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .vimeo-player iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#app {
+  margin: 0 auto;
+  font-family: $font-default;
+
+  .loading {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding-top: 200px;
+  }
+}
+
+#content {
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  min-height: $content-min-height;
+
+  @include respond-to('small') {
+    padding-left: $content-padding-left-right-mobile;
+    padding-right: $content-padding-left-right-mobile;
+  }
+}
+
+#app-wrapper {
+  background-color: white;
+
+  @include respond-to('small') {
+
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  }
+
+
+}
+
+//**********************************************************************************************************************
+// Menu interaction
+.menu-hidden {
+  display: none;
+
+  @include respond-to('small') {
+    display: block;
+  }
+}
+

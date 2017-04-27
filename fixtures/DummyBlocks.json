@@ -43,7 +43,13 @@
             "text": "Digital Business.",
             "type": "header-one",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -93,7 +99,13 @@
             "text": "Micro Services",
             "type": "header-three",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -186,7 +198,13 @@
             "text": "Big Data",
             "type": "header-three",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -279,7 +297,13 @@
             "text": "Hybrid Consulting",
             "type": "header-three",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -372,7 +396,13 @@
             "text": "About",
             "type": "header-three",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -415,7 +445,13 @@
             "text": "im Zeitalter der Digitalen Transformation.",
             "type": "header-six",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -465,7 +501,13 @@
             "text": "Contact",
             "type": "header-three",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -558,7 +600,13 @@
             "text": "Micro Services.",
             "type": "header-five",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -773,7 +821,13 @@
                 "text": "Micro Services",
                 "type": "header-five",
                 "depth": 0,
-                "inlineStyleRanges": [],
+                "inlineStyleRanges": [
+                  {
+                    "offset": 0,
+                    "length": 150,
+                    "style": "BOLD"
+                  }
+                ],
                 "entityRanges": []
               }
             ]
@@ -822,7 +876,13 @@
                 "text": "Big Data",
                 "type": "header-five",
                 "depth": 0,
-                "inlineStyleRanges": [],
+                "inlineStyleRanges": [
+                  {
+                    "offset": 0,
+                    "length": 150,
+                    "style": "BOLD"
+                  }
+                ],
                 "entityRanges": []
               }
             ]
@@ -871,7 +931,13 @@
                 "text": "Hybrid Consulting",
                 "type": "header-five",
                 "depth": 0,
-                "inlineStyleRanges": [],
+                "inlineStyleRanges": [
+                  {
+                    "offset": 0,
+                    "length": 150,
+                    "style": "BOLD"
+                  }
+                ],
                 "entityRanges": []
               }
             ]

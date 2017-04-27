@@ -1,0 +1,161 @@
+//Breakpoints
+
+//Colors
+$col-link-active: $theme-col-black;
+$col-link-active-rich-text: $theme-col-blue;
+$col-text-primary: $theme-col-black;
+
+$col-bg-white: transparent;
+$col-bg-bright: $theme-col-grey-bg;
+$col-bg-wide: $theme-col-grey-lighter;
+$col-bg-content: #fff;
+
+$col-font-white: $theme-col-white;
+$col-font-colored: $theme-col-green;
+
+$col-bullet-point-line: $theme-col-green;
+
+$col-link-icon-internal: $theme-col-black;
+$col-link-icon-external: $theme-col-green;
+$col-link-icon-doc: $theme-col-violet;
+$col-link-icon-img: $theme-col-violet;
+
+$col-small-triangle-bg: $col-bg-bright;
+$col-small-triangle: $theme-col-white;
+
+//Fonts
+$font-default: 'Open Sans', sans-serif;
+
+
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 600;
+
+$font-6px: 0.261rem;
+$font-7px: 0.304rem;
+$font-8px: 0.348rem;
+$font-9px: 0.391rem;
+$font-10px: 0.435rem;
+$font-11px: 0.478rem;
+$font-12px: 0.522rem;
+$font-13px: 0.565rem;
+$font-13-5px: 0.587rem;
+$font-14px: 0.609rem;
+$font-14-5px: 0.630rem;
+$font-15px: 0.652rem;
+$font-15-5px: 0.674rem;
+$font-16px: 0.696rem;
+$font-17px: 0.739rem;
+$font-18px: 0.783rem;
+$font-19px: 0.826rem;
+$font-20px: 0.870rem;
+$font-21px: 0.913rem;
+$font-22px: 0.957rem;
+$font-23px: 1.000rem;
+$font-24px: 1.043rem;
+$font-24-5px: 1.065rem;
+$font-26px: 1.130rem;
+$font-28px: 1.217rem;
+$font-29px: 1.261rem;
+$font-30px: 1.304rem;
+$font-32px: 1.391rem;
+$font-35px: 1.522rem;
+$font-36px: 1.565rem;
+$font-38px: 1.652rem;
+$font-40px: 1.739rem;
+$font-42px: 1.826rem;
+$font-43px: 1.870rem;
+$font-43-5px: 1.891rem;
+$font-44px: 1.913rem;
+$font-46px: 2.000rem;
+$font-50px: 2.174rem;
+$font-54px: 2.348rem;
+$font-64px: 2.783rem;
+$font-92px: 4.000rem;
+$font-96px: 4.174rem;
+$font-110px: 4.783rem;
+
+$font-small: $font-15px;
+$font-smallest: $font-14px;
+$font-mini: $font-13px;
+$font-tiny: $font-12px;
+
+/*
+  The PhotoShop font-size only includes the cap height (https://en.wikipadia.org/wiki/Cap_height), the Web font includes the whole height of the font.
+  This default value compensates for this difference. User 16px to calculate the rem.
+*/
+$font-size-default: 23px;
+
+//Sizes
+$max-side-width: 1200px;
+
+$max-content-width: 966px;
+
+$content-padding: 5%;
+
+$horizontal-content-padding: 2.25%;
+$horizontal-content-padding-mobile: 7.25%;
+$horizontal-content-padding-large: 192px;
+
+$horizontal-header-padding: 13.25%;
+
+$vertical-spacing-massive: 75px;
+$vertical-spacing-huge: 50px;
+$vertical-spacing-large: 6%;
+$vertical-spacing-medium: 2.1%;
+$vertical-spacing-small: 15px;
+
+$nav-closed-width: 203px;
+$nav-closed-height: 75px;
+
+$bullet-point-line-width: 35.5px;
+$bullet-point-line-height: 2px;
+$bullet-point-line-padding-bottom: 4.4%;
+
+$link-icon-size: 20px;
+$link-icon-padding: 10px;
+
+$small-triangle-height: 15px;
+$small-triangle-width-half: 10px;
+
+$magic-pixel: 1px;
+
+$content-padding-block: 4.6%;
+$block-content-padding-top: 2.6%;
+
+//Breakpoints
+$breakpoints: (
+        'small': (max-width: 767px),
+        'medium': (min-width: 768px),
+        'large': (min-width: 1250px)
+);
+
+// Layers (z-index)
+$layer0: 0;
+$layer1: 1;
+$layer2: 2;
+$layer3: 3;
+$layer4: 4;
+$layer5: 5;
+$layer6: 6;
+$layer7: 7;
+$layer8: 8;
+$layer9: 9;
+$layer10: 10;
+
+//Animations
+$transition-time-short: 0.25s;
+$transition-time-medium: 0.5s;
+$transition-time-long: 0.75s;
+
+
+//Background Content Opacity
+$content-background: rgba(0, 0, 0, 0.6);
+
+$content-padding-left-right: 99px;
+$content-padding-left-right-mobile: 0px;
+
+$top-padding-top-block: 5.05%;
+
+$border-bottom-title-block: 1.5px solid $theme-col-blue;

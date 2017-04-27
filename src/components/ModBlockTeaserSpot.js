@@ -8,21 +8,26 @@ export default class ModBlockTeaserSpot extends React.Component {
   render() {
     const {content} = this.props
 
-    console.log(content)
-
     const teaserSpot = content.list.map((item, index) => {
       return (
-        <div key={index} className="content">
-          <ModAnchorTag linkObject={item.imageLink}>
-            <ModImgTag imgObject={item.image}/>
-          </ModAnchorTag>
-          <ModRichText richText={item.textBlock}/>
+        <div key={index} className="teaserSpot-content">
+          <div className="teaserSpot-img">
+            <ModAnchorTag linkObject={item.imageLink}>
+              <ModImgTag imgObject={item.image} width={166} height={166}/>
+            </ModAnchorTag>
+          </div>
+
+          <div className="teaserSpot-text">
+            <ModRichText richText={item.textBlock}/>
+          </div>
+
+          <div className="teaserSpot-border-bottom"></div>
         </div>
       )
     });
 
     return (
-      <div className="richText-wrapper">
+      <div className="teaserSpot-wrapper">
         {teaserSpot}
       </div>
     )

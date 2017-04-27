@@ -133,15 +133,18 @@ export default class ModApp extends React.Component {
 
       window.addEventListener('scroll', function (e) {
         let scrollPositionY = window.pageYOffset || document.documentElement.scrollTop
-        let app = window.document.getElementById("navigation-wrappter")
+        let app = window.document.getElementById("navigation-burger")
+        let naviText = window.document.getElementById("navigation-text")
 
 
         if (this.lastKnownScrollPosition < scrollPositionY || scrollPositionY < 44) {
           if (scrollPositionY > 100) {
-            removeClassFromElement(app, "menu-hidden")
+            addClassToElement(app, "menu-content")
+            addClassToElement(naviText, "menu-content")
           }
           else {
-            addClassToElement(app, "menu-hidden")
+            removeClassFromElement(app, "menu-content")
+            removeClassFromElement(naviText, "menu-content")
           }
         }
 

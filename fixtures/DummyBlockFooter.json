@@ -35,7 +35,13 @@
             "text": "DU DA GROUP.",
             "type": "header-six",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           },
           {
@@ -67,7 +73,13 @@
             "text": "info@dudagroup.com",
             "type": "unstyled",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]
@@ -115,7 +127,13 @@
             "text": "DU DA GROUP.",
             "type": "header-six",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           },
           {
@@ -147,7 +165,13 @@
             "text": "info@dudagroup.com",
             "type": "unstyled",
             "depth": 0,
-            "inlineStyleRanges": [],
+            "inlineStyleRanges": [
+              {
+                "offset": 0,
+                "length": 150,
+                "style": "BOLD"
+              }
+            ],
             "entityRanges": []
           }
         ]

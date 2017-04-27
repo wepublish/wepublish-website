@@ -1,0 +1,29 @@
+$teaserSpot-wrapper-padding-top: 73px;
+$teaserSpot-img-padding-bottom: 18.5px;
+$teaserSpot-text-padding-bottom: 14px;
+
+.teaserSpot-wrapper {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: $teaserSpot-wrapper-padding-top;
+}
+
+.teaserSpot-content {
+  text-align: center;
+}
+
+.teaserSpot-img {
+  padding-bottom: $teaserSpot-img-padding-bottom;
+}
+
+.teaserSpot-text {
+  padding-bottom: $teaserSpot-text-padding-bottom;
+}
+
+.teaserSpot-border-bottom {
+  width: 82.6px;
+  border-bottom: 0.85px solid black;
+  margin: 0 auto;
+}

@@ -46,13 +46,13 @@ export default class ModFooter extends React.Component {
     let languageNodes = nodes.map((item, index) => {
       const languageNodesLength = nodes.map.length;
 
-      const navLang = <NavLink className={"navigation-lag " + (currentLanguage == item.slug ? 'active' : '')} to={item.relativeUrl + "/home"} onClick={this.closeNavigation}>{item.label}</NavLink>
+      const navLang = <NavLink className={"navigation-lag " + (currentLanguage == item.slug ? 'active' : '')} to={item.relativeUrl + "/microservices"} onClick={this.closeNavigation}>{item.label}</NavLink>
 
       return index == 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
 
     })
 
-    return <ul className="navigation-languages">{languageNodes}</ul>
+    return <ul className="languages-footer">{languageNodes}</ul>
   }
 
 
@@ -67,21 +67,23 @@ export default class ModFooter extends React.Component {
     const metaNavigation = navigationTreeWithoutLang ? this.createMetaNodes(navigationTreeWithoutLang.children) : null
 
 
-    console.log(content)
-
-
     return (
       <footer id="footer" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}}>
-        <div className="header-content">
+        <div className="footer-wrapper">
+          <div className="footer-left">
+            <ModRichText richText={content.text}/>
 
-          <ModRichText richText={content.text}/>
+            <div className="footer-border-bottom"></div>
+
+            {langNavigation}
+          </div>
+
+          <div className="footer-right">
+            <ModAnchorTag linkObject={content.logoLink}>
+              <ModImgTag imgObject={content.logo} width={168}/>
+            </ModAnchorTag>
+          </div>
         </div>
-
-        <ModAnchorTag linkObject={content.logoLink}>
-          <ModImgTag imgObject={content.logo}/>
-        </ModAnchorTag>
-
-        {langNavigation}
       </footer>
     )
   }

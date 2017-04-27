@@ -2,9 +2,9 @@ import React from 'react'
 import NavLink from './common/NavLink'
 import {hasContent, addClassToElement, removeClassFromElement, removeLanguageNavigationNode} from '../common/DDUtil'
 import {isNodeVisible} from '../caas/CaasHelper'
-import ModRichText from  './common/ModRichText'
-import ModAnchorTag from  './common/ModAnchorTag'
-import ModImgTag from  './common/ModImgTag'
+import ModRichText from  'components/common/ModRichText'
+import ModAnchorTag from  'components/common/ModAnchorTag'
+import ModImgTag from  'components/common/ModImgTag'
 
 
 export default class ModNavigation extends React.Component {
@@ -17,6 +17,8 @@ export default class ModNavigation extends React.Component {
     }
 
     this.toggleSubNav = this.toggleSubNav.bind(this)
+    this.toggleNavigation = this.toggleNavigation.bind(this)
+    this.closeNavigation = this.closeNavigation.bind(this)
     this.createNavigationNode = this.createNavigationNode.bind(this)
     this.createLanguageNodes = this.createLanguageNodes.bind(this)
     this.createMetaNodes = this.createMetaNodes.bind(this)
@@ -26,6 +28,18 @@ export default class ModNavigation extends React.Component {
     this.setState(
       Object.assign({}, this.state, replaceObjects)
     )
+
+    // Set App Class if menu is open
+    // TODO check if this is kosher
+    // if (replaceObjects.naviOpen != undefined) {
+    //   let app = window.document.getElementById("app")
+    //   if (replaceObjects.naviOpen) {
+    //     addClassToElement(app, "navigation-open")
+    //   }
+    //   else {
+    //     removeClassFromElement(app, "navigation-open")
+    //   }
+    // }
   }
 
   toggleSubNav(e) {
@@ -42,6 +56,21 @@ export default class ModNavigation extends React.Component {
     }
   }
 
+  toggleNavigation(e) {
+    this.setStateBy({
+      openNodeId: null
+    })
+    this.props.onNavToggle(!this.props.naviOpen)
+  }
+
+  closeNavigation(e) {
+    // if (this.props.naviOpen === true) {
+    //   this.setStateBy({
+    //     naviOpen: false
+    //   })
+    // }
+    this.props.onNavToggle(false)
+  }
 
   hasActiveChild(item, splat) {
     if (item && splat) {
@@ -85,9 +114,10 @@ export default class ModNavigation extends React.Component {
               (
                 <li key={index}
                     className={open_node ? 'navigation-item-container is-open' : 'navigation-item-container'}>
-                  <NavLink className='icon icon-nav_arrow' to={item.relativeUrl} onClick={this.closeNavigation}>
+                  <div className='navigation-top navigation-subnavigation' onClick={this.toggleSubNav}
+                       data-id={item.id}>
                     <span data-id={item.id}>{ item.label }</span>
-                  </NavLink>
+                  </div>
                   {this.createNavigationNode(item.children, false, null)}
                 </li>
               ) : (
@@ -128,29 +158,21 @@ export default class ModNavigation extends React.Component {
     if (!(nodes instanceof Array)) {
       return null
     }
-    let languageNodes = nodes.map((item, index) => {
 
+    let languageNodes = nodes.map((item, index) => {
       const languageNodesLength = nodes.map.length;
 
-      if (languageNodesLength === index + 1) {
-        return (
-          <li key={index}>
-            <NavLink id="de" className="navigation-lag" to={item.relativeUrl + "/microservices"} onClick={this.closeNavigation}>{item.label}</NavLink>
-          </li>
-        )
-      } else {
-        return (
-          <li key={index}>
-            / <NavLink id="en" className="navigation-lag" to={item.relativeUrl + "/microservices"} onClick={this.closeNavigation}>{item.label}</NavLink>
-          </li>
-        )
-      }
+      const navLang = <NavLink className={"navigation-lag " + (currentLanguage == item.slug ? 'active' : '')} to={item.relativeUrl + "/home"} onClick={this.closeNavigation}>{item.label}</NavLink>
+
+      return index == 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
+
     })
 
+    const itemleft = "{"
+    const itemright = "}"
 
-    return <ul className="navigation-languages">{languageNodes}</ul>
+    return <ul className="navigation-languages">{itemleft} {languageNodes} {itemright}</ul>
   }
-
 
 
   createMetaNodes(nodes) {
@@ -198,11 +220,22 @@ export default class ModNavigation extends React.Component {
 
 
     return (
-      <div id="navigation-wrappter" className="menu-hidden">
+      //<div id="navigation-wrappter" className="menu-hidden">
+      <div id="navigation-wrappter" className="">
 
+        <a id="navigation-burger" className="navigation-burger" onClick={this.toggleNavigation}>
+          <div className="navigation-burger-wrapper">
+            <div className="menu-content-wrapper">
+              <div id="navigation-text">We Are. <strong> DU DA.</strong></div>
+            </div>
+            <div className="navigation-icon icon icon-naviBurger"></div>
+          </div>
+        </a>
 
         <div id="navigation" className={this.props.naviOpen ? "is-expanded" : ""}>
           <div className="navigation-header">
+
+
             <NavLink to={currentLanguage} onClick={this.closeNavigation}>
             </NavLink>
           </div>
@@ -210,19 +243,19 @@ export default class ModNavigation extends React.Component {
             <div className="navigation-content">
               <div className="navigation-main">
                 <div className="navigation-logo-wrapper">
+                  {/*<a href="/"><img className="navigation-logo" src={require("static/img/navlogo.svg")}/></a>*/}
                 </div>
                 {this.createNavigationNode(navigationTreeWithoutLang.children, true, splat)}
-              </div>
 
-              <div className="navigation-meta desktop">
-                {langNavigation}
-              </div>
 
+                <div className="navigation-meta desktop">
+                  {langNavigation}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     )
   }
 }

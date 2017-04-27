@@ -1,0 +1,24 @@
+$header-padding-top: 209.5px;
+$header-padding-bottom: 25px;
+$header-border-padding-bottom: 147.5px;
+
+.header-background {
+  background-size: cover;
+}
+
+.header-wrapper {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding-bottom: $header-border-padding-bottom;
+}
+
+.header-content {
+  padding-top: $header-padding-top;
+  padding-bottom: $header-padding-bottom;
+  color: $theme-col-white;
+}
+
+.header-border-bottom {
+  width: 145px;
+  border-bottom: 2.2px solid white;
+}

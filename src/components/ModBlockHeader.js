@@ -10,8 +10,14 @@ export default class ModBlockHeader extends React.Component {
 
     return (
       <div className="header-background" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}}>
-        <div className="header-content">
-          <ModRichText richText={content.title}/>
+
+        <div className="header-wrapper">
+          <div className="header-content">
+            <ModRichText richText={content.title}/>
+          </div>
+
+          <div className="header-border-bottom"></div>
+
         </div>
       </div>
     )
