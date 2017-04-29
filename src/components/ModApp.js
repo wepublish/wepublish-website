@@ -11,11 +11,7 @@ import {getCurrentLanguageOrFallBackByPath, addClassToElement, removeClassFromEl
 
 if (WEBPACK_FRONTEND_BUILD) {
   require("../static/fonts/iconfont/Iconfont.font.js");
-
   require("../static/scss/index.scss")
-
-
-
 }
 
 export default class ModApp extends React.Component {
@@ -41,17 +37,12 @@ export default class ModApp extends React.Component {
         navigationTree: null,
         footer: null,
         content: null,
-        modalView: null,
         naviOpen: false
       }
     }
 
-    //this.state = this.props.context || window.APP_STATE || {items: []};
-
     this.setStateBy = this.setStateBy.bind(this)
     this.setHeadMetaInformation = this.setHeadMetaInformation.bind(this)
-    this.openViewModalView = this.openViewModalView.bind(this)
-    this.onCloseModalView = this.onCloseModalView.bind(this)
     this.fetchFooter = this.fetchFooter.bind(this)
     this.onGotoHome = this.onGotoHome.bind(this)
     this.hasUpdatedLocation = this.hasUpdatedLocation.bind(this)
@@ -72,14 +63,6 @@ export default class ModApp extends React.Component {
     this.setState(
       Object.assign({}, this.state, replaceObjects)
     )
-  }
-
-  openViewModalView(object) {
-    this.setStateBy({modalView: object})
-  }
-
-  onCloseModalView() {
-    this.setStateBy({modalView: null})
   }
 
   onGotoHome() {
@@ -176,18 +159,12 @@ export default class ModApp extends React.Component {
         <ModNavigation navigationTree={this.state.navigationTree}
                        currentLanguage={currentLanguage}
                        splat={this.props.params.splat}
-                       footer={this.state.footer}
                        naviOpen={this.state.naviOpen}
                        onNavToggle={this.onNavToggle}/>
         <ModContent config={this.state.config}
                     content={this.state.content}
-                    caasHelper={this.caasHelper}
-                    navigationTree={this.state.navigationTree}
-                    openModalViewHandler={this.openViewModalView}
-                    currentLanguage={currentLanguage}
                     naviOpen={this.state.naviOpen}
                     onNavToggle={this.onNavToggle}
-                    pathname={this.props.location.pathname}
         />
         <ModFooter content={this.state.footer} currentLanguage={currentLanguage} splat={this.props.params.splat} navigationTree={this.state.navigationTree}
         />

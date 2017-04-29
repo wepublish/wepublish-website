@@ -11,18 +11,13 @@ import ModBlockSpacer from "./ModBlockSpacer";
 export default class ModArticle extends React.Component {
 
   render () {
-    const {article, config, openModalViewHandler, currentLanguage, pathname, caasHelper, navigationNodeId, navigationTree} = this.props
+    const {article, config} = this.props
 
     let html = article.blocks.map(function (item, index) {
       switch (item.type) {
         case config.contentTypeBlockHeader:
           return <ModBlockHeader key={index}
-                                 content={item.content}
-                                 blocks={article.blocks}
-                                 config={config}
-                                 pathname={pathname}
-                                 currentLanguage={currentLanguage}
-                                 navigationTree={navigationTree}/>
+                                 content={item.content}/>
         case config.contentTypeBlockRichText:
           return <ModBlockRichText key={index}
                                  content={item.content}/>
@@ -55,11 +50,5 @@ export default class ModArticle extends React.Component {
 
 ModArticle.propTypes = {
   article: React.PropTypes.object,
-  config: React.PropTypes.object,
-  openModalViewHandler: React.PropTypes.func,
-  currentLanguage: React.PropTypes.string.isRequired,
-  pathname: React.PropTypes.string.isRequired,
-  caasHelper: React.PropTypes.object.isRequired,
-  navigationNodeId: React.PropTypes.string.isRequired,
-  navigationTree: React.PropTypes.object.isRequired
+  config: React.PropTypes.object
 }

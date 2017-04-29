@@ -1,7 +1,6 @@
 import React from 'react'
 import ModArticle from './ModArticle'
 import Mod404 from './Mod404'
-import {removeClassFromElement} from '../common/DDUtil'
 
 export default class ModContent extends React.Component {
 
@@ -22,21 +21,15 @@ export default class ModContent extends React.Component {
   }
 
   render() {
-    const {content, config, caasHelper, navigationTree, openModalViewHandler, currentLanguage, pathname} = this.props
+    const {content, config} = this.props
 
     let contentHtml = <Mod404 />
 
     if (content && content.article) {
-      if (content.article.type == config.contentTypeArticle) {
+      if (content.article.type === config.contentTypeArticle) {
         contentHtml =
           <ModArticle article={content.article}
                       config={config}
-                      openModalViewHandler={openModalViewHandler}
-                      currentLanguage={currentLanguage}
-                      pathname={pathname}
-                      caasHelper={caasHelper}
-                      navigationNodeId={content.navigationNodeId}
-                      navigationTree={navigationTree}
           />
       }
     }
@@ -52,9 +45,4 @@ export default class ModContent extends React.Component {
 ModContent.propTypes = {
   config: React.PropTypes.object,
   content: React.PropTypes.object,
-  caasHelper: React.PropTypes.object,
-  navigationTree: React.PropTypes.object,
-  openModalViewHandler: React.PropTypes.func,
-  currentLanguage: React.PropTypes.string.isRequired,
-  pathname: React.PropTypes.string.isRequired
 }

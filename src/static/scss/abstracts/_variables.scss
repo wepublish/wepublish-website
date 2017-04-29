@@ -88,8 +88,6 @@ $font-tiny: $font-12px;
 $font-size-default: 23px;
 
 //Sizes
-$max-side-width: 1200px;
-
 $max-content-width: 966px;
 
 $content-padding: 5%;
@@ -121,8 +119,6 @@ $small-triangle-width-half: 10px;
 
 $magic-pixel: 1px;
 
-$content-padding-block: 4.6%;
-$block-content-padding-top: 2.6%;
 
 //Breakpoints
 $breakpoints: (
@@ -146,16 +142,8 @@ $layer10: 10;
 
 //Animations
 $transition-time-short: 0.25s;
-$transition-time-medium: 0.5s;
-$transition-time-long: 0.75s;
-
-
-//Background Content Opacity
-$content-background: rgba(0, 0, 0, 0.6);
 
 $content-padding-left-right: 99px;
 $content-padding-left-right-mobile: 0px;
 
-$top-padding-top-block: 5.05%;
 
-$border-bottom-title-block: 1.5px solid $theme-col-blue;

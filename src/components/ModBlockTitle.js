@@ -6,8 +6,6 @@ export default class ModBlockTitle extends React.Component {
   render() {
     const {content} = this.props
 
-    console.log(content)
-
     return (
       <div className="title-wrapper">
         <div className="icon icon-titleArrow"></div>

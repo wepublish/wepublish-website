@@ -71,11 +71,6 @@
   }
 }
 
-/// Keeps aspect ratio of fluid divs
-///
-/// @param $width - width in percentage
-/// @param $height - height in percentage
-/// @param $padding - padding
 @mixin aspect-ratio($width, $height, $padding, $overflow_hidden) {
   position: relative;
   width: $width;
@@ -163,7 +158,6 @@
 
 @mixin li() {
   li {
-    //list-style: none;
     padding-bottom: 0;
 
     &:last-child {

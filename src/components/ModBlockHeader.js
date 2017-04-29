@@ -15,9 +15,7 @@ export default class ModBlockHeader extends React.Component {
           <div className="header-content">
             <ModRichText richText={content.title}/>
           </div>
-
           <div className="header-border-bottom"></div>
-
         </div>
       </div>
     )
