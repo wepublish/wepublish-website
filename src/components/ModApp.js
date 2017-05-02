@@ -158,7 +158,6 @@ export default class ModApp extends React.Component {
       <div id="app">
         <ModNavigation navigationTree={this.state.navigationTree}
                        currentLanguage={currentLanguage}
-                       splat={this.props.params.splat}
                        naviOpen={this.state.naviOpen}
                        onNavToggle={this.onNavToggle}/>
         <ModContent config={this.state.config}

@@ -9,6 +9,8 @@ $subtitle-padding-top: 31.5px;
   align-items: center;
   text-align: center;
   padding-top: $title-wrapper-padding-top;
+
+  @extend .content-padding-desktop;
 }
 
 .title {

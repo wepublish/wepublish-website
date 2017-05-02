@@ -1,15 +1,23 @@
-$header-padding-top: 209.5px;
+$header-padding-top: 107.5px;
 $header-padding-bottom: 25px;
 $header-border-padding-bottom: 147.5px;
+$header-border-padding-top: 20.5px;
 
 .header-background {
   background-size: cover;
+  height: 656px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-height: 850px;
 }
 
 .header-wrapper {
   max-width: $max-content-width;
   margin: 0 auto;
   padding-bottom: $header-border-padding-bottom;
+  padding-top: $header-border-padding-top;
+
+  @extend .content-padding-desktop;
 }
 
 .header-content {

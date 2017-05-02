@@ -76,7 +76,7 @@ export default class ModNavigation extends React.Component {
 
 
   render() {
-    const {navigationTree, currentLanguage, splat} = this.props
+    const {navigationTree, currentLanguage} = this.props
     if (!(navigationTree && navigationTree.children && hasContent(currentLanguage))) {
       return null
     }
@@ -91,7 +91,11 @@ export default class ModNavigation extends React.Component {
         <a id="navigation-burger" className="navigation-burger" onClick={this.toggleNavigation}>
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
-              <div id="navigation-text">We Are. <strong> DU DA.</strong></div>
+              <div id="navigation-text">
+                <p id="scroll-text-small">We Are.&nbsp;</p>
+                <p id="scroll-text-big"> DU DA.</p>
+              </div>
+
             </div>
             <div className="navigation-icon icon icon-naviBurger"></div>
           </div>
@@ -104,9 +108,19 @@ export default class ModNavigation extends React.Component {
           </div>
           <div className="navigation-wrapper">
             <div className="navigation-content">
+
+              <div className="closeNavigation icon icon-naviBurgerClose" onClick={this.closeNavigation}></div>
+
               <div className="navigation-main">
-                {this.createNavigationNode(navigationTreeWithoutLang.children, true, splat)}
-                <div className="navigation-meta desktop">
+                <div className="navigation-title">
+                  <div className="naviOpen-text">
+                    <p id="naviOpen-text-small">We Are.&nbsp;</p>
+                    <p id="naviOpen-text-big"> DU DA.</p>
+                  </div>
+                  <div className="navi-border-bottom"></div>
+                </div>
+                {this.createNavigationNode(navigationTreeWithoutLang.children, true)}
+                <div className="navigation-meta">
                   {langNavigation}
                 </div>
               </div>
@@ -114,12 +128,12 @@ export default class ModNavigation extends React.Component {
           </div>
         </div>
       </div>
-    )
+  )
   }
-}
+  }
 
-ModNavigation
+  ModNavigation
   .propTypes = {
-  currentLanguage: React.PropTypes.string.isRequired,
-  navigationTree: React.PropTypes.object.isRequired
-}
+    currentLanguage: React.PropTypes.string.isRequired,
+    navigationTree: React.PropTypes.object.isRequired
+  }

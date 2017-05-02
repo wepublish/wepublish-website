@@ -7,15 +7,20 @@ $richText-block-padding-left-right: 2.5%;
   max-width: $max-content-width;
   margin: 0 auto;
   padding-top: $richText-wrapper-padding-top;
+
+  @extend .content-padding-desktop;
 }
 
 .richText-content {
   display: flex;
   padding-top: $richText-content-padding-top;
 
+  @include respond-to('small') {
+    flex-direction: column;
+  }
+
   .richText-block {
     box-sizing: border-box;
-    width: 50%;
 
     .rich-text {
       font-size: $font-16px;
@@ -25,10 +30,18 @@ $richText-block-padding-left-right: 2.5%;
 
   .left {
     padding-right: $richText-block-padding-left-right;
+
+    @include respond-to('small') {
+      padding: 0px;
+    }
   }
 
   .right {
     padding-left: $richText-block-padding-left-right;
+
+    @include respond-to('small') {
+      padding: 0px;
+    }
   }
 
 }

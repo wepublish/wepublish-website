@@ -5,6 +5,7 @@
     "definition": {
       "blockName": "Duda Group Header",
       "backgroundImage": "{{dummyDocumentHeaderBackground}}",
+      "logo": "{{dummyDocumentHeaderLogo}}",
       "title": {
         "entityMap": {
           "0": {

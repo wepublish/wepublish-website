@@ -1,17 +1,17 @@
 import React from 'react'
 import ModRichText from  './common/ModRichText'
+import ModImgTag from "./common/ModImgTag";
 
 export default class ModBlockHeader extends React.Component {
 
   render() {
     const {content} = this.props
 
-    console.log(content)
-
     return (
       <div className="header-background" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}}>
 
         <div className="header-wrapper">
+          <ModImgTag imgObject={content.logo} width={55} height={55}/>
           <div className="header-content">
             <ModRichText richText={content.title}/>
           </div>

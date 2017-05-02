@@ -24,8 +24,6 @@ module.exports = {
     contentBase: "/",
     port: 8080,
     host: '0.0.0.0',
-    // noInfo: true, //  --no-info option
-    // hot: true,
     inline: true
   },
 

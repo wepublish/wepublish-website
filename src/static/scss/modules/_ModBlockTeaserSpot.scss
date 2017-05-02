@@ -8,14 +8,26 @@ $teaserSpot-text-padding-bottom: 14px;
   display: flex;
   justify-content: space-around;
   padding-top: $teaserSpot-wrapper-padding-top;
+  flex-wrap: wrap;
+
+  @extend .content-padding-desktop;
 }
 
 .teaserSpot-content {
   text-align: center;
+  width: 33%;
+
+  @include respond-to('small') {
+    width: 100%;
+  }
 }
 
 .teaserSpot-img {
   padding-bottom: $teaserSpot-img-padding-bottom;
+
+  @include respond-to('small') {
+    padding-top: $teaserSpot-img-padding-bottom;
+  }
 }
 
 .teaserSpot-text {

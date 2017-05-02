@@ -14,9 +14,9 @@ export default class ModFooter extends React.Component {
     }
 
     let languageNodes = nodes.map((item, index) => {
-      const navLang = <NavLink className={"navigation-lag " + (currentLanguage == item.slug ? 'active' : '')} to={item.relativeUrl + "/microservices"} onClick={this.closeNavigation}>{item.label}</NavLink>
+      const navLang = <NavLink className={"navigation-lag " + (currentLanguage === item.slug ? 'active' : '')} to={item.relativeUrl + "/microservices"} onClick={this.closeNavigation}>{item.label}</NavLink>
 
-      return index == 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
+      return index === 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
 
     })
 

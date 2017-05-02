@@ -33,6 +33,11 @@ $col-block-pagination-dot-active: $theme-col-real-black;
 .block-slider {
   position: relative;
   cursor: pointer;
+  padding-top: 50px;
+  max-width: $max-content-width;
+  margin: 0 auto;
+
+  @extend .content-padding-desktop;
 
   .block-slider-img-container {
     position: relative;
@@ -60,6 +65,8 @@ $col-block-pagination-dot-active: $theme-col-real-black;
   }
 
   .swiper-slide {
+    max-width: $max-content-width;
+    margin: 0 auto;
 
     .caption {
       @include block-padding;

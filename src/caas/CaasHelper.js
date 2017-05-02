@@ -52,7 +52,6 @@ export default function SaasHelper () {
       navigationTree: null,
       footer: null,
       content: null,
-      modalView: null
     }
     await fetchModelTypes(voConfig)
     voConfig.rootNavigationEntityId = await fetchRootCategoryNode(voConfig)
@@ -204,9 +203,6 @@ export default function SaasHelper () {
           footer.logo = getMediaObjectById(mediaPool, footer.logo)
           footer.logoLink = addLinkObject(navigationTree, mediaPool, footer.logoLink)
 
-
-
-
           return footer
         }
       }
@@ -220,8 +216,6 @@ export default function SaasHelper () {
    * @param navigationNodeId
    * @param callback
    */
-
-  console.log(voConfig)
 
   this.fetchContentByNavigationNodeId = function (navigationTree, navigationNodeId, callback) {
     const query = [
@@ -319,6 +313,7 @@ export default function SaasHelper () {
           if (node.type === voConfig.contentTypeBlockHeader) {
             node.content.backgroundImage = getMediaObjectById(mediaPool, node.content.backgroundImage)
             node.content.title = addLinkObjectToRichText(navigationTree, mediaPool, node.content.title)
+            node.content.logo = getMediaObjectById(mediaPool, node.content.logo)
           }
 
           else if (node.type === voConfig.contentTypeBlockTitle) {
@@ -652,12 +647,6 @@ async function fetchModelTypes (voConfig) {
              break
           }
         })
-
-        // if (!(hasContent(voConfig.contentTypeNavigationNodes) &&
-        //   hasContent(voConfig.contentTypeArticle) &&
-        //   hasContent(voConfig.contentTypeBlockRichText))) {
-        //   throw new InvalidConfigException("some default settings are missing")
-        // }
 
         if (!(hasContent(voConfig.contentTypeNavigationNodes) &&
           hasContent(voConfig.contentTypeArticle))) {

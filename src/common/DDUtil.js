@@ -147,25 +147,6 @@ export function dateFormat(date) {
 
 /**
  *
- * @param array
- * @returns {*}
- */
-export function shuffleArray(array) {
-  let counter = array.length
-
-  while (counter > 0) {
-    let index = Math.floor(Math.random() * counter)
-    counter--
-    let temp = array[counter]
-    array[counter] = array[index]
-    array[index] = temp
-  }
-
-  return array
-}
-
-/**
- *
  * @param url
  * @param cloudinaryParams
  * @returns {string|void|XML|*}
@@ -193,8 +174,4 @@ export function removeLanguageNavigationNode(nodes, currentLanguage) {
       }
     }
   }
-}
-
-export function hasRichTextContent(richText) {
-  return !(richText.blocks.length == 1 && !hasContent(richText.blocks[0].text))
 }

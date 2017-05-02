@@ -2,10 +2,18 @@ $footer-padding-top: 45px;
 $footer-padding-bottom: 34px;
 $footer-left-padding-bottom: 24.5px;
 
+$footer-padding-bottom-mobile: 50px;
+
 #footer {
   margin-top: 100px;
   padding-top: $footer-padding-top;
   padding-bottom: $footer-padding-bottom;
+
+  @extend .content-padding-desktop;
+
+  @include respond-to('small') {
+    padding-bottom: $footer-padding-bottom-mobile;
+  }
 }
 
 .footer-wrapper {
@@ -14,23 +22,23 @@ $footer-left-padding-bottom: 24.5px;
   display: flex;
   justify-content: space-between;
   color: $theme-col-white;
-}
 
-.footer-right {
-  display: flex;
-  align-items: flex-end;
-}
-
-.footer-left {
-  .rich-text {
-    padding-bottom: $footer-left-padding-bottom;
-    font-size: $font-15px;
-    line-height: 1.4;
+  .footer-right {
+    display: flex;
+    align-items: flex-end;
   }
 
-  .footer-border-bottom {
-    width: 82.6px;
-    border-bottom: 1.2px solid white;
+  .footer-left {
+    .rich-text {
+      padding-bottom: $footer-left-padding-bottom;
+      font-size: $font-15px;
+      line-height: 1.4;
+    }
+
+    .footer-border-bottom {
+      width: 82.6px;
+      border-bottom: 1.2px solid white;
+    }
   }
 }
 

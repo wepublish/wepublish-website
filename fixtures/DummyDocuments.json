@@ -25,12 +25,12 @@
     "id": "dummyDocumentHeaderBackground",
     "target": "{{ModelDocuments}}",
     "definition": {
-      "url": "http://media.karma.run/image/upload/v1491922133/duda-website/i5mzwwcgbude08m3rkvc.png",
-      "secureUrl": "http://media.karma.run/image/upload/v1491922133/duda-website/i5mzwwcgbude08m3rkvc.png",
-      "publicId": "duda-website/i5mzwwcgbude08m3rkvc",
-      "version": 1491922133,
-      "width": 2399,
-      "height": 966,
+      "url": "http://media.karma.run/image/upload/v1493728229/duda-website/yorwc4fboa133xpn0kj7.png",
+      "secureUrl": "http://media.karma.run/image/upload/v1493728229/duda-website/yorwc4fboa133xpn0kj7.png",
+      "publicId": "duda-website/yorwc4fboa133xpn0kj7",
+      "version": 1493728229,
+      "width": 2398,
+      "height": 970,
       "format": "png",
       "createdAt": "",
       "resourceType": "",
@@ -40,6 +40,28 @@
       "signature": "",
       "title": "Header Background",
       "altText": "Header Background",
+      "originalFilename": ""
+    }
+  },
+  {
+    "id": "dummyDocumentHeaderLogo",
+    "target": "{{ModelDocuments}}",
+    "definition": {
+      "url": "http://media.karma.run/image/upload/v1493727297/duda-website/dvlc1pbno66ssx6rfcof.png",
+      "secureUrl": "http://media.karma.run/image/upload/v1493727297/duda-website/dvlc1pbno66ssx6rfcof.png",
+      "publicId": "duda-website/dvlc1pbno66ssx6rfcof",
+      "version": 1493727297,
+      "width": 110,
+      "height": 112,
+      "format": "png",
+      "createdAt": "",
+      "resourceType": "",
+      "bytes": 0,
+      "type": "image",
+      "etag": "",
+      "signature": "",
+      "title": "FooterLogo",
+      "altText": "FooterLogo",
       "originalFilename": ""
     }
   },

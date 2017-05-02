@@ -12,6 +12,9 @@
               "minLength": 3
             }
           },
+          "logo": {
+            "ref": "{{ModelDocuments}}"
+          },
           "backgroundImage": {
             "ref": "{{ModelDocuments}}"
           },

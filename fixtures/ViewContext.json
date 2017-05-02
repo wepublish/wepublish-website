@@ -17,6 +17,13 @@
                 "label": "Block Name"
               }
             },
+            "logo": {
+              "ref": {
+                "allowInlineEditing": true,
+                "label": "Logo",
+                "maxDepth": 3
+              }
+            },
             "backgroundImage": {
               "ref": {
                 "allowInlineEditing": true,

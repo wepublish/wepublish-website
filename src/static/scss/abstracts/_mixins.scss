@@ -34,10 +34,10 @@
     padding-right: 0;
   }
 
-  @include respond-to('large') {
-    padding-left: $horizontal-header-padding;
-    padding-right: $horizontal-header-padding;
-  }
+  //@include respond-to('large') {
+  //  padding-left: $horizontal-header-padding;
+  //  padding-right: $horizontal-header-padding;
+  //}
 }
 
 
@@ -50,10 +50,10 @@
     padding-right: 0;
   }
 
-  @include respond-to('large') {
-    padding-left: $horizontal-content-padding;
-    padding-right: $horizontal-content-padding;
-  }
+  //@include respond-to('large') {
+  //  padding-left: $horizontal-content-padding;
+  //  padding-right: $horizontal-content-padding;
+  //}
 }
 
 @mixin block-margin() {
@@ -65,10 +65,10 @@
     margin-right: 0;
   }
 
-  @include respond-to('large') {
-    margin-left: $horizontal-content-padding-large;
-    margin-right: $horizontal-content-padding-large;
-  }
+  //@include respond-to('large') {
+  //  margin-left: $horizontal-content-padding-large;
+  //  margin-right: $horizontal-content-padding-large;
+  //}
 }
 
 @mixin aspect-ratio($width, $height, $padding, $overflow_hidden) {

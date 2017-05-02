@@ -173,7 +173,7 @@ export default class ModBlockImageSlider extends React.Component {
     ) : null
 
     return (
-      <div className="block-slider parent bg-white">
+      <div className="block-slider parent">
         <div className="block-slider-text-bg"></div>
         <ModIdangerousSwiper id={this.props.content.id}
                              hasNavigation={true}
