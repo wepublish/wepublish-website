@@ -115,11 +115,11 @@ $col-block-pagination-dot-active: $theme-col-real-black;
 
   .swiper-button-prev {
     left: $block-slider-navigation-spacing;
-    transform: rotate(180deg);
   }
 
   .swiper-button-next {
     right: $block-slider-navigation-spacing;
+    transform: rotate(180deg);
   }
 
   .swiper-pagination {

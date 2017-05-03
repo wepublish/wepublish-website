@@ -158,10 +158,10 @@ export default class ModBlockImageSlider extends React.Component {
             <div className="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
               <div className="pswp__share-tooltip"></div>
             </div>
-            <div className="pswp__ icon icon-but_sliderArrow left"></div>
+            <div className="pswp__ icon icon-sliderArrowR"></div>
             <button className="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
             </button>
-            <div className="pswp__ icon icon-but_sliderArrow right"></div>
+            <div className="pswp__ icon icon-sliderArrowL"></div>
             <button className="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
             </button>
             <div className="pswp__caption">
@@ -177,7 +177,7 @@ export default class ModBlockImageSlider extends React.Component {
         <div className="block-slider-text-bg"></div>
         <ModIdangerousSwiper id={this.props.content.id}
                              hasNavigation={true}
-                             navigationIcon="icon-but_sliderArrow"
+                             navigationIcon="icon-sliderArrowL"
                              hasPagination={true}
                              maxPaginationCount={10}
                              hasFullScreen={true}

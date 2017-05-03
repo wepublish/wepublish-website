@@ -1,0 +1,11 @@
+.block-image {
+  padding-top: 50px;
+  max-width: $max-content-width;
+  margin: 0 auto;
+
+  @extend .content-padding-desktop;
+
+  img {
+    width: 100%;
+  }
+}

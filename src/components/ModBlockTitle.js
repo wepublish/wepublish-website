@@ -12,9 +12,7 @@ export default class ModBlockTitle extends React.Component {
         <div className="title">
           <ModRichText richText={content.title}/>
         </div>
-
         <div className="title-border-bottom"></div>
-
         <div className="subtitle">
           <ModRichText richText={content.subtitle}/>
         </div>

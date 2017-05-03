@@ -105,9 +105,9 @@ export default class ModIdangerousSwiper extends React.Component {
           className={"swiper-button-fullscreen" + (fullScreenIcon ? " icon " + fullScreenIcon : "")}></div> : "" }
         { hasNavigation ?
           <div>
-            {/*<div className={"swiper-button-next" + (navigationIcon ? " icon " + navigationIcon : "")}></div>*/}
-            {/*<div*/}
-              {/*className={"swiper-button-prev"  + (navigationIcon ? " icon " + navigationIcon : "")}></div>*/}
+            <div className={"swiper-button-next" + (navigationIcon ? " icon " + navigationIcon : "")}></div>
+            <div
+              className={"swiper-button-prev"  + (navigationIcon ? " icon " + navigationIcon : "")}></div>
           </div> : "" }
         { (hasPagination && children.length < maxPaginationCount) ? <div className="swiper-pagination"></div> : "" }
         { hasSlideNumber ?
