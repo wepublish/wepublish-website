@@ -22,3 +22,7 @@ export default class ModBlockTitle extends React.Component {
     )
   }
 }
+
+ModBlockTitle.propTypes = {
+  content: React.PropTypes.object
+}

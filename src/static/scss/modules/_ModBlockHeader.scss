@@ -8,7 +8,10 @@ $header-border-padding-top: 20.5px;
   height: 656px;
   background-repeat: no-repeat;
   background-position: bottom;
-  max-height: 850px;
+
+  @include respond-to('small') {
+    height: auto;
+  }
 }
 
 .header-wrapper {

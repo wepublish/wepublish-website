@@ -33,7 +33,7 @@ export default class ModFooter extends React.Component {
     const langNavigation = this.createLanguageNodes(navigationTree.children, currentLanguage)
 
     return (
-      <footer id="footer" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}}>
+      <footer id="footer" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}} alt={content.backgroundImage.altText}>
         <div className="footer-wrapper">
           <div className="footer-left">
             <ModRichText richText={content.text}/>
@@ -43,7 +43,7 @@ export default class ModFooter extends React.Component {
 
           <div className="footer-right">
             <ModAnchorTag linkObject={content.logoLink}>
-              <ModImgTag imgObject={content.logo} width={168}/>
+              <ModImgTag imgObject={content.logo} width={168} alt={content.logo.altText}/>
             </ModAnchorTag>
           </div>
         </div>

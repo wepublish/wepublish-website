@@ -124,7 +124,7 @@ export default class ModBlockImageSlider extends React.Component {
       return (
         <div className="swiper-slide" key={index} data-index={index} onClick={this.onClickProductImage}>
           <div className="block-slider-img-container">
-            <ModImgTag imgObject={item.image} width={1920} transformation="c_limit"/>
+            <ModImgTag imgObject={item.image} width={1920} transformation="c_limit" alt={item.image.altText}/>
           </div>
           <div className="caption">
             <p className="typo-h7 l-centered-content">{item.text}</p>

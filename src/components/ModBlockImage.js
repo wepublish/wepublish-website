@@ -27,11 +27,11 @@ export default class ModBlockImage extends React.Component {
     if (this.state.showMe) {
       imageContent =
         <div className="fullsize">
-          <ModImgTag imgObject={content.image}/>
+          <ModImgTag imgObject={content.image} alt={content.image.altText}/>
         </div>
     } else {
       imageContent =
-        <ModImgTag imgObject={content.image} width={687} height={416}/>
+        <ModImgTag imgObject={content.image} width={687} height={416} alt={content.image.altText}/>
     }
 
     return (

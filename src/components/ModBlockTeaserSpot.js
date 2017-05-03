@@ -13,7 +13,7 @@ export default class ModBlockTeaserSpot extends React.Component {
         <div key={index} className="teaserSpot-content">
           <div className="teaserSpot-img">
             <ModAnchorTag linkObject={item.imageLink}>
-              <ModImgTag imgObject={item.image} width={166} height={166}/>
+              <ModImgTag imgObject={item.image} width={166} height={166} alt={item.image.altText}/>
             </ModAnchorTag>
           </div>
 
@@ -32,5 +32,9 @@ export default class ModBlockTeaserSpot extends React.Component {
       </div>
     )
   }
+}
+
+ModBlockTeaserSpot.propTypes = {
+  content: React.PropTypes.object
 }
 
