@@ -1,5 +1,7 @@
+$imageBlock-padding-top: 50px;
+
 .block-image {
-  padding-top: 50px;
+  padding-top: $imageBlock-padding-top;
   max-width: $max-content-width;
   margin: 0 auto;
 

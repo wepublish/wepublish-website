@@ -1,5 +1,3 @@
-
-
 /**
  * @external VoContentType
  * @param obj {Object}

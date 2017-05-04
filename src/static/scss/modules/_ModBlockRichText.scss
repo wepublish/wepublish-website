@@ -3,6 +3,8 @@ $richText-content-padding-top: 11px;
 
 $richText-block-padding-left-right: 2.5%;
 
+$padding-null: 0px;
+
 .richText-wrapper {
   max-width: $max-content-width;
   margin: 0 auto;
@@ -32,7 +34,7 @@ $richText-block-padding-left-right: 2.5%;
     padding-right: $richText-block-padding-left-right;
 
     @include respond-to('small') {
-      padding: 0px;
+      padding: $padding-null;
     }
   }
 
@@ -40,7 +42,7 @@ $richText-block-padding-left-right: 2.5%;
     padding-left: $richText-block-padding-left-right;
 
     @include respond-to('small') {
-      padding: 0px;
+      padding: $padding-null;
     }
   }
 

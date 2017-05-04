@@ -2,6 +2,10 @@ $teaserSpot-wrapper-padding-top: 73px;
 $teaserSpot-img-padding-bottom: 18.5px;
 $teaserSpot-text-padding-bottom: 14px;
 
+$teaserSpot-line-width: 82.6px;
+$teaserSpot-line-height: 0.85px;
+
+
 .teaserSpot-wrapper {
   max-width: $max-content-width;
   margin: 0 auto;
@@ -35,7 +39,7 @@ $teaserSpot-text-padding-bottom: 14px;
 }
 
 .teaserSpot-border-bottom {
-  width: 82.6px;
-  border-bottom: 0.85px solid black;
+  width: $teaserSpot-line-width;
+  border-bottom: $teaserSpot-line-height solid black;
   margin: 0 auto;
 }

@@ -108,9 +108,7 @@ export default class ModNavigation extends React.Component {
           </div>
           <div className="navigation-wrapper">
             <div className="navigation-content">
-
               <div className="closeNavigation icon icon-naviBurgerClose" onClick={this.closeNavigation}></div>
-
               <div className="navigation-main">
                 <div className="navigation-title">
                   <div className="naviOpen-text">
@@ -128,12 +126,12 @@ export default class ModNavigation extends React.Component {
           </div>
         </div>
       </div>
-  )
+    )
   }
-  }
+}
 
-  ModNavigation
+ModNavigation
   .propTypes = {
-    currentLanguage: React.PropTypes.string.isRequired,
-    navigationTree: React.PropTypes.object.isRequired
-  }
+  currentLanguage: React.PropTypes.string.isRequired,
+  navigationTree: React.PropTypes.object.isRequired
+}

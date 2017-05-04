@@ -18,14 +18,10 @@ function getUrl () {
   return endpoint
 }
 
-/**
- *
- * @constructor
- */
 export default function SaasHelper () {
 
   /**
-   *
+   * Fetchen der gesamten Seite
    * @param path
    * @param callback
    */
@@ -120,9 +116,10 @@ export default function SaasHelper () {
 
 
   /**
-   * fetch the whole navigation tree
+   * Gesamten Navigationbaum fetchen
    */
   this.fetchNavigation = async function () {
+    //verbindungen zwischen Types aufzeigen Navigation
     const query = [
       `${voConfig.contentTypeNavigationNodes}->${voConfig.contentTypeNavigationNodes}`,
       `${voConfig.contentTypeNavigationNodes}<-${voConfig.contentTypeArticle}`
@@ -158,6 +155,7 @@ export default function SaasHelper () {
    */
   this.fetchFooter = async function (navigationTree, lang) {
     let footerNavigationNodeId = searchNavigationNodeByUrl(navigationTree.children, lang + "/footer")
+    //verbindungen zwischen Types aufzeigen Footer
     const query = [
       `${voConfig.contentTypeNavigationNodes}<-${voConfig.contentTypeFooter}`,
       `${voConfig.contentTypeFooter}->${voConfig.contentTypeMedia}`
@@ -181,7 +179,7 @@ export default function SaasHelper () {
   }
 
   /**
-   *
+   * Footer Analysieren
    * @param navigationTree
    * @param result
    * @returns {null}
@@ -211,13 +209,13 @@ export default function SaasHelper () {
   }
 
   /**
-   * fetch content and return a the result
+   * Fetcht den Content der Webseite
    * @param navigationTree
    * @param navigationNodeId
    * @param callback
    */
-
   this.fetchContentByNavigationNodeId = function (navigationTree, navigationNodeId, callback) {
+    //verbindungen zwischen Types aufzeigen
     const query = [
       `${voConfig.contentTypeNavigationNodes}<-${voConfig.contentTypeArticle}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockHeader}`,
@@ -260,6 +258,12 @@ export default function SaasHelper () {
       })
   }
 
+  /**
+   * Content Anlaysieren
+   * @param navigationTree
+   * @param result
+   * @param {null / parseArticle}
+   */
   function parseContent (navigationTree, result) {
     if (result) {
       const mediaPool = parseMedia(result)
@@ -271,6 +275,10 @@ export default function SaasHelper () {
     return null
   }
 
+  /**
+   * Analysieren der Bilder
+   * @return mediaPool
+   */
   function parseMedia (result) {
     const mediaPool = result[voConfig.contentTypeMedia]
     for (let key in mediaPool) {
@@ -282,6 +290,13 @@ export default function SaasHelper () {
     return mediaPool
   }
 
+  /**
+   * Content Anlaysieren
+   * @param navigationTree
+   * @param mediaPool
+   * @param result
+   * @param {article / previousValue }
+   */
   function parseArticle (navigationTree, mediaPool, result) {
     let articlePool = result[voConfig.contentTypeArticle]
     let article = null
@@ -306,9 +321,8 @@ export default function SaasHelper () {
 
           let key2
 
-          // Validate Block Objects
+          // Validierung der verschiedenen Modelle
           node.content.id = entityId
-
 
           if (node.type === voConfig.contentTypeBlockHeader) {
             node.content.backgroundImage = getMediaObjectById(mediaPool, node.content.backgroundImage)
@@ -357,6 +371,10 @@ export default function SaasHelper () {
     return article
   }
 
+  /**
+   * Holt alle Navigation Node IDs
+   * @return {type: typeId, / content: typedPool[entityId] }
+   */
   function getNodeById (objectPool, entityId) {
     for (let typeId in objectPool) {
       if (objectPool.hasOwnProperty(typeId)) {
@@ -371,6 +389,10 @@ export default function SaasHelper () {
     }
   }
 
+  /**
+   * Holt alle Article mit der Node ID
+   * @return {articlePool / null }
+   */
   function getArticleByNodeId (articlePool, nodeId) {
     for (let key in articlePool) {
       if (articlePool.hasOwnProperty(key)) {
@@ -383,7 +405,7 @@ export default function SaasHelper () {
   }
 
   /**
-   * change the server result to a nested object
+   * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    * @param nodePool
    * @param articlePool
    * @param nodeIds
@@ -415,7 +437,7 @@ export default function SaasHelper () {
 }
 
 /**
- * searches an navigation node by his url and returns his id or null if not found
+ * Sucht die Navigationnode in der URL und gibt die ID zurück wird keine id gefunden {null}
  * @param array
  * @param searchRelativeUrl
  * @returns String|null
@@ -461,7 +483,7 @@ export function searchNavigationNodeById (array, nodeId) {
 
 
 /**
- *
+ * Wird für nicht Navigationspunkte wie beispielsweise den Footer verwendet
  * @param node
  * @returns {boolean}
  */
@@ -480,15 +502,21 @@ export function isNodeVisible (node) {
 
 
 /**
- *
+ * Im CMS kann gewählt werden ob die Seite Live ist oder nicht
+ * Dies wird in diesem Teil des CaasHelpers überprüft
  * @param article
  * @returns {boolean}
  */
 export function isArticleActiveNow (article) {
+  /**
+   * Ist die Seite auf Live geschaltet
+   */
   if (!article.isLive) {
     return false
   }
-
+  /**
+   * überprüfung ob Datum der Liveschaltung erreicht ist
+   */
   let now = new Date().getTime()
   if (article.expiryDate !== 0 && now > article.expiryDate * 1000) {
     return false
@@ -507,7 +535,9 @@ function InvalidConfigException (message) {
 
 
 /**
- *
+ * In diesem Teil des CaasHelper wird das Login in die Karma.run
+ * Datenbank gemacht.
+ * Ohne dieses Login können die Daten nicht aus der karma.run Datenbank geladen werden!
  * @param user
  * @param pwd
  * @param database
@@ -532,11 +562,19 @@ async function signIn (user, pwd, database) {
     .then(function (result) {
       return result
     })
+    /**
+     * Wenn das Login nicht funktioniert hat wird eine
+     * Errormeldung in der Konsole des Browsers angezeigt
+     */
     .catch(function (ex) {
       console.error('CaasHelper.fetchNavigation failed', ex)
     })
 }
 
+/**
+ * Logindaten in userSession speichern
+ * @param voConfig,
+ */
 function getFetchOptions (voConfig) {
   let headers = new Headers()
   headers.append("X-CaaS-User", voConfig.userSession['user-id'])
@@ -552,7 +590,7 @@ function getFetchOptions (voConfig) {
 }
 
 /**
- * search the root navigation node.
+ * sucht die root Navigation in der karma.run Datenbank
  * @param voConfig
  */
 async function fetchRootCategoryNode (voConfig) {
@@ -579,13 +617,18 @@ async function fetchRootCategoryNode (voConfig) {
         return rootNavigationNodeId
       }
     })
+    /**
+     * Error Ausgabe in der Konsole wenn das Navigationnode suchen nicht funktioniert hat
+     */
     .catch(function (ex) {
       console.error('CaasHelper.fetchRootCategoryNode failed: ', ex)
     })
 }
 
 /**
- * Fetch all model types,
+ * Fetchen aller Modell Types aus der Datenank
+ * @param voConfig,
+ *
  */
 async function fetchModelTypes (voConfig) {
   let url = getUrl()
@@ -613,6 +656,10 @@ async function fetchModelTypes (voConfig) {
           throw new InvalidConfigException("no models defined")
         }
 
+        /**
+         * For Each loop durch alle Modelle aus der karma.run Datenbank
+         *
+         */
         modelDefinition.forEach((model) => {
           switch (model.key) {
             case "navigation-node":
@@ -655,6 +702,9 @@ async function fetchModelTypes (voConfig) {
 
         return voConfig
       }
+      /**
+       * Errorausgabe bei Fetchfehler
+       */
     }).catch(function (ex) {
       console.error('CaasHelper.fetchModelTypes failed', ex)
       return null

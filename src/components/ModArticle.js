@@ -31,7 +31,6 @@ export default class ModArticle extends React.Component {
                                    content={item.content}/>
         case config.contentTypeBlockImageSlider:
           if (item.content.list.length === 1) {
-            // If there is just one item in the list, display an simple Image Block
             return <ModBlockImage key={index} content={{image: item.content.list[0].image}}/>
           }
           return <ModBlockImageSlider key={index} content={item.content} index={index}/>

@@ -25,3 +25,6 @@ export default class ModBlockRichText extends React.Component {
   }
 }
 
+ModBlockRichText.propTypes = {
+  content: React.PropTypes.object
+};

@@ -21,9 +21,6 @@ The following steps will run an example production server which enables features
 
 The demo site well be accessible under [http://localhost:8000](http://localhost:8000). 
 
-## DEBUG
-SourceMap for backend and frontend are generated. Debugging works for frontend and backend with PyCharm (install NodeJs Plugin)
-
 
 ## ENVIRONMENT VARIABLES
 * NODE_ENV: development, production

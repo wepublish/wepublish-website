@@ -1,11 +1,18 @@
+$footer-margin-top: 100px;
 $footer-padding-top: 45px;
 $footer-padding-bottom: 34px;
 $footer-left-padding-bottom: 24.5px;
 
 $footer-padding-bottom-mobile: 50px;
 
+$footer-line-width: 82.6px;
+$footer-line-height: 1.2px;
+
+$li-padding: 5px;
+$padding-null: 0px;
+
 #footer {
-  margin-top: 100px;
+  margin-top: $footer-margin-top;
   padding-top: $footer-padding-top;
   padding-bottom: $footer-padding-bottom;
 
@@ -36,8 +43,8 @@ $footer-padding-bottom-mobile: 50px;
     }
 
     .footer-border-bottom {
-      width: 82.6px;
-      border-bottom: 1.2px solid white;
+      width: $footer-line-width;
+      border-bottom: $footer-line-height solid white;
     }
   }
 }
@@ -52,11 +59,11 @@ $footer-padding-bottom-mobile: 50px;
   }
 
   li {
-    padding-right: 5px;
+    padding-right: $li-padding;
   }
 
   li:last-of-type {
-    padding-right: 0px;
+    padding-right: $padding-null;
   }
 }
 

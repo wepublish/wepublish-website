@@ -1,32 +1,11 @@
-//Breakpoints
-
 //Colors
 $col-link-active: $theme-col-black;
 $col-link-active-rich-text: $theme-col-blue;
 $col-text-primary: $theme-col-black;
-
-$col-bg-white: transparent;
-$col-bg-bright: $theme-col-grey-bg;
-$col-bg-wide: $theme-col-grey-lighter;
-$col-bg-content: #fff;
-
-$col-font-white: $theme-col-white;
-$col-font-colored: $theme-col-green;
-
-$col-bullet-point-line: $theme-col-green;
-
-$col-link-icon-internal: $theme-col-black;
-$col-link-icon-external: $theme-col-green;
-$col-link-icon-doc: $theme-col-violet;
-$col-link-icon-img: $theme-col-violet;
-
-$col-small-triangle-bg: $col-bg-bright;
 $col-small-triangle: $theme-col-white;
 
 //Fonts
 $font-default: 'Open Sans', sans-serif;
-
-
 
 $font-light: 300;
 $font-regular: 400;
@@ -81,55 +60,33 @@ $font-smallest: $font-14px;
 $font-mini: $font-13px;
 $font-tiny: $font-12px;
 
-/*
-  The PhotoShop font-size only includes the cap height (https://en.wikipadia.org/wiki/Cap_height), the Web font includes the whole height of the font.
-  This default value compensates for this difference. User 16px to calculate the rem.
-*/
-$font-size-default: 23px;
-
 //Sizes
 $max-content-width: 966px;
 
 $content-padding: 5%;
 
+//content Padding Mobile
+$content-padding-mobile-l-r: 5.6%;
+
+//content Padding Desktop
+$content-padding-desktop-l-r: 5.8%;
+
 $horizontal-content-padding: 2.25%;
 $horizontal-content-padding-mobile: 7.25%;
-$horizontal-content-padding-large: 192px;
-
 $horizontal-header-padding: 13.25%;
 
-$vertical-spacing-massive: 75px;
-$vertical-spacing-huge: 50px;
 $vertical-spacing-large: 6%;
-$vertical-spacing-medium: 2.1%;
-$vertical-spacing-small: 15px;
 
-$nav-closed-width: 203px;
-$nav-closed-height: 75px;
-
-$bullet-point-line-width: 35.5px;
-$bullet-point-line-height: 2px;
-$bullet-point-line-padding-bottom: 4.4%;
-
-$link-icon-size: 20px;
-$link-icon-padding: 10px;
 
 $small-triangle-height: 15px;
 $small-triangle-width-half: 10px;
-
 $magic-pixel: 1px;
-
-//content Padding Mobile
-$content-padding-mobile-l-r: 5.6%;
-//content Padding Desktop
-$content-padding-desktop-l-r: 5.8%;
 
 
 //Breakpoints
 $breakpoints: (
         'small': (max-width: 767px),
         'medium': (min-width: 768px),
-        //'large': (min-width: 1250px)
 );
 
 // Layers (z-index)

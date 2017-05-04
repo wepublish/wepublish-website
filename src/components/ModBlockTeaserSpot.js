@@ -16,11 +16,9 @@ export default class ModBlockTeaserSpot extends React.Component {
               <ModImgTag imgObject={item.image} width={166} height={166} alt={item.image.altText}/>
             </ModAnchorTag>
           </div>
-
           <div className="teaserSpot-text">
             <ModRichText richText={item.textBlock}/>
           </div>
-
           <div className="teaserSpot-border-bottom"></div>
         </div>
       )

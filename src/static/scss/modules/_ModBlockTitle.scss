@@ -3,6 +3,9 @@ $title-padding-top: 25px;
 $title-padding-bottom: 21px;
 $subtitle-padding-top: 31.5px;
 
+$title-line-width: 118px;
+$title-line-height: 1.75px;
+
 .title-wrapper {
   display: flex;
   flex-direction: column;
@@ -19,8 +22,8 @@ $subtitle-padding-top: 31.5px;
 }
 
 .title-border-bottom {
-  width: 118px;
-  border-bottom: 1.75px solid black;
+  width: $title-line-width;
+  border-bottom: $title-line-height solid black;
 }
 
 .subtitle {

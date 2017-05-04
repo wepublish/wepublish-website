@@ -3,6 +3,9 @@ $header-padding-bottom: 25px;
 $header-border-padding-bottom: 147.5px;
 $header-border-padding-top: 20.5px;
 
+$header-line-width: 145px;
+$header-line-height: 2.2px;
+
 .header-background {
   background-size: cover;
   height: 656px;
@@ -30,6 +33,6 @@ $header-border-padding-top: 20.5px;
 }
 
 .header-border-bottom {
-  width: 145px;
-  border-bottom: 2.2px solid white;
+  width: $header-line-width;
+  border-bottom: $header-line-height solid white;
 }

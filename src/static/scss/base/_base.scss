@@ -6,10 +6,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  //@include respond-to('large') {
-  //  font-size: $font-size-default;
-  //}
-
   @include respond-to('small') {
     font-size: 21px;
   }
