@@ -183,6 +183,10 @@ $null: 0px;
 
 }
 
+.icon-naviBurger:before, .icon-naviBurgerClose:before {
+  font-weight: bold !important;
+}
+
 .navigation-burger {
   position: fixed;
   z-index: $layer9;

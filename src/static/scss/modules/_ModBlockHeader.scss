@@ -10,7 +10,7 @@ $header-line-height: 2.2px;
   background-size: cover;
   height: 656px;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 
   @include respond-to('small') {
     height: auto;

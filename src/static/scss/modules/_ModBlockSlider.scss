@@ -7,7 +7,7 @@ $block-slider-text-padding-top: 10px;
 $block-slider-text-padding-top-mobile: 44px;
 
 $block-slider-navigation-spacing: 42px;
-$block-slider-navigation-size: 45px;
+$block-slider-navigation-size: 18px;
 
 $block-slider-fullscreen-top: 20px;
 $block-slider-fullscreen-right: 30px;
@@ -107,6 +107,7 @@ $col-block-pagination-dot-active: $theme-col-real-black;
     color: $col-block-icons;
     font-size: $block-slider-navigation-size;
     z-index: $layer1;
+    height: 18px !important;
 
     @include respond-to('small') {
       display: none;
