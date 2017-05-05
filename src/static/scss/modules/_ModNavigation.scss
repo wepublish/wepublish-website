@@ -183,7 +183,11 @@ $null: 0px;
 
 }
 
-.icon-naviBurger:before, .icon-naviBurgerClose:before {
+.icon-naviBurger:before {
+  font-weight: bold !important;
+}
+
+.icon-naviBurgerClose:before {
   font-weight: bold !important;
 }
 
