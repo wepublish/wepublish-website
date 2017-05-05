@@ -76,6 +76,7 @@ $col-block-pagination-dot-active: $theme-col-real-black;
       height: $block-slider-text-height;
       text-align: center;
       padding-top: $block-slider-text-padding-top;
+      font-size: $font-16px;
 
       @include respond-to('small') {
         height: $block-slider-text-height-mobile;
@@ -107,7 +108,7 @@ $col-block-pagination-dot-active: $theme-col-real-black;
     color: $col-block-icons;
     font-size: $block-slider-navigation-size;
     z-index: $layer1;
-    height: 18px !important;
+    height: 13px !important;
 
     @include respond-to('small') {
       display: none;
