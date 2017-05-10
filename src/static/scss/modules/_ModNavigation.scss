@@ -190,7 +190,6 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
 .navigation-burger {
   position: fixed;
   z-index: $layer9;
-  cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -202,6 +201,16 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   @include respond-to('small') {
     left: 0;
   }
+}
+
+.navigation-icon-open {
+  cursor: pointer;
+  height: 19px;
+}
+
+.navigation-icon-close {
+  cursor: pointer;
+  height: 26px;
 }
 
 .is-expanded .content_img {

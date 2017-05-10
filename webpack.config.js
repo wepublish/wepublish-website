@@ -23,8 +23,6 @@ module.exports = {
   devServer: {
     contentBase: "/",
     port: 8080,
-    host: '0.0.0.0',
-    inline: true
   },
 
   plugins: getPlugins(production),
@@ -56,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.font\.(js|json)$/,
-        loader: "style!css!fontgen"
+        loader: "style!css!webfonts"
       }
     ]
   },

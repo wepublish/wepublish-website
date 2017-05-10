@@ -88,7 +88,7 @@ export default class ModNavigation extends React.Component {
     return (
       <div id="navigation-wrappter" className="">
 
-        <a id="navigation-burger" className="navigation-burger" onClick={this.toggleNavigation}>
+        <a id="navigation-burger" className="navigation-burger">
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
               <div id="navigation-text">
@@ -97,7 +97,9 @@ export default class ModNavigation extends React.Component {
               </div>
 
             </div>
-            <div className="navigation-icon icon icon-naviBurger"></div>
+            <div className="navigation-icon" onClick={this.toggleNavigation}>
+              <img className="navigation-icon-open" src={require("../static/fonts/iconfont/svg/naviBurger.png")}/>
+            </div>
           </div>
         </a>
 
@@ -108,7 +110,9 @@ export default class ModNavigation extends React.Component {
           </div>
           <div className="navigation-wrapper">
             <div className="navigation-content">
-              <div className="closeNavigation icon icon-naviBurgerClose" onClick={this.closeNavigation}></div>
+              <div className="closeNavigation" onClick={this.closeNavigation}>
+                <img className="navigation-icon-close" src={require("../static/fonts/iconfont/svg/naviBurgerClose.png")}/>
+              </div>
               <div className="navigation-main">
                 <div className="navigation-title">
                   <div className="naviOpen-text">
