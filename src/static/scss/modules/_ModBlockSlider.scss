@@ -155,7 +155,6 @@ $col-block-pagination-dot-active: $theme-col-real-black;
     position: absolute;
     left: $block-slider-slide-number-left;
     bottom: $block-slider-slide-number-bottom + $block-slider-text-height;
-
     font-family: $font-default;
     font-size: $font-smallest;
     color: $col-block-icons;
@@ -166,6 +165,7 @@ $col-block-pagination-dot-active: $theme-col-real-black;
       bottom: initial;
       left: $horizontal-content-padding-mobile;
       color: $col-block-icons-mobile;
+      margin-left: 20px;
     }
 
   }
