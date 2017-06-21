@@ -6,6 +6,7 @@ import ModBlockTeaserSpot from "./ModBlockTeaserSpot";
 import ModBlockImageSlider from "./ModBlockImageSlider";
 import ModBlockImage from "./ModBlockImage";
 import ModBlockSpacer from "./ModBlockSpacer";
+import ModBlockiFrame from "./ModBlockiFrame";
 
 
 export default class ModArticle extends React.Component {
@@ -34,6 +35,8 @@ export default class ModArticle extends React.Component {
             return <ModBlockImage key={index} content={{image: item.content.list[0].image}}/>
           }
           return <ModBlockImageSlider key={index} content={item.content} index={index}/>
+        case config.contentTypeBlockIFrame:
+          return <ModBlockiFrame key={index} content={item.content}/>
         default:
           return null
       }

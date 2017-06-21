@@ -24,7 +24,8 @@
         "{{viewContextModelBlockRichText}}",
         "{{viewContextModelBlockTeaserSpot}}",
         "{{viewContextModelBlockImageSlider}}",
-        "{{viewContextModelBlockSpacer}}"
+        "{{viewContextModelBlockSpacer}}",
+        "{{viewContextModelBlockiFrame}}"
       ]
     }
   },

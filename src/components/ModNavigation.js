@@ -91,7 +91,7 @@ export default class ModNavigation extends React.Component {
         <a id="navigation-burger" className="navigation-burger">
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
-              <div id="navigation-text">
+              <div id="navigation-text" href="/">
                 <p id="scroll-text-small">We Are.&nbsp;</p>
                 <p id="scroll-text-big"> DU DA.</p>
               </div>

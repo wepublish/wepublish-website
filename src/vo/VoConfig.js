@@ -13,7 +13,9 @@ export default function VoConfig () {
   this.contentTypeBlockTeaserSpot = null;
   this.contentTypeBlockImageSlider = null;
   this.contentTypeBlockSpacer = null;
+  this.contentTypeBlockIFrame = null;
   this.contentTypeFooter = null
+
 
   // SOME ROOT ENTITIES
   this.rootNavigationEntityId = null;

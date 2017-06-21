@@ -45,7 +45,14 @@ export default class ModIdangerousSwiper extends React.Component {
       params['pagination'] = '#' + this.props.id + ' .swiper-pagination'
       params['paginationClickable'] = true
     }
-
+    if(this.props.directionVertical) {
+      params['direction'] = 'vertical'
+    }
+    if(this.props.autoplay) {
+      params['autoplay'] = this.props.autoplay
+      params['speed'] = 700
+      params['effect'] = 'slide'
+    }
 
     this.swiper = new Swiper('#' + this.props.id, params)
 
@@ -58,6 +65,8 @@ export default class ModIdangerousSwiper extends React.Component {
     this.swiper.on('onSlideChangeEnd', () => {
       this.onSliderSlide(false)
     })
+
+    console.log(params)
   }
 
   onSliderSlide (activity) {
@@ -94,15 +103,14 @@ export default class ModIdangerousSwiper extends React.Component {
 
 
   render () {
-    const {children, hasNavigation, navigationIcon, hasFullScreen, fullScreenIcon, hasPagination, maxPaginationCount, hasSlideNumber, id} = this.props
+    const {children, hasNavigation, navigationIcon, hasFullScreen, fullScreenIcon, hasPagination, maxPaginationCount, hasSlideNumber, id, directionVertical} = this.props
 
     return (
-      <div className="swiper-container" id={id}>
+      <div className={directionVertical === false ? "swiper-container" : "swiper-container vertical-slider"} id={id}>
         <div className="swiper-wrapper">
           {children}
         </div>
-        { hasFullScreen ? <div
-          className={"swiper-button-fullscreen" + (fullScreenIcon ? " icon " + fullScreenIcon : "")}></div> : "" }
+        { hasFullScreen ? <div className={"swiper-button-fullscreen" + (fullScreenIcon ? " icon " + fullScreenIcon : "")}></div> : "" }
         { hasNavigation ?
           <div>
             <div className={"swiper-button-next" + (navigationIcon ? " icon " + navigationIcon : "")}></div>
@@ -129,6 +137,7 @@ ModIdangerousSwiper.propTypes = {
   hasFullScreen: React.PropTypes.bool,
   fullScreenIcon: React.PropTypes.string,
   hasSlideNumber: React.PropTypes.bool,
+  directionVertical: React.PropTypes.bool,
   options: React.PropTypes.object
 }
 

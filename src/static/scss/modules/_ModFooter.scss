@@ -15,6 +15,8 @@ $padding-null: 0px;
   margin-top: $footer-margin-top;
   padding-top: $footer-padding-top;
   padding-bottom: $footer-padding-bottom;
+  background-size: cover;
+  background-position: center;
 
   @extend .content-padding-desktop;
 
@@ -33,6 +35,10 @@ $padding-null: 0px;
   .footer-right {
     display: flex;
     align-items: flex-end;
+
+    @include respond-to('small') {
+      align-items: flex-start;
+    }
   }
 
   .footer-left {

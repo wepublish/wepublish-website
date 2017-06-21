@@ -30,6 +30,12 @@ $col-block-icons-mobile: $theme-col-black;
 $col-block-pagination-dot: $theme-col-white;
 $col-block-pagination-dot-active: $theme-col-real-black;
 
+.vertical-slider {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+}
+
 .block-slider {
   position: relative;
   cursor: pointer;
@@ -67,6 +73,9 @@ $col-block-pagination-dot-active: $theme-col-real-black;
   .swiper-slide {
     max-width: $max-content-width;
     margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
 
     .caption {
       @include block-padding;

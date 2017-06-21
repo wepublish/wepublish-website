@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ModBlockiFrame",
+    "target": "{{entityEntity}}",
+    "definition": {
+      "key": "blockIFrame",
+      "model": {
+        "struct": {
+          "blockName": {
+            "string": {
+              "maxLength": 40,
+              "minLength": 3
+            }
+          },
+          "snippet": {
+            "string": {}
+          },
+          "aspectRatio": {
+            "string": {
+              "regex": {
+                "caseInsensitive": false,
+                "expression": "^\\d{1,2}:\\d{1,2}$",
+                "multiline": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

@@ -8,7 +8,8 @@ export default class ModBlockHeader extends React.Component {
     const {content} = this.props
 
     return (
-      <div className="header-background" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}} alt={content.backgroundImage.altText}>
+      <div className="header-background" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}}
+           alt={content.backgroundImage.altText}>
 
         <div className="header-wrapper">
           <ModImgTag imgObject={content.logo} width={55} height={55} alt={content.logo.altText}/>

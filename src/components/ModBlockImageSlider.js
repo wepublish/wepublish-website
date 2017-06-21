@@ -9,7 +9,7 @@ const MAX_IMG_SIZE = 2000
 
 export default class ModBlockImageSlider extends React.Component {
 
-  constructor (props) {
+  constructor(props) {
     super(props)
 
 
@@ -26,18 +26,18 @@ export default class ModBlockImageSlider extends React.Component {
     this.onClickProductImage = this.onClickProductImage.bind(this)
   }
 
-  onClickProductImage (event) {
+  onClickProductImage(event) {
     this.setState({
       fullScreen: true,
       sliderIndex: event.currentTarget.getAttribute('data-index')
     })
   }
 
-  getFullscreenSliderId () {
+  getFullscreenSliderId() {
     return 'fullscreen-slider-' + this.props.index
   }
 
-  componentDidUpdate (prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
     if (this.state.fullScreen) {
       this.initFullScreenSwiperComponents(this.state.sliderIndex)
     }
@@ -47,7 +47,7 @@ export default class ModBlockImageSlider extends React.Component {
   // Fullscreen Slider
   //******************************************************************************************************************
 
-  initFullScreenSwiperComponents (index = 0) {
+  initFullScreenSwiperComponents(index = 0) {
     this.destroyFullScreenSwiperComponents()
 
     if (this.props.content) {
@@ -99,7 +99,7 @@ export default class ModBlockImageSlider extends React.Component {
     }
   }
 
-  destroyFullScreenSwiperComponents () {
+  destroyFullScreenSwiperComponents() {
     if (this.photoSwipeFullscreen) {
       try {
         this.photoSwipeFullscreen.destroy()
@@ -114,13 +114,13 @@ export default class ModBlockImageSlider extends React.Component {
   // React
   //******************************************************************************************************************
 
-  render () {
+  render() {
 
     if (!hasContent(this.props.content.list)) {
       return null
     }
 
-    let inlineSlider = this.props.content.list.map((item, index)=> {
+    let inlineSlider = this.props.content.list.map((item, index) => {
       return (
         <div className="swiper-slide" key={index} data-index={index} onClick={this.onClickProductImage}>
           <div className="block-slider-img-container">
@@ -182,7 +182,8 @@ export default class ModBlockImageSlider extends React.Component {
                              maxPaginationCount={10}
                              hasFullScreen={true}
                              fullScreenIcon="icon-but_double_arrow"
-                             hasSlideNumber={true}>
+                             hasSlideNumber={true}
+                             directionVertical={false}>
           {inlineSlider}
         </ModIdangerousSwiper>
         {fullScreenSlider}

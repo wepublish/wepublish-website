@@ -14,11 +14,11 @@ let db = config.caasDb
 let user = config.user
 let pwd = config.pwd
 
-function getUrl () {
+function getUrl() {
   return endpoint
 }
 
-export default function SaasHelper () {
+export default function SaasHelper() {
 
   /**
    * Fetchen der gesamten Seite
@@ -140,12 +140,11 @@ export default function SaasHelper () {
       })
   }
 
-  function parseCategories (result) {
+  function parseCategories(result) {
     const nodePool = result[voConfig.contentTypeNavigationNodes]
     const articlePool = result[voConfig.contentTypeArticle]
     return createNodes(nodePool, articlePool, [voConfig.rootNavigationEntityId], "")[0] || [];
   }
-
 
 
   /**
@@ -184,7 +183,7 @@ export default function SaasHelper () {
    * @param result
    * @returns {null}
    */
-  function parseFooter (navigationTree, result) {
+  function parseFooter(navigationTree, result) {
     if (result &&
       result.hasOwnProperty(voConfig.contentTypeMedia) &&
       result.hasOwnProperty(voConfig.contentTypeFooter)
@@ -224,10 +223,11 @@ export default function SaasHelper () {
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockSpacer}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockImageSlider}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockTeaserSpot}`,
+      `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockIFrame}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeMedia}`,
       `${voConfig.contentTypeBlockHeader}->${voConfig.contentTypeMedia}`,
       `${voConfig.contentTypeBlockImageSlider}->${voConfig.contentTypeMedia}`,
-      `${voConfig.contentTypeBlockTeaserSpot}->${voConfig.contentTypeMedia}`
+      `${voConfig.contentTypeBlockTeaserSpot}->${voConfig.contentTypeMedia}`,
     ]
 
     const url = getUrl() + "/" + voConfig.contentTypeNavigationNodes + "/" + navigationNodeId + "?flow=" + encodeURIComponent(JSON.stringify(query))
@@ -264,7 +264,7 @@ export default function SaasHelper () {
    * @param result
    * @param {null / parseArticle}
    */
-  function parseContent (navigationTree, result) {
+  function parseContent(navigationTree, result) {
     if (result) {
       const mediaPool = parseMedia(result)
       if (result.hasOwnProperty(voConfig.contentTypeArticle)) {
@@ -279,7 +279,7 @@ export default function SaasHelper () {
    * Analysieren der Bilder
    * @return mediaPool
    */
-  function parseMedia (result) {
+  function parseMedia(result) {
     const mediaPool = result[voConfig.contentTypeMedia]
     for (let key in mediaPool) {
       if (mediaPool.hasOwnProperty(key)) {
@@ -297,7 +297,7 @@ export default function SaasHelper () {
    * @param result
    * @param {article / previousValue }
    */
-  function parseArticle (navigationTree, mediaPool, result) {
+  function parseArticle(navigationTree, mediaPool, result) {
     let articlePool = result[voConfig.contentTypeArticle]
     let article = null
 
@@ -361,6 +361,10 @@ export default function SaasHelper () {
             }
           }
 
+          else if (node.type === voConfig.contentTypeBlockWebsiteTeaser) {
+
+          }
+
           previousValue.push(node)
 
           return previousValue
@@ -375,7 +379,7 @@ export default function SaasHelper () {
    * Holt alle Navigation Node IDs
    * @return {type: typeId, / content: typedPool[entityId] }
    */
-  function getNodeById (objectPool, entityId) {
+  function getNodeById(objectPool, entityId) {
     for (let typeId in objectPool) {
       if (objectPool.hasOwnProperty(typeId)) {
         const typedPool = objectPool[typeId]
@@ -393,7 +397,7 @@ export default function SaasHelper () {
    * Holt alle Article mit der Node ID
    * @return {articlePool / null }
    */
-  function getArticleByNodeId (articlePool, nodeId) {
+  function getArticleByNodeId(articlePool, nodeId) {
     for (let key in articlePool) {
       if (articlePool.hasOwnProperty(key)) {
         if (articlePool[key].navigationNode === nodeId) {
@@ -412,7 +416,7 @@ export default function SaasHelper () {
    * @param relativeUrl
    * @returns {*}
    */
-  function createNodes (nodePool, articlePool, nodeIds, relativeUrl) {
+  function createNodes(nodePool, articlePool, nodeIds, relativeUrl) {
     return nodeIds.reduce(function (previousValue, nodeId) {
       let url = relativeUrl
       if (!nodePool[nodeId]) {
@@ -442,7 +446,7 @@ export default function SaasHelper () {
  * @param searchRelativeUrl
  * @returns String|null
  */
-export function searchNavigationNodeByUrl (array, searchRelativeUrl) {
+export function searchNavigationNodeByUrl(array, searchRelativeUrl) {
   if (!(array instanceof Array))return null
 
   for (let i = 0; i < array.length; i++) {
@@ -463,7 +467,7 @@ export function searchNavigationNodeByUrl (array, searchRelativeUrl) {
  * @param nodeId
  * @returns {null}
  */
-export function searchNavigationNodeById (array, nodeId) {
+export function searchNavigationNodeById(array, nodeId) {
   if (typeof nodeId === 'string' && array instanceof Array) {
     for (let key in array) {
       if (array.hasOwnProperty(key)) {
@@ -487,7 +491,7 @@ export function searchNavigationNodeById (array, nodeId) {
  * @param node
  * @returns {boolean}
  */
-export function isNodeVisible (node) {
+export function isNodeVisible(node) {
   if (!node.showInMenu) {
     return false
   }
@@ -507,7 +511,7 @@ export function isNodeVisible (node) {
  * @param article
  * @returns {boolean}
  */
-export function isArticleActiveNow (article) {
+export function isArticleActiveNow(article) {
   /**
    * Ist die Seite auf Live geschaltet
    */
@@ -529,7 +533,7 @@ export function isArticleActiveNow (article) {
 }
 
 
-function InvalidConfigException (message) {
+function InvalidConfigException(message) {
   this.message = message;
 }
 
@@ -543,7 +547,7 @@ function InvalidConfigException (message) {
  * @param database
  * @returns {Headers}
  */
-async function signIn (user, pwd, database) {
+async function signIn(user, pwd, database) {
   const url = getUrl() + "/_login"
   const options = {
     method: "POST",
@@ -575,7 +579,7 @@ async function signIn (user, pwd, database) {
  * Logindaten in userSession speichern
  * @param voConfig,
  */
-function getFetchOptions (voConfig) {
+function getFetchOptions(voConfig) {
   let headers = new Headers()
   headers.append("X-CaaS-User", voConfig.userSession['user-id'])
   headers.append("X-CaaS-Signature", voConfig.userSession['signature'])
@@ -593,7 +597,7 @@ function getFetchOptions (voConfig) {
  * sucht die root Navigation in der karma.run Datenbank
  * @param voConfig
  */
-async function fetchRootCategoryNode (voConfig) {
+async function fetchRootCategoryNode(voConfig) {
   let url = getUrl() + "/" + voConfig.contentTypeNavigationNodes
   log("CaasHelper.fetchRootCategoryNode: " + url)
   return await fetch(url, getFetchOptions(voConfig))
@@ -630,7 +634,7 @@ async function fetchRootCategoryNode (voConfig) {
  * @param voConfig,
  *
  */
-async function fetchModelTypes (voConfig) {
+async function fetchModelTypes(voConfig) {
   let url = getUrl()
   log("CaasHelper.fetchModelTypes: " + url)
   return await fetch(url, getFetchOptions(voConfig))
@@ -680,6 +684,9 @@ async function fetchModelTypes (voConfig) {
             case "blockRichText":
               voConfig.contentTypeBlockRichText = model.contentTypeId
               break
+            case "blockIFrame":
+              voConfig.contentTypeBlockIFrame = model.contentTypeId
+              break
             case "blockTeaserSpot":
               voConfig.contentTypeBlockTeaserSpot = model.contentTypeId
               break
@@ -691,7 +698,7 @@ async function fetchModelTypes (voConfig) {
               break
             case "blockFooter":
               voConfig.contentTypeFooter = model.contentTypeId
-             break
+              break
           }
         })
 
@@ -712,15 +719,15 @@ async function fetchModelTypes (voConfig) {
 }
 
 
-function response (response) {
+function response(response) {
   return response.response
 }
 
-function json (response) {
+function json(response) {
   return response.json()
 }
 
-function status (response) {
+function status(response) {
   if (response.status >= 200 && response.status < 300) {
     return Promise.resolve(response)
   }

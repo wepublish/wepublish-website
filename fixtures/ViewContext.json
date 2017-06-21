@@ -1,5 +1,62 @@
 [
   {
+    "id": "viewContextModelBlockiFrame",
+    "target": "scOLBohZPju",
+    "definition": {
+      "contentTypeId": "{{ModBlockiFrame}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "field": {
+        "fieldset": {
+          "fields": {
+            "aspectRatio": {
+              "text": {
+                "label": "Aspect Ratio (e.g. 16:9)"
+              }
+            },
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "snippet": {
+              "text": {
+                "label": "HTML Snippet"
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "snippet"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "aspectRatio"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "iFrame",
+      "slug": "iframe"
+    }
+  },
+  {
     "id": "viewContextModelBlockHeader",
     "target": "scOLBohZPju",
     "definition": {
@@ -399,7 +456,6 @@
     "id": "viewContextModelBlockTeaserSpot",
     "target": "scOLBohZPju",
     "definition": {
-
       "descriptionKeyPaths": [
         [
           "blockName"
@@ -831,6 +887,17 @@
                         "key": "blockImageSlider",
                         "icon": "photo_library",
                         "label": "Image Slider",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "icon": "code",
+                        "key": "blockIFrame",
+                        "label": "iFrame",
                         "type": {
                           "ref": {
                             "allowInlineEditing": true,
