@@ -1,7 +1,7 @@
 [
   {
     "id": "workspaceArticles",
-    "target": "cCXthPAzIku",
+    "target": "rpiFaTYDfuf",
     "definition": {
       "icon": "description",
       "name": "Articles",
@@ -13,7 +13,7 @@
   },
   {
     "id": "workspaceBlocks",
-    "target": "cCXthPAzIku",
+    "target": "rpiFaTYDfuf",
     "definition": {
       "icon": "view_module",
       "name": "Blocks",
@@ -31,7 +31,7 @@
   },
   {
     "id": "workspaceNavigation",
-    "target": "cCXthPAzIku",
+    "target": "rpiFaTYDfuf",
     "definition": {
       "icon": "navigation",
       "name": "Navigation",
@@ -44,7 +44,7 @@
   },
   {
     "id": "workspaceMedia",
-    "target": "cCXthPAzIku",
+    "target": "rpiFaTYDfuf",
     "definition": {
       "icon": "image",
       "name": "Media",

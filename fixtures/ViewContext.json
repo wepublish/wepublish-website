@@ -1,7 +1,7 @@
 [
   {
     "id": "viewContextModelBlockiFrame",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModBlockiFrame}}",
       "descriptionKeyPaths": [
@@ -58,7 +58,7 @@
   },
   {
     "id": "viewContextModelBlockHeader",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModBlockHeader}}",
       "descriptionKeyPaths": [
@@ -160,7 +160,7 @@
   },
   {
     "id": "viewContextModelBlockTitle",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModBlockTitle}}",
       "descriptionKeyPaths": [
@@ -286,7 +286,7 @@
   },
   {
     "id": "viewContextModelBlockRichText",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModBlockRichText}}",
       "descriptionKeyPaths": [
@@ -454,7 +454,7 @@
   },
   {
     "id": "viewContextModelBlockTeaserSpot",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "descriptionKeyPaths": [
         [
@@ -621,7 +621,7 @@
   },
   {
     "id": "viewContextModelBlockImageSlider",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "descriptionKeyPaths": [
         [
@@ -706,7 +706,7 @@
   },
   {
     "id": "viewContextModelBlockSpacer",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModBlockSpacer}}",
       "descriptionKeyPaths": [
@@ -753,7 +753,7 @@
   },
   {
     "id": "viewContextModelArticles",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "name": "Article",
       "slug": "article",
@@ -991,7 +991,7 @@
   },
   {
     "id": "viewContextModelNavigationNode",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "descriptionKeyPaths": [
         [
@@ -1078,7 +1078,7 @@
   },
   {
     "id": "viewContextModelBlockFooter",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModBlockFooter}}",
       "descriptionKeyPaths": [
@@ -1237,7 +1237,7 @@
   },
   {
     "id": "viewContextModelDocuments",
-    "target": "scOLBohZPju",
+    "target": "YNWcOoETusD",
     "definition": {
       "contentTypeId": "{{ModelDocuments}}",
       "descriptionKeyPaths": [
