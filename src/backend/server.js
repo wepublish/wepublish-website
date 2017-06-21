@@ -37,12 +37,12 @@ app.get('*', (req, res) => {
       if (currentLanguage === 'unknown') {
         //If no valid lang is specified, forward to an accepted language
         const lang = req.acceptsLanguages('de', 'en')
-        res.redirect('/' + lang + '/microservices')
+        res.redirect('/' + lang + '/home')
         //res.redirect('/en/home')
         return
       }
       if (/^\/de[\/]{0,1}$/.test(req.path)) {
-        res.redirect(req.path + '/microservices/')
+        res.redirect(req.path + '/home/')
         return
       }
 
