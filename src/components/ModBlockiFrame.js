@@ -15,7 +15,9 @@ export default class ModBlockIFrame extends React.Component {
     }
 
     return (
-      <div className="block-iframe" style={style} dangerouslySetInnerHTML={createRichtTextMarkup(content.snippet)}/>
+      <div className="block-iframe-wrapper">
+        <div className="block-iframe" style={style} dangerouslySetInnerHTML={createRichtTextMarkup(content.snippet)}/>
+      </div>
     )
   }
 }

@@ -12,6 +12,8 @@ $title-line-height: 1.75px;
   align-items: center;
   text-align: center;
   padding-top: $title-wrapper-padding-top;
+  max-width: $max-content-width;
+  margin: 0 auto;
 
   @extend .content-padding-desktop;
 }

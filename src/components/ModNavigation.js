@@ -65,7 +65,9 @@ export default class ModNavigation extends React.Component {
     }
 
     let languageNodes = nodes.map((item, index) => {
-      const navLang = <NavLink className={"navigation-lag " + (currentLanguage === item.slug ? 'active' : '')} to={item.relativeUrl + "/microservices"} onClick={this.closeNavigation}>{item.label}</NavLink>
+      const navLang = <NavLink className={"navigation-lag " + (currentLanguage === item.slug ? 'active' : '')}
+                               to={item.relativeUrl + "/microservices"}
+                               onClick={this.closeNavigation}>{item.label}</NavLink>
 
       return index == 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
 
@@ -92,13 +94,13 @@ export default class ModNavigation extends React.Component {
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
               <div id="navigation-text" href="/">
-                <p id="scroll-text-small">We Are.&nbsp;</p>
-                <p id="scroll-text-big"> DU DA.</p>
+                <p id="scroll-text-small">Gemeinsam sind wir&nbsp;</p>
+                <p id="scroll-text-big"> stark.</p>
               </div>
 
             </div>
             <div className="navigation-icon" onClick={this.toggleNavigation}>
-              <img className="navigation-icon-open" src={require("../static/fonts/iconfont/svg/naviBurger.png")}/>
+              <img className="navigation-icon-open" src={require("../static/img/naviBurger.svg")}/>
             </div>
           </div>
         </a>
@@ -108,18 +110,26 @@ export default class ModNavigation extends React.Component {
             <NavLink to={currentLanguage} onClick={this.closeNavigation}>
             </NavLink>
           </div>
+
           <div className="navigation-wrapper">
             <div className="navigation-content">
-              <div className="closeNavigation" onClick={this.closeNavigation}>
-                <img className="navigation-icon-close" src={require("../static/fonts/iconfont/svg/naviBurgerClose.png")}/>
-              </div>
               <div className="navigation-main">
                 <div className="navigation-title">
+
+                  <div className="navi-placholder"></div>
+
                   <div className="naviOpen-text">
-                    <p id="naviOpen-text-small">We Are.&nbsp;</p>
-                    <p id="naviOpen-text-big"> DU DA.</p>
+                    <div className="navi-text-wrapper">
+                      <p id="naviOpen-text-small">Denn stark ist wer&nbsp;</p>
+                      <p id="naviOpen-text-big">teilt.</p>
+                    </div>
+                    <div className="navi-border-bottom"></div>
                   </div>
-                  <div className="navi-border-bottom"></div>
+
+                  <div className="closeNavigation" onClick={this.closeNavigation}>
+                    <img className="navigation-icon-close" src={require("../static/img/naviBurgerClose.svg")}/>
+                  </div>
+
                 </div>
                 {this.createNavigationNode(navigationTreeWithoutLang.children, true)}
                 <div className="navigation-meta">

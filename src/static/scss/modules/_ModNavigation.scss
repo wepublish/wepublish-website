@@ -24,7 +24,6 @@ $col-nav-meta-language: $theme-col-black;
 $null: 0px;
 
 #navigation {
-  z-index: $layer9;
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,6 +35,7 @@ $null: 0px;
   }
 
   &.is-expanded {
+    z-index: $layer10;
     width: 100%;
     transition-duration: $transition-time-short;
     height: 100%;
@@ -53,28 +53,41 @@ $null: 0px;
 
 .navigation-title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  max-width: 966px;
+  margin: 0 auto;
+  align-items: flex-start;
+
+  @extend .content-padding-desktop;
+
+  .navi-placholder {
+    width: 24px;
+  }
 
   .naviOpen-text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 
-    #naviOpen-text-small {
-      font-size: $font-29px;
-      line-height: 1.3;
-    }
+    .navi-text-wrapper {
+      display: flex;
 
-    #naviOpen-text-big {
-      font-size: $font-35px;
-      font-weight: bold;
+      #naviOpen-text-small {
+        font-size: $font-29px;
+        line-height: 1.3;
+      }
+
+      #naviOpen-text-big {
+        font-size: $font-35px;
+        font-weight: bold;
+      }
     }
   }
 }
 
 .navigation-wrapper {
   position: relative;
-  max-width:100%;
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
   overflow-y: auto;
@@ -112,11 +125,10 @@ $null: 0px;
   margin: 0 auto;
   background: white;
   right: 0;
-
   width: 100%;
   margin-right: $null;
-  height: auto;
-
+  //height: auto;
+  height: 100vh;
 
   @include respond-to('small') {
     width: 100%;
@@ -127,15 +139,7 @@ $null: 0px;
 }
 
 .closeNavigation {
-  position: absolute;
-  right: $close-navigation-right;
-  top: $close-navigation-top;
   cursor: pointer;
-  @include respond-to('small') {
-    position: absolute;
-    right: $close-navigation-right-small;
-    top: $close-navigation-top;
-  }
 }
 
 .navigation-text-content {
@@ -153,6 +157,11 @@ $null: 0px;
 }
 
 .menu-content {
+  background-color: $navigation-color;
+  display: flex !important;
+}
+
+.noHeader {
   background-color: $navigation-color;
   display: flex !important;
 }
@@ -210,7 +219,8 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
 
 .navigation-icon-close {
   cursor: pointer;
-  height: 26px;
+  height: 24px;
+  padding-top: 4px;
 }
 
 .is-expanded .content_img {
@@ -221,7 +231,6 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   height: 0;
   z-index: 999999999;
 }
-
 
 .navigation-nodes {
   display: flex;
@@ -285,7 +294,6 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
     font-weight: bold;
     font-size: $font-15px;
 
-
     li {
       padding-right: 5px;
     }
@@ -313,7 +321,6 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
 #navigation a.active {
   color: $theme-col-mud-dark;
   font-weight: bold;
-
 
   &:before {
     color: $theme-col-blue;
