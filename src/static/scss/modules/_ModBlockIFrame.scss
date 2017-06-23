@@ -1,11 +1,11 @@
 .block-iframe-wrapper {
   padding-top: 53.5px;
+  max-width: $max-content-width;
+  margin: 0 auto;
 
   .block-iframe {
     position: relative;
     height: 0;
-    max-width: $max-content-width;
-    margin: 0 auto;
 
     iframe {
       position: absolute;
