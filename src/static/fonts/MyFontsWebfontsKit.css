@@ -1,0 +1,95 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3206132, 2016-04-19T06:22:01-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: FF DIN Round Web Pro by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/din-round-pro/regular/
+ * Copyright: 2010 Albert-Jan Pool published by FSI FontShop International GmbH
+ * Licensed pageviews: 50,000
+ *
+ * Webfont: FF DIN Round Web Pro Medium by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/din-round-pro/medium/
+ * Copyright: 2010 Albert-Jan Pool published by FSI FontShop International GmbH
+ * Licensed pageviews: 50,000
+ *
+ * Webfont: FF DIN Round Web Pro Light by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/din-round-pro/light/
+ * Copyright: 2010 Albert-Jan Pool published by FSI FontShop International GmbH
+ * Licensed pageviews: 50,000
+ *
+ * Webfont: Lifehack-Regular by DearType
+ * URL: http://www.myfonts.com/fonts/deartype/lifehack/regular/
+ * Copyright: Copyright &#x00A9; 2015 by DearType, Veneta Rangelova. All rights reserved.
+ * Licensed pageviews: 100,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3206132
+ *
+ * © 2016 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30ebf4");
+
+/*
+@font-face {
+    font-family: 'FFDINRoundWebPro';
+    src: url('30EBF4_0_0.eot');
+    src: url('30EBF4_0_0.eot?#iefix') format('embedded-opentype'),
+    url('30EBF4_0_0.woff2') format('woff2'),
+    url('30EBF4_0_0.woff') format('woff'),
+    url('30EBF4_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FFDINRoundWebProMedium';
+    src: url('30EBF4_1_0.eot');
+    src: url('30EBF4_1_0.eot?#iefix') format('embedded-opentype'),
+    url('30EBF4_1_0.woff2') format('woff2'),
+    url('30EBF4_1_0.woff') format('woff'),
+    url('30EBF4_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FFDINRoundWebProLight';
+    src: url('30EBF4_2_0.eot');
+    src: url('30EBF4_2_0.eot?#iefix') format('embedded-opentype'),
+    url('30EBF4_2_0.woff2') format('woff2'),
+    url('30EBF4_2_0.woff') format('woff'),
+    url('30EBF4_2_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lifehack-Regular';
+    src: url('30EBF4_3_0.eot');
+    src: url('30EBF4_3_0.eot?#iefix') format('embedded-opentype'),
+    url('30EBF4_3_0.woff2') format('woff2'),
+    url('30EBF4_3_0.woff') format('woff'),
+    url('30EBF4_3_0.ttf') format('truetype');
+}
+*/
+
+/* fonts added 01.09.2016. */
+
+
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('Nexa_Free_Light-webfont.woff2') format('woff2'),
+    url('Nexa_Free_Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa_Free_Bold';
+    src: url('Nexa_Free_Bold-webfont.woff2') format('woff2'),
+         url('Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+

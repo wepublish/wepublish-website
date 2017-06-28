@@ -1,8 +1,10 @@
-@import '../../../node_modules/photoswipe/dist/photoswipe.css';
-
 @import "./abstracts/colors";
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+
+@import '../../../node_modules/photoswipe/dist/photoswipe.css';
+
+@import '../fonts/MyFontsWebfontsKit.css';
 
 @import "./base/reset";
 @import "./base/base";

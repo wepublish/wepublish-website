@@ -5,19 +5,10 @@ $col-text-primary: $theme-col-black;
 $col-small-triangle: $theme-col-white;
 
 //Fonts
-@font-face {
-  font-family: "Nexa Light";
-  src: url('/static/fonts/Nexa Light.otf') format("opentype");
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Nexa Bold";
-  src: url('/static/fonts/Nexa Bold.otf') format("opentype");
-}
 
-$font-default: 'Nexa Light';
-$font-bold: 'Nexa Bold';
+$font-default: 'Nexa_Free_Light';
+$font-bold: 'Nexa_Free_Bold';
 
 //$font-light: 300;
 //$font-regular: 400;
