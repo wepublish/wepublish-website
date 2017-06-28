@@ -1,9 +1,9 @@
 [
   {
-    "id": "ModBlockTeaserSpot",
+    "id": "ModBlockRichTextTab",
     "target": "{{entityEntity}}",
     "definition": {
-      "key": "blockTeaserSpot",
+      "key": "blockRichTextTab",
       "model": {
         "struct": {
           "blockName": {
@@ -16,34 +16,13 @@
             "list": {
               "elements": {
                 "struct": {
-                  "image": {
-                    "ref": "{{ModelDocuments}}"
-                  },
-                  "imageLink": {
-                    "union": {
-                      "document": {
-                        "ref": "{{ModelDocuments}}"
-                      },
-                      "navigationNode": {
-                        "ref": "{{ModelNavigationNode}}"
-                      },
-                      "null": {
-                        "optional": {
-                          "struct": {}
-                        }
-                      },
-                      "url": {
-                        "string": {
-                          "regex": {
-                            "caseInsensitive": false,
-                            "expression": "^$|^([a-z][+.\\-a-z0-9]*):(//([^:]+:[^@]+@)?([^/:]+)(:[1-9][0-9]*)?)?/?([^?]+)(\\?[^#]+)?(#.*)?$",
-                            "multiline": false
-                          }
-                        }
-                      }
+                  "title": {
+                    "string": {
+                      "maxLength": 40,
+                      "minLength": 3
                     }
                   },
-                  "textBlock": {
+                  "text": {
                     "struct": {
                       "blocks": {
                         "list": {

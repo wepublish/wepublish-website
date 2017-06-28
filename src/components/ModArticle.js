@@ -1,17 +1,20 @@
 import React from 'react'
 import ModBlockHeader from './ModBlockHeader'
-import ModBlockRichText from './ModBlockRichText'
+import ModBlockTwoColumnGrid from './ModBlockTwoColumnGrid'
 import ModBlockTitle from "./ModBlockTitle";
 import ModBlockTeaserSpot from "./ModBlockTeaserSpot";
 import ModBlockImageSlider from "./ModBlockImageSlider";
 import ModBlockImage from "./ModBlockImage";
 import ModBlockSpacer from "./ModBlockSpacer";
 import ModBlockiFrame from "./ModBlockiFrame";
+import ModBlockDownload from "./ModBlockDownload";
+import ModBlockRichTextTab from "./ModBockRichTextTab";
+import ModBlockContact from "./ModBlockContact";
 
 
 export default class ModArticle extends React.Component {
 
-  render () {
+  render() {
     const {article, config} = this.props
 
     let html = article.blocks.map(function (item, index) {
@@ -19,17 +22,23 @@ export default class ModArticle extends React.Component {
         case config.contentTypeBlockHeader:
           return <ModBlockHeader key={index}
                                  content={item.content}/>
-        case config.contentTypeBlockRichText:
-          return <ModBlockRichText key={index}
-                                 content={item.content}/>
+        case config.contentTypeBlockRichTextTab:
+          return <ModBlockRichTextTab key={index}
+                                      content={item.content}/>
+        case config.contentTypeBlockTwoColGrid:
+          return <ModBlockTwoColumnGrid key={index}
+                                        content={item.content}/>
         case config.contentTypeBlockTitle:
           return <ModBlockTitle key={index}
-                                   content={item.content}/>
+                                content={item.content}/>
+        case config.contentTypeBlockContact:
+          return <ModBlockContact key={index}
+                                content={item.content}/>
         case config.contentTypeBlockSpacer:
           return <ModBlockSpacer key={index} content={item.content}/>
         case config.contentTypeBlockTeaserSpot:
           return <ModBlockTeaserSpot key={index}
-                                   content={item.content}/>
+                                     content={item.content}/>
         case config.contentTypeBlockImageSlider:
           if (item.content.list.length === 1) {
             return <ModBlockImage key={index} content={{image: item.content.list[0].image}}/>
@@ -37,6 +46,9 @@ export default class ModArticle extends React.Component {
           return <ModBlockImageSlider key={index} content={item.content} index={index}/>
         case config.contentTypeBlockIFrame:
           return <ModBlockiFrame key={index} content={item.content}/>
+        case config.contentTypeBlockDownload:
+          return <ModBlockDownload key={index}
+                                     content={item.content}/>
         default:
           return null
       }

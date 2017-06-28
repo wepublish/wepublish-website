@@ -1,9 +1,9 @@
 [
   {
-    "id": "ModBlockHeader",
+    "id": "ModBlockContact",
     "target": "{{entityEntity}}",
     "definition": {
-      "key": "blockHeader",
+      "key": "blockContact",
       "model": {
         "struct": {
           "blockName": {
@@ -12,13 +12,34 @@
               "minLength": 3
             }
           },
-          "logo": {
+          "image": {
             "ref": "{{ModelDocuments}}"
           },
-          "backgroundImage": {
-            "ref": "{{ModelDocuments}}"
+          "imageLink": {
+            "union": {
+              "document": {
+                "ref": "{{ModelDocuments}}"
+              },
+              "navigationNode": {
+                "ref": "{{ModelNavigationNode}}"
+              },
+              "null": {
+                "optional": {
+                  "struct": {}
+                }
+              },
+              "url": {
+                "string": {
+                  "regex": {
+                    "caseInsensitive": false,
+                    "expression": "^$|^([a-z][+.\\-a-z0-9]*):(//([^:]+:[^@]+@)?([^/:]+)(:[1-9][0-9]*)?)?/?([^?]+)(\\?[^#]+)?(#.*)?$",
+                    "multiline": false
+                  }
+                }
+              }
+            }
           },
-          "title": {
+          "textBlock": {
             "struct": {
               "blocks": {
                 "list": {
@@ -62,16 +83,14 @@
               }
             }
           },
-          "snippet": {
-            "string": {}
-          },
-          "aspectRatio": {
+          "backgroundColor": {
             "string": {
-              "regex": {
-                "caseInsensitive": false,
-                "expression": "^\\d{1,2}:\\d{1,2}$",
-                "multiline": false
-              }
+              "oneOf": [
+                "turquoise",
+                "black",
+                "white",
+                "grey"
+              ]
             }
           }
         }

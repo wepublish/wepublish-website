@@ -195,10 +195,7 @@ export default function SaasHelper() {
         if (footerPool.hasOwnProperty(footerId)) {
           let footer = footerPool[footerId]
 
-          footer.backgroundImage = getMediaObjectById(mediaPool, footer.backgroundImage)
-          footer.text = addLinkObjectToRichText(navigationTree, mediaPool, footer.text)
-          footer.logo = getMediaObjectById(mediaPool, footer.logo)
-          footer.logoLink = addLinkObject(navigationTree, mediaPool, footer.logoLink)
+          footer.image = getMediaObjectById(mediaPool, footer.image)
 
           return footer
         }
@@ -214,20 +211,25 @@ export default function SaasHelper() {
    * @param callback
    */
   this.fetchContentByNavigationNodeId = function (navigationTree, navigationNodeId, callback) {
-    //verbindungen zwischen Types aufzeigen
     const query = [
       `${voConfig.contentTypeNavigationNodes}<-${voConfig.contentTypeArticle}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockHeader}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockTitle}`,
-      `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockRichText}`,
+      `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockRichTextTab}`,
+      `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockTwoColGrid}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockSpacer}`,
+      `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockDownload}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockImageSlider}`,
+      `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockContact}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockTeaserSpot}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeBlockIFrame}`,
       `${voConfig.contentTypeArticle}->${voConfig.contentTypeMedia}`,
       `${voConfig.contentTypeBlockHeader}->${voConfig.contentTypeMedia}`,
       `${voConfig.contentTypeBlockImageSlider}->${voConfig.contentTypeMedia}`,
       `${voConfig.contentTypeBlockTeaserSpot}->${voConfig.contentTypeMedia}`,
+      `${voConfig.contentTypeBlockTwoColGrid}->${voConfig.contentTypeMedia}`,
+      `${voConfig.contentTypeBlockDownload}->${voConfig.contentTypeMedia}`,
+      `${voConfig.contentTypeBlockContact}->${voConfig.contentTypeMedia}`,
     ]
 
     const url = getUrl() + "/" + voConfig.contentTypeNavigationNodes + "/" + navigationNodeId + "?flow=" + encodeURIComponent(JSON.stringify(query))
@@ -335,10 +337,20 @@ export default function SaasHelper() {
             node.content.subtitle = addLinkObjectToRichText(navigationTree, mediaPool, node.content.subtitle)
           }
 
-          else if (node.type === voConfig.contentTypeBlockRichText) {
-            node.content.title = addLinkObjectToRichText(navigationTree, mediaPool, node.content.title)
-            node.content.textRight = addLinkObjectToRichText(navigationTree, mediaPool, node.content.textRight)
+          else if (node.type === voConfig.contentTypeBlockRichTextTab) {
+            for (key2 in node.content.list) {
+              if (node.content.list.hasOwnProperty(key2)) {
+                let row = node.content.list[key2]
+                row.text = addLinkObjectToRichText(navigationTree, mediaPool, row.text)
+              }
+            }
+          }
+
+          else if (node.type === voConfig.contentTypeBlockTwoColGrid) {
             node.content.textLeft = addLinkObjectToRichText(navigationTree, mediaPool, node.content.textLeft)
+            node.content.textRight = addLinkObjectToRichText(navigationTree, mediaPool, node.content.textRight)
+            node.content.imageRight = getMediaObjectById(mediaPool, node.content.imageRight)
+            node.content.imageLeft = getMediaObjectById(mediaPool, node.content.imageLeft)
           }
 
           else if (node.type === voConfig.contentTypeBlockTeaserSpot) {
@@ -352,6 +364,15 @@ export default function SaasHelper() {
             }
           }
 
+          else if (node.type === voConfig.contentTypeBlockDownload) {
+            node.content.textLeft = addLinkObjectToRichText(navigationTree, mediaPool, node.content.textLeft)
+            node.content.textRight = addLinkObjectToRichText(navigationTree, mediaPool, node.content.textRight)
+            node.content.imageLinkLeft = addLinkObject(navigationTree, mediaPool, node.content.imageLinkLeft)
+            node.content.imageLinkRight = addLinkObject(navigationTree, mediaPool, node.content.imageLinkRight)
+            node.content.imageLeft = getMediaObjectById(mediaPool, node.content.imageLeft)
+            node.content.imageRight = getMediaObjectById(mediaPool, node.content.imageRight)
+          }
+
           else if (node.type === voConfig.contentTypeBlockImageSlider) {
             for (key2 in node.content.list) {
               if (node.content.list.hasOwnProperty(key2)) {
@@ -361,8 +382,10 @@ export default function SaasHelper() {
             }
           }
 
-          else if (node.type === voConfig.contentTypeBlockWebsiteTeaser) {
-
+          else if (node.type === voConfig.contentTypeBlockContact) {
+            node.content.textBlock = addLinkObjectToRichText(navigationTree, mediaPool, node.content.textBlock)
+            node.content.imageLink = addLinkObject(navigationTree, mediaPool, node.content.imageLink)
+            node.content.image = getMediaObjectById(mediaPool, node.content.image)
           }
 
           previousValue.push(node)
@@ -681,8 +704,17 @@ async function fetchModelTypes(voConfig) {
             case "blockTitle":
               voConfig.contentTypeBlockTitle = model.contentTypeId
               break
-            case "blockRichText":
-              voConfig.contentTypeBlockRichText = model.contentTypeId
+            case "blockRichTextTab":
+              voConfig.contentTypeBlockRichTextTab = model.contentTypeId
+              break
+            case "blockTwoColGrid":
+              voConfig.contentTypeBlockTwoColGrid = model.contentTypeId
+              break
+            case "blockDownload":
+              voConfig.contentTypeBlockDownload = model.contentTypeId
+              break
+            case "blockContact":
+              voConfig.contentTypeBlockContact = model.contentTypeId
               break
             case "blockIFrame":
               voConfig.contentTypeBlockIFrame = model.contentTypeId

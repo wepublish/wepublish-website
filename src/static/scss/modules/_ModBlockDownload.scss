@@ -1,0 +1,142 @@
+$teaserSpot-wrapper-padding-top: 73px;
+$teaserSpot-img-padding-bottom: 18.5px;
+$teaserSpot-text-padding-bottom: 14px;
+
+$teaserSpot-line-width: 82.6px;
+$teaserSpot-line-height: 0.85px;
+
+.download-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @extend .content-padding-desktop;
+}
+
+.download-content {
+  text-align: center;
+
+  @include respond-to('small') {
+    width: 100%;
+  }
+}
+
+.download-img-container {
+  width: 279px;
+  height: 279px;
+  background-color: $wepub-col-light-grey;
+  border-radius: 100%;
+
+  @include respond-to('small') {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+.download-text {
+  padding-bottom: $teaserSpot-text-padding-bottom;
+  padding-top: 50px;
+}
+
+.download-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @include respond-to('small') {
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.download-arrow {
+  opacity: 0;
+  display: none;
+}
+
+.download-img-container {
+  .download-arrow {
+    position: relative;
+    animation: moveUpArrow 0.2s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+
+  .download-img {
+    position: relative;
+    animation: moveUpImg 0.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes moveUpArrow {
+  100% {
+    opacity: 0;
+    top: 1px;
+  }
+  0% {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveUpImg {
+  100% {
+    opacity: 1;
+    top: 1px;
+  }
+  40% {
+    opacity: 0;
+  }
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+}
+
+.download-img-container:hover {
+  .download-arrow {
+    position: relative;
+    animation: moveDownArrow 0.2s;
+    animation-fill-mode: forwards;
+    display: block;
+  }
+
+  .download-img {
+    position: relative;
+    animation: moveDownImg 0.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes moveDownArrow {
+  0% {
+    opacity: 0;
+    top: 0px;
+    display: flex;
+  }
+  100% {
+    top: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveDownImg {
+  0% {
+    opacity: 1;
+    top: 1px;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    top: 100px;
+    opacity: 0;
+  }
+}

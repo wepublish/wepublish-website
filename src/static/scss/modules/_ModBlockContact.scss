@@ -1,0 +1,123 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 135px;
+
+  @include respond-to('small') {
+    padding-bottom: 40px;
+  }
+
+  .contact-img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+  }
+
+  .rich-text {
+    padding-top: 26px;
+  }
+}
+
+.contact-arrow {
+  opacity: 1;
+  display: none;
+}
+
+.contact-img-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-img-content {
+  .contact-arrow {
+    position: relative;
+    animation: moveLeftArrow 0.2s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+
+  .contact-img {
+    position: relative;
+    animation: moveLeftImg 0.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes moveLeftArrow {
+  100% {
+    opacity: 0;
+    left: 1px;
+  }
+  60% {
+    display: flex;
+  }
+  0% {
+    left: 25px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeftImg {
+  100% {
+    opacity: 1;
+    left: 1px;
+  }
+  40% {
+    opacity: 0;
+  }
+  0% {
+    left: 25px;
+    opacity: 0;
+  }
+}
+
+.contact-img-content:hover {
+  .contact-arrow {
+    position: relative;
+    animation: moveRightArrow 0.2s; /* IE 10+, Fx 29+ */
+    animation-fill-mode: forwards;
+    display: block;
+  }
+
+  .contact-img {
+    position: relative;
+    animation: moveRightImg 0.2s; /* IE 10+, Fx 29+ */
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes moveRightArrow {
+  0% {
+    opacity: 0;
+    left: 1px;
+  }
+  40% {
+    display: flex;
+  }
+  100% {
+    left: 25px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveRightImg {
+  0% {
+    opacity: 1;
+    left: 1px;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    left: 40px;
+    opacity: 0;
+  }
+}

@@ -9,8 +9,8 @@ export default class ModBlockIFrame extends React.Component {
       return {__html: content};
     }
 
-    var aspectRatio = content.aspectRatio.split(":")
-    var style = {
+    let aspectRatio = content.aspectRatio.split(":")
+    let style = {
       paddingBottom: ((aspectRatio[1] / aspectRatio[0]) * 100) + '%'
     }
 

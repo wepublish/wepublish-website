@@ -12,7 +12,7 @@ $close-navigation-top: 92px;
 $close-navigation-right-small: 24px;
 
 $navigation-text-padding-bottom: 15px;
-$navigation-burger-wrapper-hight: 62px;
+$navigation-burger-wrapper-hight: 100px;
 
 $navi-line-width: 117.5px;
 $navi-line-height: 2.2px;
@@ -157,7 +157,7 @@ $null: 0px;
 }
 
 .menu-content {
-  background-color: $navigation-color;
+  background-color: $wepub-col-grey-black;
   display: flex !important;
 }
 
@@ -170,25 +170,25 @@ $null: 0px;
   display: none;
 
   #scroll-text-small {
-    font-size: $font-20px;
+    font-family: $font-bold;
+    font-size: $font-33px;
     line-height: 1.3;
-  }
-
-  #scroll-text-big {
-    font-size: $font-24-5px;
-    font-weight: bold;
   }
 }
 
 .navigation-burger-wrapper {
   display: flex;
   justify-content: space-between;
-  width: $max-content-width;
+  width: 1600px;
   margin: 0 auto;
   height: $navigation-burger-wrapper-hight;
   align-items: center;
 
   @extend .content-padding-desktop;
+
+  @include respond-to('small') {
+    height: 80px;
+  }
 
 }
 
@@ -198,6 +198,10 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
 
 .navigation-burger {
   position: fixed;
+
+  //position: relative;
+  background-color: $wepub-col-grey-black;
+
   z-index: $layer9;
   width: 100%;
   display: flex;

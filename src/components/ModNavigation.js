@@ -90,12 +90,13 @@ export default class ModNavigation extends React.Component {
     return (
       <div id="navigation-wrappter" className="">
 
-        <a id="navigation-burger" className="navigation-burger">
+        <a id="navigation-burger" className="navigation-burger menu-content">
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
-              <div id="navigation-text" href="/">
-                <p id="scroll-text-small">Gemeinsam sind wir&nbsp;</p>
-                <p id="scroll-text-big"> stark.</p>
+              <div id="navigation-text" href="/" className="menu-content">
+                <p id="scroll-text-small">we</p>
+                <p id="scroll-text-small" className="color-turquoise">.</p>
+                <p id="scroll-text-small">publish</p>
               </div>
 
             </div>
@@ -120,8 +121,9 @@ export default class ModNavigation extends React.Component {
 
                   <div className="naviOpen-text">
                     <div className="navi-text-wrapper">
-                      <p id="naviOpen-text-small">Denn stark ist wer&nbsp;</p>
-                      <p id="naviOpen-text-big">teilt.</p>
+                      <p id="naviOpen-text-small">we</p>
+                      <p id="scroll-text-small" className="color-turquoise">.</p>
+                      <p id="naviOpen-text-small">publish</p>
                     </div>
                     <div className="navi-border-bottom"></div>
                   </div>

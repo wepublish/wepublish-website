@@ -1,10 +1,6 @@
-$title-wrapper-padding-top: 53.5px;
-$title-padding-top: 25px;
-$title-padding-bottom: 21px;
-$subtitle-padding-top: 31.5px;
-
-$title-line-width: 118px;
-$title-line-height: 1.75px;
+$title-wrapper-padding-top: 57px;
+$title-wrapper-padding-bottom: 81px;
+$title-padding-bottom: 34px;
 
 .title-wrapper {
   display: flex;
@@ -12,23 +8,15 @@ $title-line-height: 1.75px;
   align-items: center;
   text-align: center;
   padding-top: $title-wrapper-padding-top;
+  padding-bottom: $title-wrapper-padding-bottom;
   max-width: $max-content-width;
   margin: 0 auto;
+  font-family: $font-bold;
 
   @extend .content-padding-desktop;
 }
 
 .title {
-  padding-top: $title-padding-top;
   padding-bottom: $title-padding-bottom;
-}
-
-.title-border-bottom {
-  width: $title-line-width;
-  border-bottom: $title-line-height solid black;
-}
-
-.subtitle {
-  padding-top: $subtitle-padding-top;
 }
 

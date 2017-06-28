@@ -5,11 +5,23 @@ $col-text-primary: $theme-col-black;
 $col-small-triangle: $theme-col-white;
 
 //Fonts
-$font-default: 'Open Sans';
+@font-face {
+  font-family: "Nexa Light";
+  src: url('/static/fonts/Nexa Light.otf') format("opentype");
+  font-style: normal;
+}
 
-$font-light: 300;
-$font-regular: 400;
-$font-bold: 600;
+@font-face {
+  font-family: "Nexa Bold";
+  src: url('/static/fonts/Nexa Bold.otf') format("opentype");
+}
+
+$font-default: 'Nexa Light';
+$font-bold: 'Nexa Bold';
+
+//$font-light: 300;
+//$font-regular: 400;
+//$font-bold: 600;
 
 $font-6px: 0.261rem;
 $font-7px: 0.304rem;
@@ -39,6 +51,7 @@ $font-28px: 1.217rem;
 $font-29px: 1.261rem;
 $font-30px: 1.304rem;
 $font-32px: 1.391rem;
+$font-33px: 1.435rem;
 $font-35px: 1.522rem;
 $font-36px: 1.565rem;
 $font-38px: 1.652rem;
@@ -50,6 +63,7 @@ $font-44px: 1.913rem;
 $font-46px: 2.000rem;
 $font-50px: 2.174rem;
 $font-54px: 2.348rem;
+$font-60px: 2.609rem;
 $font-64px: 2.783rem;
 $font-92px: 4.000rem;
 $font-96px: 4.174rem;
@@ -77,11 +91,9 @@ $horizontal-header-padding: 13.25%;
 
 $vertical-spacing-large: 6%;
 
-
 $small-triangle-height: 15px;
 $small-triangle-width-half: 10px;
 $magic-pixel: 1px;
-
 
 //Breakpoints
 $breakpoints: (

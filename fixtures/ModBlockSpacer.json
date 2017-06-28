@@ -14,6 +14,25 @@
           },
           "value": {
             "float": {}
+          },
+          "backgroundColor": {
+            "string": {
+              "oneOf": [
+                "turquoise",
+                "black",
+                "white",
+                "grey"
+              ]
+            }
+          },
+          "lineColor": {
+            "string": {
+              "oneOf": [
+                "turquoise",
+                "black",
+                "white"
+              ]
+            }
           }
         }
       }

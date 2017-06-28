@@ -7,16 +7,31 @@ export default class ModBlockHeader extends React.Component {
   render() {
     const {content} = this.props
 
-    return (
-      <div className="header-background" style={{backgroundImage: 'url(' + content.backgroundImage.url + ')'}}
-           alt={content.backgroundImage.altText}>
+    const createRichtTextMarkup = (content) => {
+      return {__html: content};
+    }
 
-        <div className="header-wrapper">
-          <ModImgTag imgObject={content.logo} width={55} height={55} alt={content.logo.altText}/>
-          <div className="header-content">
-            <ModRichText richText={content.title}/>
-          </div>
-          <div className="header-border-bottom"></div>
+    let aspectRatio = content.aspectRatio.split(":")
+    let style = {
+      paddingBottom: ((aspectRatio[1] / aspectRatio[0]) * 100) + '%'
+    }
+
+    return (
+
+      <div className="header-container">
+        <div className="header-background">
+
+
+          <div className="header-background block-iframe" style={style}
+               dangerouslySetInnerHTML={createRichtTextMarkup(content.snippet)}/>
+
+
+          {/*<div className="header-wrapper">*/}
+          {/*<ModImgTag imgObject={content.logo} width={55} height={55} alt={content.logo.altText}/>*/}
+          {/*<div className="header-content">*/}
+          {/*<ModRichText richText={content.title}/>*/}
+          {/*</div>*/}
+          {/*</div>*/}
         </div>
       </div>
     )

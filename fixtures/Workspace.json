@@ -21,10 +21,13 @@
       "viewContexts": [
         "{{viewContextModelBlockHeader}}",
         "{{viewContextModelBlockTitle}}",
-        "{{viewContextModelBlockRichText}}",
+        "{{viewContextModelBlockTwoColumnGird}}",
         "{{viewContextModelBlockTeaserSpot}}",
         "{{viewContextModelBlockImageSlider}}",
+        "{{viewContextModelBlockDownload}}",
+        "{{viewContextModelBlockContact}}",
         "{{viewContextModelBlockSpacer}}",
+        "{{viewContextModelBlockRichTextTab}}",
         "{{viewContextModelBlockiFrame}}"
       ]
     }

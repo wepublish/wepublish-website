@@ -9,11 +9,14 @@ export default function VoConfig () {
   this.contentTypeMedia = null;
   this.contentTypeBlockHeader = null;
   this.contentTypeBlockTitle = null;
-  this.contentTypeBlockRichText = null;
+  this.contentTypeBlockRichTextTab = null;
+  this.contentTypeBlockTwoColGrid = null;
   this.contentTypeBlockTeaserSpot = null;
   this.contentTypeBlockImageSlider = null;
   this.contentTypeBlockSpacer = null;
   this.contentTypeBlockIFrame = null;
+  this.contentTypeBlockDownload = null;
+  this.contentTypeBlockContact = null;
   this.contentTypeFooter = null
 
 

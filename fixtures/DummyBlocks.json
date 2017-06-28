@@ -3,16 +3,16 @@
     "id": "dummyBlockHeader",
     "target": "{{ModBlockHeader}}",
     "definition": {
-      "blockName": "Duda Group Header",
-      "backgroundImage": "{{dummyDocumentHeaderBackground}}",
-      "logo": "{{dummyDocumentHeaderLogo}}",
+      "blockName": "Header iFrame",
+      "backgroundImage": "{{dummyDocumentHeaderImg}}",
+      "logo": "{{dummyDocumentKarmaLogo}}",
       "title": {
         "entityMap": {
           "0": {
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
+              "document": "{{dummyDocumentKarmaLogo}}"
             }
           },
           "1": {
@@ -26,14 +26,314 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
+              "navigationNode": "{{naviHome}}"
             }
           }
         },
         "blocks": [
           {
             "key": "",
-            "text": "We Do.",
+            "text": "Die Plattform für",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Medienvielfalt",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "aspectRatio": "16:9",
+      "snippet": "<iframe src='https://player.vimeo.com/video/223128477' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    }
+  },
+  {
+    "id": "dummyBlockVisionTitle",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "Vision Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Vision",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "white"
+    }
+  },
+  {
+    "id": "dummyBlockRichTextTab",
+    "target": "{{ModBlockRichTextTab}}",
+    "definition": {
+      "blockName": "Block RichTextTab",
+      "list": [
+        {
+          "title": "Das Ziel",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHome}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Wer heutzutage professionellen Online-Journalismus betreiben will, läuft schnell Gefahr, sich in technischen Problemen zu verlieren. Gerade kleinere Journalismus-Organisationen, die den Schritt in die Online-Publizistik wagen, kann dies überfordern. Deshalb ist eine gemeinsame Infrastruktur, auf der hochwertiger Journalismus mit guten Inhalten, neue Medienmarken und ein kompetitives und zeitgemässes Mediensystem entwickelt werden kann, sinnvoll und notwendig. Wir haben uns diesem Ziel verschrieben.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "title": "Der Weg",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHome}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Deshalb ist eine gemeinsame Infrastruktur, auf der hochwertiger Journalismus mit guten Inhalten, neue Medienmarken und ein kompetitives und zeitgemässes Mediensystem entwickelt werden kann, sinnvoll und notwendig. Wir haben uns diesem Ziel verschrieben.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "title": "Warum?",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHome}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "title": "Für wen?",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHome}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Wer heutzutage professionellen Online-Journalismus betreiben will, läuft schnell Gefahr, sich in technischen Problemen zu verlieren. Gerade kleinere Journalismus-Organisationen, die den Schritt in die Online-Publizistik wagen, kann dies überfordern.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        }
+      ],
+      "backgroundColor": "grey"
+    }
+  },
+  {
+    "id": "dummyBlockTwoColumnGrid",
+    "target": "{{TwoColumnGrid}}",
+    "definition": {
+      "blockName": "Wir sind",
+      "textLeft": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Wir sind nicht:",
             "type": "header-two",
             "depth": 0,
             "inlineStyleRanges": [],
@@ -41,584 +341,102 @@
           },
           {
             "key": "",
-            "text": "Digital Business.",
-            "type": "header-one",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockMicroServicesTitle",
-    "target": "{{ModBlockTitle}}",
-    "definition": {
-      "blockName": "Micro Services Title",
-      "title": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "We Do.",
-            "type": "header-four",
+            "text": "",
+            "type": "unstyled",
             "depth": 0,
             "inlineStyleRanges": [],
             "entityRanges": []
           },
           {
             "key": "",
-            "text": "Micro Services",
-            "type": "header-three",
+            "text": "",
+            "type": "unstyled",
             "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Eine Online-Publikations-Plattform,",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "ein Blog oder Meta-Portal",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Ein kommerzielles Newsportal, das selbst Inhalte erstellt oder Uber-Journalismus förder",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Eine Datenkrake mit Lock-in Effekt",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "mit Lock-in Effekt",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
             "entityRanges": []
           }
         ]
       },
-      "subtitle": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "Analyse und Implementation Ihrer Businessprozesse",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "im Zeitalter der Digitalen Transformation.",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockBigData",
-    "target": "{{ModBlockTitle}}",
-    "definition": {
-      "blockName": "Big Data",
-      "title": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "We Do.",
-            "type": "header-four",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "Big Data",
-            "type": "header-three",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      },
-      "subtitle": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "Analyse und Implementation Ihrer Businessprozesse",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "im Zeitalter der Digitalen Transformation.",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockHybridConsulting",
-    "target": "{{ModBlockTitle}}",
-    "definition": {
-      "blockName": "Hybrid Consulting",
-      "title": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "We Do.",
-            "type": "header-four",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "Hybrid Consulting",
-            "type": "header-three",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      },
-      "subtitle": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "Analyse und Implementation Ihrer Businessprozesse",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "im Zeitalter der Digitalen Transformation.",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockAbout",
-    "target": "{{ModBlockTitle}}",
-    "definition": {
-      "blockName": "About",
-      "title": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "We Do.",
-            "type": "header-four",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "About",
-            "type": "header-three",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      },
-      "subtitle": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "Analyse und Implementation Ihrer Businessprozesse",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "im Zeitalter der Digitalen Transformation.",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockContact",
-    "target": "{{ModBlockTitle}}",
-    "definition": {
-      "blockName": "Contact",
-      "title": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "We Do.",
-            "type": "header-four",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "Contact",
-            "type": "header-three",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      },
-      "subtitle": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "Analyse und Implementation Ihrer Businessprozesse",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "im Zeitalter der Digitalen Transformation.",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockRichText",
-    "target": "{{ModBlockRichText}}",
-    "definition": {
-      "blockName": "Duda Group RichText",
-      "title": {
-        "entityMap": {
-          "0": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
-            }
-          },
-          "1": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "url": "http://www.dudagroup.com"
-            }
-          },
-          "2": {
-            "type": "LINK",
-            "mutability": "MUTABLE",
-            "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
-            }
-          }
-        },
-        "blocks": [
-          {
-            "key": "",
-            "text": "Komponenten.",
-            "type": "header-six",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "Micro Services.",
-            "type": "header-five",
-            "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 0,
-                "length": 150,
-                "style": "BOLD"
-              }
-            ],
-            "entityRanges": []
-          }
-        ]
-      },
+      "imageLeft": "{{dummyDocumentRichTextImageTwo}}",
       "textRight": {
         "entityMap": {
           "0": {
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
+              "document": "{{dummyDocumentKarmaLogo}}"
             }
           },
           "1": {
@@ -632,33 +450,17 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
+              "navigationNode": "{{naviHome}}"
             }
           }
         },
         "blocks": [
           {
             "key": "",
-            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum ",
-            "type": "unstyled",
+            "text": "Wir sind:",
+            "type": "header-two",
             "depth": 0,
-            "inlineStyleRanges": [
-              {
-                "offset": 20,
-                "length": 100,
-                "style": "ITALIC"
-              },
-              {
-                "offset": 171,
-                "length": 20,
-                "style": "BOLD"
-              },
-              {
-                "offset": 192,
-                "length": 40,
-                "style": "UNDERLINE"
-              }
-            ],
+            "inlineStyleRanges": [],
             "entityRanges": []
           },
           {
@@ -671,45 +473,107 @@
           },
           {
             "key": "",
-            "text": "Lorem ipsum dolor sit amet",
-            "type": "unordered-list-item",
+            "text": "",
+            "type": "unstyled",
             "depth": 0,
             "inlineStyleRanges": [],
             "entityRanges": []
           },
           {
             "key": "",
-            "text": "consetetur sadipscing elitr",
-            "type": "unordered-list-item",
+            "text": "Eine hoch innovative Open-Source Plattform",
+            "type": "unstyled",
             "depth": 0,
             "inlineStyleRanges": [],
             "entityRanges": []
           },
           {
             "key": "",
-            "text": "sed diam nonumy eirmod tempor",
-            "type": "unordered-list-item",
+            "text": "",
+            "type": "unstyled",
             "depth": 0,
             "inlineStyleRanges": [],
             "entityRanges": []
           },
           {
             "key": "",
-            "text": "invidunt ut labore et dolore",
-            "type": "unordered-list-item",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "die erlaubt Inhalte, Medienformen frei und partizipativ zu entwickeln",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "und nach eigenen Wünschen zu vermarkten.",
+            "type": "unstyled",
             "depth": 0,
             "inlineStyleRanges": [],
             "entityRanges": []
           }
         ]
       },
-      "textLeft": {
+      "imageRight": "{{dummyDocumentRichTextImageOne}}",
+      "backgroundColor": "turquoise",
+      "lineColor": "white"
+    }
+  },
+  {
+    "id": "dummyBlockSpacerWhite",
+    "target": "{{ModBlockSpacer}}",
+    "definition": {
+      "blockName": "Spacer White",
+      "value": 120,
+      "backgroundColor": "white",
+      "lineColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockSpacerBlack",
+    "target": "{{ModBlockSpacer}}",
+    "definition": {
+      "blockName": "Spacer Black",
+      "value": 120,
+      "backgroundColor": "black",
+      "lineColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockTeamTitle",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "Team Title",
+      "title": {
         "entityMap": {
           "0": {
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "document": "{{dummyDocumentHeaderBackground}}"
+              "document": "{{dummyDocumentKarmaLogo}}"
             }
           },
           "1": {
@@ -723,54 +587,57 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviNodeMicroServices}}"
+              "navigationNode": "{{naviHome}}"
             }
           }
         },
         "blocks": [
           {
             "key": "",
-            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum ",
-            "type": "unstyled",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "",
-            "type": "unstyled",
-            "depth": 0,
-            "inlineStyleRanges": [],
-            "entityRanges": []
-          },
-          {
-            "key": "",
-            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum ",
-            "type": "unstyled",
+            "text": "Team",
+            "type": "header-two",
             "depth": 0,
             "inlineStyleRanges": [],
             "entityRanges": []
           }
         ]
-      }
-    }
-  },
-  {
-    "id": "dummyBlockSlider",
-    "target": "{{ModBlockImageSlider}}",
-    "definition": {
-      "blockName": "Block Slider",
-      "list": [
-        {
-          "image": "{{dummyDocumentSliderImage}}",
-          "text": "sed diam nonumy eirmod"
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
         },
-        {
-          "image": "{{dummyDocumentSliderImageSpace}}",
-          "text": "Lorem ipsum dolor sit"
-        }
-      ]
+        "blocks": [
+          {
+            "key": "",
+            "text": "A vision is a dream with a deadline.",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "black"
     }
   },
   {
@@ -780,9 +647,9 @@
       "blockName": "Block TeaserSpot",
       "list": [
         {
-          "image": "{{dummyDocumentGridImgOne}}",
+          "image": "{{dummyDocumentTwitterLogo}}",
           "imageLink": {
-            "navigationNode": "{{naviNodeMicroServices}}"
+            "url": "http://www.dudagroup.com"
           },
           "textBlock": {
             "entityMap": {
@@ -790,7 +657,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "document": "{{dummyDocumentGridImgOne}}"
+                  "document": "{{dummyDocumentTwitterLogo}}"
                 }
               },
               "1": {
@@ -804,40 +671,50 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviNodeMicroServices}}"
+                  "navigationNode": "{{naviHome}}"
                 }
               }
             },
             "blocks": [
               {
                 "key": "",
-                "text": "We Do.",
-                "type": "header-six",
+                "text": "Konzeption / Leitung",
+                "type": "header-three",
                 "depth": 0,
                 "inlineStyleRanges": [],
                 "entityRanges": []
               },
               {
                 "key": "",
-                "text": "Micro Services",
-                "type": "header-five",
+                "text": "",
+                "type": "unstyled",
                 "depth": 0,
-                "inlineStyleRanges": [
-                  {
-                    "offset": 0,
-                    "length": 150,
-                    "style": "BOLD"
-                  }
-                ],
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Hansi Voigt,",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Olaf Kunz",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
                 "entityRanges": []
               }
             ]
           }
         },
         {
-          "image": "{{dummyDocumentGridImgTwo}}",
+          "image": "{{dummyDocumentHinderlingVolkart}}",
           "imageLink": {
-            "navigationNode": "{{naviNodeMicroServices}}"
+            "url": "http://www.dudagroup.com"
           },
           "textBlock": {
             "entityMap": {
@@ -845,7 +722,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "document": "{{dummyDocumentGridImgOne}}"
+                  "document": "{{dummyDocumentHinderlingVolkart}}"
                 }
               },
               "1": {
@@ -859,40 +736,42 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviNodeMicroServices}}"
+                  "navigationNode": "{{naviHome}}"
                 }
               }
             },
             "blocks": [
               {
                 "key": "",
-                "text": "We Do.",
-                "type": "header-six",
+                "text": "Branding / Frontend",
+                "type": "header-three",
                 "depth": 0,
                 "inlineStyleRanges": [],
                 "entityRanges": []
               },
               {
                 "key": "",
-                "text": "Big Data",
-                "type": "header-five",
+                "text": "",
+                "type": "unstyled",
                 "depth": 0,
-                "inlineStyleRanges": [
-                  {
-                    "offset": 0,
-                    "length": 150,
-                    "style": "BOLD"
-                  }
-                ],
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Hinderling Volkart",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
                 "entityRanges": []
               }
             ]
           }
         },
         {
-          "image": "{{dummyDocumentGridImgThree}}",
+          "image": "{{dummyDocumentKarmaLogo}}",
           "imageLink": {
-            "navigationNode": "{{naviNodeMicroServices}}"
+            "url": "http://www.dudagroup.com"
           },
           "textBlock": {
             "entityMap": {
@@ -900,7 +779,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "document": "{{dummyDocumentGridImgOne}}"
+                  "document": "{{dummyDocumentKarmaLogo}}"
                 }
               },
               "1": {
@@ -914,37 +793,366 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviNodeMicroServices}}"
+                  "navigationNode": "{{naviHome}}"
                 }
               }
             },
             "blocks": [
               {
                 "key": "",
-                "text": "We Do.",
-                "type": "header-six",
+                "text": "Backend / Umsetzung",
+                "type": "header-three",
                 "depth": 0,
                 "inlineStyleRanges": [],
                 "entityRanges": []
               },
               {
                 "key": "",
-                "text": "Hybrid Consulting",
-                "type": "header-five",
+                "text": "",
+                "type": "unstyled",
                 "depth": 0,
-                "inlineStyleRanges": [
-                  {
-                    "offset": 0,
-                    "length": 150,
-                    "style": "BOLD"
-                  }
-                ],
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Karma.run AG",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
                 "entityRanges": []
               }
             ]
           }
         }
-      ]
+      ],
+      "backgroundColor": "black"
+    }
+  },
+  {
+    "id": "dummyBlockSpacerTurquoise",
+    "target": "{{ModBlockSpacer}}",
+    "definition": {
+      "blockName": "Spacer Turquoise",
+      "value": 120,
+      "backgroundColor": "turquoise",
+      "lineColor": "white"
+    }
+  },
+  {
+    "id": "dummyBlockDownloadTitle",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "Download Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Downloads",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "grey"
+    }
+  },
+  {
+    "id": "dummyBlockDownload",
+    "target": "{{ModBlockDownload}}",
+    "definition": {
+      "blockName": "Block Download",
+      "imageLeft": "{{dummyDocumentAniDocument}}",
+      "imageLinkLeft": {
+        "url": "http://www.dudagroup.com"
+      },
+      "textLeft": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentAniDocument}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Download",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Abstract",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "imageRight": "{{dummyDocumentAniFolder}}",
+      "imageLinkRight": {
+        "url": "http://www.dudagroup.com"
+      },
+      "textRight": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentAniFolder}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Download",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Presseinformation",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "grey",
+      "lineColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockKontaktTitle",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "Kontakt Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Kontakt",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Unterstützen Sie das Projekt und kontaktieren Sie uns.",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockSpacerGrey",
+    "target": "{{ModBlockSpacer}}",
+    "definition": {
+      "blockName": "Spacer Black Grey",
+      "value": 120,
+      "backgroundColor": "grey",
+      "lineColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockContact",
+    "target": "{{ModBlockContact}}",
+    "definition": {
+      "blockName": "Block Contact",
+      "image": "{{dummyDocumentAniLetter}}",
+      "imageLink": {
+        "url": "http://www.dudagroup.com"
+      },
+      "textBlock": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentAniDocument}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHome}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Mail schicken",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "turquoise"
     }
   }
 ]

@@ -5,12 +5,11 @@ $teaserSpot-text-padding-bottom: 14px;
 $teaserSpot-line-width: 82.6px;
 $teaserSpot-line-height: 0.85px;
 
-
 .teaserSpot-wrapper {
-  max-width: $max-content-width;
+  max-width: 1080px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: $teaserSpot-wrapper-padding-top;
   flex-wrap: wrap;
 
@@ -19,7 +18,6 @@ $teaserSpot-line-height: 0.85px;
 
 .teaserSpot-content {
   text-align: center;
-  width: 33%;
 
   @include respond-to('small') {
     width: 100%;
@@ -31,15 +29,13 @@ $teaserSpot-line-height: 0.85px;
 
   @include respond-to('small') {
     padding-top: $teaserSpot-img-padding-bottom;
+
+    img {
+      width: 60%;
+    }
   }
 }
 
 .teaserSpot-text {
   padding-bottom: $teaserSpot-text-padding-bottom;
-}
-
-.teaserSpot-border-bottom {
-  width: $teaserSpot-line-width;
-  border-bottom: $teaserSpot-line-height solid black;
-  margin: 0 auto;
 }

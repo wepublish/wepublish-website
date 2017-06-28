@@ -7,7 +7,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   @include respond-to('small') {
-    font-size: 21px;
+    font-size: 18px;
   }
 
 }
@@ -18,36 +18,29 @@ a {
 }
 
 h1 {
-  font-size: $font-43-5px;
+  font-size: $font-60px;
   line-height: 1.2;
+  font-family: $font-bold;
 }
 
 h2 {
-  font-size: $font-36px;
+  font-size: $font-33px;
   line-height: 1.2;
+  font-family: $font-bold;
 }
 
 h3 {
-  font-size: $font-35px;
+  font-size: $font-16px;
   line-height: 1.2;
-}
-
-h4 {
-  font-size: $font-29px;
-  line-height: 1.2;
-}
-
-h5 {
-  font-size: $font-24-5px;
-  line-height: 1.2;
-}
-
-h6 {
-  font-size: $font-20px;
-  line-height: 1.2;
+  font-family: $font-bold;
 }
 
 .rich-text {
+  p {
+    font-size: $font-22px;
+    font-family: $font-bold;
+  }
+
   ul {
     list-style: disc;
     margin-left: 20px;
@@ -77,3 +70,32 @@ h6 {
 strong {
   font-weight: bold;
 }
+
+.bg-black {
+  background-color: $wepub-col-grey-black;
+}
+
+.bg-turquoise {
+  background-color: $wepub-col-turquoise;
+}
+
+.bg-white {
+  background-color: $theme-col-white;
+}
+
+.bg-grey {
+  background-color: $wepub-col-mid-grey;
+}
+
+.color-turquoise {
+  color: $wepub-col-turquoise;
+}
+
+.color-black {
+  color: $wepub-col-grey-black;
+}
+
+.color-white {
+  color: $theme-col-white;
+}
+

@@ -1,5 +1,420 @@
 [
   {
+    "id": "viewContextModelBlockContact",
+    "target": "YNWcOoETusD",
+    "definition": {
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "contentTypeId": "{{ModBlockContact}}",
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "image": {
+              "ref": {
+                "label": "Image",
+                "description": "Image Dimension: 1920x864",
+                "maxDepth": 3,
+                "allowInlineEditing": true
+              }
+            },
+            "imageLink": {
+              "picker": {
+                "label": "Link",
+                "fields": [
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "http",
+                    "type": {
+                      "text": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "textBlock": {
+              "richText": {
+                "label": "Text",
+                "controls": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "image"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "imageLink"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "textBlock"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Contact",
+      "slug": "contact"
+    }
+  },
+  {
+    "id": "viewContextModelBlockDownload",
+    "target": "YNWcOoETusD",
+    "definition": {
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "contentTypeId": "{{ModBlockDownload}}",
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "imageLeft": {
+              "ref": {
+                "label": "Image Left",
+                "description": "Image Dimension: 1920x864",
+                "maxDepth": 3,
+                "allowInlineEditing": true
+              }
+            },
+            "imageLinkLeft": {
+              "picker": {
+                "label": "Image Link Left",
+                "fields": [
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "http",
+                    "type": {
+                      "text": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "textLeft": {
+              "richText": {
+                "label": "Text Left",
+                "controls": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "imageRight": {
+              "ref": {
+                "label": "Image Right",
+                "description": "Image Dimension: 1920x864",
+                "maxDepth": 3,
+                "allowInlineEditing": true
+              }
+            },
+            "imageLinkRight": {
+              "picker": {
+                "label": "Image Link Right",
+                "fields": [
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {
+                        "maxDepth": 3,
+                        "allowInlineEditing": false
+                      }
+                    }
+                  },
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "http",
+                    "type": {
+                      "text": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "textRight": {
+              "richText": {
+                "label": "Text Right",
+                "controls": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "unorderedList",
+                  "orderedList"
+                ],
+                "linkTypes": [
+                  {
+                    "key": "url",
+                    "label": "URL",
+                    "icon": "insert_drive_file",
+                    "type": {
+                      "text": {}
+                    }
+                  },
+                  {
+                    "key": "document",
+                    "label": "Document",
+                    "icon": "device_hub",
+                    "type": {
+                      "ref": {}
+                    }
+                  },
+                  {
+                    "key": "navigationNode",
+                    "label": "Navigation Node",
+                    "icon": "http",
+                    "type": {
+                      "ref": {}
+                    }
+                  }
+                ]
+              }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
+              }
+            },
+            "lineColor": {
+              "select": {
+                "label": "Line Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White"
+                }
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "imageLeft"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "imageLinkLeft"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "textLeft"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "imageRight"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "imageLinkRight"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "textRight"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "lineColor"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "Download",
+      "slug": "download"
+    }
+  },
+  {
     "id": "viewContextModelBlockiFrame",
     "target": "YNWcOoETusD",
     "definition": {
@@ -12,14 +427,14 @@
       "field": {
         "fieldset": {
           "fields": {
-            "aspectRatio": {
-              "text": {
-                "label": "Aspect Ratio (e.g. 16:9)"
-              }
-            },
             "blockName": {
               "text": {
                 "label": "Block Name"
+              }
+            },
+            "aspectRatio": {
+              "text": {
+                "label": "Aspect Ratio (e.g. 16:9)"
               }
             },
             "snippet": {
@@ -94,7 +509,6 @@
                 "label": "Title",
                 "controls": [
                   "h1",
-                  "h2",
                   "bold",
                   "italic",
                   "underline",
@@ -128,6 +542,16 @@
                   }
                 ]
               }
+            },
+            "aspectRatio": {
+              "text": {
+                "label": "Aspect Ratio (e.g. 16:9)"
+              }
+            },
+            "snippet": {
+              "text": {
+                "label": "HTML Snippet"
+              }
             }
           },
           "layout": {
@@ -147,6 +571,16 @@
                 {
                   "field": {
                     "key": "title"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "aspectRatio"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "snippet"
                   }
                 }
               ]
@@ -180,8 +614,7 @@
               "richText": {
                 "label": "Title",
                 "controls": [
-                  "h3",
-                  "h4",
+                  "h1",
                   "bold",
                   "italic",
                   "underline",
@@ -220,7 +653,7 @@
               "richText": {
                 "label": "Subtitle",
                 "controls": [
-                  "h6",
+                  "h2",
                   "bold",
                   "italic",
                   "underline",
@@ -253,6 +686,17 @@
                     }
                   }
                 ]
+              }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
               }
             }
           },
@@ -274,6 +718,11 @@
                   "field": {
                     "key": "subtitle"
                   }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
                 }
               ]
             }
@@ -285,10 +734,141 @@
     }
   },
   {
-    "id": "viewContextModelBlockRichText",
+    "id": "viewContextModelBlockRichTextTab",
     "target": "YNWcOoETusD",
     "definition": {
-      "contentTypeId": "{{ModBlockRichText}}",
+      "descriptionKeyPaths": [
+        [
+          "blockName"
+        ]
+      ],
+      "contentTypeId": "{{ModBlockRichTextTab}}",
+      "field": {
+        "fieldset": {
+          "fields": {
+            "blockName": {
+              "text": {
+                "label": "Block Name"
+              }
+            },
+            "list": {
+              "repeater": {
+                "label": "RichText Tab List",
+                "description": "min. 404x404px",
+                "maxDepth": 3,
+                "field": {
+                  "fieldset": {
+                    "fields": {
+                      "title": {
+                        "text": {
+                          "label": "Title"
+                        }
+                      },
+                      "text": {
+                        "richText": {
+                          "label": "Text",
+                          "controls": [
+                            "bold",
+                            "italic",
+                            "underline",
+                            "unorderedList",
+                            "orderedList"
+                          ],
+                          "linkTypes": [
+                            {
+                              "key": "url",
+                              "label": "URL",
+                              "icon": "insert_drive_file",
+                              "type": {
+                                "text": {}
+                              }
+                            },
+                            {
+                              "key": "document",
+                              "label": "Document",
+                              "icon": "device_hub",
+                              "type": {
+                                "ref": {}
+                              }
+                            },
+                            {
+                              "key": "navigationNode",
+                              "label": "Navigation Node",
+                              "icon": "http",
+                              "type": {
+                                "ref": {}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "layout": {
+                      "group": {
+                        "direction": "column",
+                        "layouts": [
+                          {
+                            "field": {
+                              "key": "title"
+                            }
+                          },
+                          {
+                            "field": {
+                              "key": "text"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "list"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "name": "RichText Tab",
+      "slug": "richtext-tab"
+    }
+  },
+  {
+    "id": "viewContextModelBlockTwoColumnGird",
+    "target": "YNWcOoETusD",
+    "definition": {
+      "contentTypeId": "{{TwoColumnGrid}}",
       "descriptionKeyPaths": [
         [
           "blockName"
@@ -302,50 +882,11 @@
                 "label": "Block Name"
               }
             },
-            "title": {
-              "richText": {
-                "label": "Title",
-                "controls": [
-                  "h5",
-                  "h6",
-                  "bold",
-                  "italic",
-                  "underline",
-                  "unorderedList",
-                  "orderedList"
-                ],
-                "linkTypes": [
-                  {
-                    "key": "url",
-                    "label": "URL",
-                    "icon": "insert_drive_file",
-                    "type": {
-                      "text": {}
-                    }
-                  },
-                  {
-                    "key": "document",
-                    "label": "Document",
-                    "icon": "device_hub",
-                    "type": {
-                      "ref": {}
-                    }
-                  },
-                  {
-                    "key": "navigationNode",
-                    "label": "Navigation Node",
-                    "icon": "http",
-                    "type": {
-                      "ref": {}
-                    }
-                  }
-                ]
-              }
-            },
             "textRight": {
               "richText": {
                 "label": "Text Right",
                 "controls": [
+                  "h2",
                   "bold",
                   "italic",
                   "underline",
@@ -384,6 +925,7 @@
               "richText": {
                 "label": "Text Left",
                 "controls": [
+                  "h2",
                   "bold",
                   "italic",
                   "underline",
@@ -417,6 +959,43 @@
                   }
                 ]
               }
+            },
+            "imageRight": {
+              "ref": {
+                "label": "Image Right",
+                "description": "Image Dimension:",
+                "maxDepth": 3,
+                "allowInlineEditing": true
+              }
+            },
+            "imageLeft": {
+              "ref": {
+                "label": "Image Left",
+                "description": "Image Dimension:",
+                "maxDepth": 3,
+                "allowInlineEditing": true
+              }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
+              }
+            },
+            "lineColor": {
+              "select": {
+                "label": "Line Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White"
+                }
+              }
             }
           },
           "layout": {
@@ -430,17 +1009,32 @@
                 },
                 {
                   "field": {
-                    "key": "title"
-                  }
-                },
-                {
-                  "field": {
                     "key": "textLeft"
                   }
                 },
                 {
                   "field": {
+                    "key": "imageLeft"
+                  }
+                },
+                {
+                  "field": {
                     "key": "textRight"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "imageRight"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "lineColor"
                   }
                 }
               ]
@@ -448,8 +1042,8 @@
           }
         }
       },
-      "name": "RichText",
-      "slug": "richText"
+      "name": "Two Column Grid",
+      "slug": "twoColumnGrid"
     }
   },
   {
@@ -464,28 +1058,6 @@
       "contentTypeId": "{{ModBlockTeaserSpot}}",
       "field": {
         "fieldset": {
-          "layout": {
-            "group": {
-              "direction": "column",
-              "layouts": [
-                {
-                  "field": {
-                    "key": "blockName"
-                  }
-                },
-                {
-                  "field": {
-                    "key": "list"
-                  }
-                },
-                {
-                  "field": {
-                    "key": "textBlock"
-                  }
-                }
-              ]
-            }
-          },
           "fields": {
             "blockName": {
               "text": {
@@ -549,8 +1121,8 @@
                         "richText": {
                           "label": "Text",
                           "controls": [
-                            "h5",
-                            "h6",
+                            "h2",
+                            "h3",
                             "bold",
                             "italic",
                             "underline",
@@ -611,6 +1183,39 @@
                   }
                 }
               }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
+              }
+            }
+          },
+          "layout": {
+            "group": {
+              "direction": "column",
+              "layouts": [
+                {
+                  "field": {
+                    "key": "blockName"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "list"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
+                }
+              ]
             }
           }
         }
@@ -726,6 +1331,27 @@
               "number": {
                 "label": "Space (px)"
               }
+            },
+            "backgroundColor": {
+              "select": {
+                "label": "Background Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White",
+                  "grey": "Grey"
+                }
+              }
+            },
+            "lineColor": {
+              "select": {
+                "label": "Line Color",
+                "labels": {
+                  "turquoise": "Turquoise",
+                  "black": "Black",
+                  "white": "White"
+                }
+              }
             }
           },
           "layout": {
@@ -740,6 +1366,16 @@
                 {
                   "field": {
                     "key": "value"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "backgroundColor"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "lineColor"
                   }
                 }
               ]
@@ -862,9 +1498,20 @@
                         }
                       },
                       {
-                        "key": "blockRichText",
+                        "key": "blockRichTextTab",
+                        "icon": "call_to_action",
+                        "label": "RichText Tab",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockTwoColGrid",
                         "icon": "dashboard",
-                        "label": "RichText",
+                        "label": "Two Column Grid",
                         "type": {
                           "ref": {
                             "allowInlineEditing": true,
@@ -876,6 +1523,17 @@
                         "key": "blockTeaserSpot",
                         "icon": "filter 3",
                         "label": "TeaserSpot",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockDownload",
+                        "icon": "vertical_align_bottom",
+                        "label": "Download",
                         "type": {
                           "ref": {
                             "allowInlineEditing": true,
@@ -1094,99 +1752,31 @@
                 "label": "Block Name"
               }
             },
-            "backgroundImage": {
+            "textLeft": {
+              "text": {
+                "label": "Text Left"
+              }
+            },
+            "textCenter": {
+              "text": {
+                "label": "Text Center"
+              }
+            },
+            "textRight": {
+              "text": {
+                "label": "Text Right"
+              }
+            },
+            "image": {
               "ref": {
-                "allowInlineEditing": true,
-                "description": "Grösse: 1920 x 1080px",
-                "label": "Background Image",
-                "maxDepth": 3
-              }
-            },
-            "text": {
-              "richText": {
-                "label": "Title",
-                "controls": [
-                  "h6",
-                  "bold",
-                  "italic",
-                  "underline",
-                  "unorderedList",
-                  "orderedList"
-                ],
-                "linkTypes": [
-                  {
-                    "key": "url",
-                    "label": "URL",
-                    "icon": "insert_drive_file",
-                    "type": {
-                      "text": {}
-                    }
-                  },
-                  {
-                    "key": "document",
-                    "label": "Document",
-                    "icon": "device_hub",
-                    "type": {
-                      "ref": {}
-                    }
-                  },
-                  {
-                    "key": "navigationNode",
-                    "label": "Navigation Node",
-                    "icon": "http",
-                    "type": {
-                      "ref": {}
-                    }
-                  }
-                ]
-              }
-            },
-            "logo": {
-              "ref": {
-                "allowInlineEditing": true,
-                "label": "Logo",
-                "maxDepth": 3
-              }
-            },
-            "logoLink": {
-              "picker": {
-                "label": "Link",
-                "fields": [
-                  {
-                    "key": "document",
-                    "label": "Document",
-                    "icon": "insert_drive_file",
-                    "type": {
-                      "ref": {
-                        "maxDepth": 3,
-                        "allowInlineEditing": false
-                      }
-                    }
-                  },
-                  {
-                    "key": "navigationNode",
-                    "label": "Navigation Node",
-                    "icon": "device_hub",
-                    "type": {
-                      "ref": {
-                        "maxDepth": 3,
-                        "allowInlineEditing": false
-                      }
-                    }
-                  },
-                  {
-                    "key": "url",
-                    "label": "URL",
-                    "icon": "http",
-                    "type": {
-                      "text": {}
-                    }
-                  }
-                ]
+                "label": "Image",
+                "maxDepth": 3,
+                "allowInlineEditing": true
               }
             },
             "navigationNode": {
               "ref": {
+                "label": "Navigation Node",
                 "allowInlineEditing": false,
                 "maxDepth": 3
               }
@@ -1203,22 +1793,22 @@
                 },
                 {
                   "field": {
-                    "key": "backgroundImage"
+                    "key": "textLeft"
                   }
                 },
                 {
                   "field": {
-                    "key": "text"
+                    "key": "textCenter"
                   }
                 },
                 {
                   "field": {
-                    "key": "logo"
+                    "key": "textRight"
                   }
                 },
                 {
                   "field": {
-                    "key": "logoLink"
+                    "key": "image"
                   }
                 },
                 {
@@ -1246,7 +1836,7 @@
       "field": {
         "cloudinary": {
           "cloudName": "karmarun",
-          "folder": "duda-website",
+          "folder": "wepublish",
           "preset": "iue6ge8o",
           "thumbnailTransformName": "caas-frontend"
         }

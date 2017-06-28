@@ -22,12 +22,8 @@
       "slug": "de",
       "showInMenu": true,
       "children": [
-        "{{naviNodeMicroServices}}",
-        "{{naviNodeBigData}}",
-        "{{naviNodeHybridConsulting}}",
-        "{{naviNodeAbout}}",
-        "{{naviNodeContact}}",
-        "{{naviNodeFooterDE}}"
+        "{{naviHome}}",
+        "{{naviFooter}}"
       ]
     }
   },
@@ -40,91 +36,28 @@
       "slug": "en",
       "showInMenu": true,
       "children": [
-        "{{naviNodeMicroServices}}",
-        "{{naviNodeBigData}}",
-        "{{naviNodeHybridConsulting}}",
-        "{{naviNodeAbout}}",
-        "{{naviNodeContact}}",
-        "{{naviNodeFooterEN}}"
+        "{{naviHome}}",
+        "{{naviFooter}}"
       ]
     }
   },
   {
-    "id": "naviNodeMicroServices",
+    "id": "naviHome",
     "target": "{{ModelNavigationNode}}",
     "definition": {
-      "blockName": "EN Micro Services",
-      "label": "Micro Services",
-      "slug": "microservices",
+      "blockName": "Home",
+      "label": "Home",
+      "slug": "home",
       "showInMenu": true,
       "children": [
       ]
     }
   },
   {
-    "id": "naviNodeBigData",
+    "id": "naviFooter",
     "target": "{{ModelNavigationNode}}",
     "definition": {
-      "blockName": "EN Big Data",
-      "label": "Big Data",
-      "slug": "bigdata",
-      "showInMenu": true,
-      "children": [
-      ]
-    }
-  },
-  {
-    "id": "naviNodeHybridConsulting",
-    "target": "{{ModelNavigationNode}}",
-    "definition": {
-      "blockName": "EN Hybrid Consulting",
-      "label": "Hybrid Consulting",
-      "slug": "hybridconsulting",
-      "showInMenu": true,
-      "children": [
-      ]
-    }
-  },
-  {
-    "id": "naviNodeAbout",
-    "target": "{{ModelNavigationNode}}",
-    "definition": {
-      "blockName": "EN About",
-      "label": "About",
-      "slug": "about",
-      "showInMenu": true,
-      "children": [
-      ]
-    }
-  },
-  {
-    "id": "naviNodeContact",
-    "target": "{{ModelNavigationNode}}",
-    "definition": {
-      "blockName": "EN Contact",
-      "label": "Contact",
-      "slug": "contact",
-      "showInMenu": true,
-      "children": [
-      ]
-    }
-  },
-  {
-    "id": "naviNodeFooterEN",
-    "target": "{{ModelNavigationNode}}",
-    "definition": {
-      "blockName": "EN Footer",
-      "label": "Footer",
-      "slug": "footer",
-      "showInMenu": false,
-      "children": []
-    }
-  },
-  {
-    "id": "naviNodeFooterDE",
-    "target": "{{ModelNavigationNode}}",
-    "definition": {
-      "blockName": "DE Footer",
+      "blockName": "Footer",
       "label": "Footer",
       "slug": "footer",
       "showInMenu": false,

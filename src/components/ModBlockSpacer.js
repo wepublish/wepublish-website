@@ -1,14 +1,25 @@
 import React from 'react'
+import {backgroundColorSwitch, lineColorSwitch} from '../common/DDUtil'
+
 
 export default class ModBlockSpacer extends React.Component {
 
-  render () {
+  render() {
     const {content} = this.props
-    var divStyle = {
+
+    let backgroundColor = backgroundColorSwitch(content.backgroundColor)
+    let lineColor = lineColorSwitch(content.lineColor)
+
+    let divStyle = {
       height: content.value + 'px'
     }
+
     return (
-        <div className="block-spacer bg-white" style={divStyle}></div>
+      <div className={backgroundColor}>
+        <div className="block-spacer" style={divStyle}>
+          <div className={lineColor} style={divStyle}></div>
+        </div>
+      </div>
     )
   }
 }

@@ -1,9 +1,9 @@
 [
   {
-    "id": "ModBlockTitle",
+    "id": "ModBlockDownload",
     "target": "{{entityEntity}}",
     "definition": {
-      "key": "blockTitle",
+      "key": "blockDownload",
       "model": {
         "struct": {
           "blockName": {
@@ -12,7 +12,34 @@
               "minLength": 3
             }
           },
-          "title": {
+          "imageLeft": {
+            "ref": "{{ModelDocuments}}"
+          },
+          "imageLinkLeft": {
+            "union": {
+              "document": {
+                "ref": "{{ModelDocuments}}"
+              },
+              "navigationNode": {
+                "ref": "{{ModelNavigationNode}}"
+              },
+              "null": {
+                "optional": {
+                  "struct": {}
+                }
+              },
+              "url": {
+                "string": {
+                  "regex": {
+                    "caseInsensitive": false,
+                    "expression": "^$|^([a-z][+.\\-a-z0-9]*):(//([^:]+:[^@]+@)?([^/:]+)(:[1-9][0-9]*)?)?/?([^?]+)(\\?[^#]+)?(#.*)?$",
+                    "multiline": false
+                  }
+                }
+              }
+            }
+          },
+          "textLeft": {
             "struct": {
               "blocks": {
                 "list": {
@@ -56,7 +83,34 @@
               }
             }
           },
-          "subtitle": {
+          "imageRight": {
+            "ref": "{{ModelDocuments}}"
+          },
+          "imageLinkRight": {
+            "union": {
+              "document": {
+                "ref": "{{ModelDocuments}}"
+              },
+              "navigationNode": {
+                "ref": "{{ModelNavigationNode}}"
+              },
+              "null": {
+                "optional": {
+                  "struct": {}
+                }
+              },
+              "url": {
+                "string": {
+                  "regex": {
+                    "caseInsensitive": false,
+                    "expression": "^$|^([a-z][+.\\-a-z0-9]*):(//([^:]+:[^@]+@)?([^/:]+)(:[1-9][0-9]*)?)?/?([^?]+)(\\?[^#]+)?(#.*)?$",
+                    "multiline": false
+                  }
+                }
+              }
+            }
+          },
+          "textRight": {
             "struct": {
               "blocks": {
                 "list": {
@@ -107,6 +161,15 @@
                 "black",
                 "white",
                 "grey"
+              ]
+            }
+          },
+          "lineColor": {
+            "string": {
+              "oneOf": [
+                "turquoise",
+                "black",
+                "white"
               ]
             }
           }

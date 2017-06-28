@@ -175,3 +175,60 @@ export function removeLanguageNavigationNode(nodes, currentLanguage) {
     }
   }
 }
+
+/**
+ *
+ *
+ *
+ *
+ */
+export function backgroundColorSwitch(backgroundColor) {
+  switch (backgroundColor) {
+    case "black":
+      backgroundColor = "bg-black color-white"
+      break;
+    case "turquoise":
+      backgroundColor = "bg-turquoise"
+      break;
+    case "white":
+      backgroundColor = "bg-white"
+      break;
+    case "grey":
+      backgroundColor = "bg-grey"
+      break;
+  }
+
+  return backgroundColor;
+}
+
+/**
+ *
+ *
+ *
+ *
+ */
+export function lineColorSwitch(lineColor) {
+  switch (lineColor) {
+    case "black":
+      lineColor = "bg-black spacer-line"
+      break;
+    case "turquoise":
+      lineColor = "bg-turquoise spacer-line"
+      break;
+    case "white":
+      lineColor = "bg-white spacer-line"
+      break;
+  }
+
+  return lineColor;
+}
+
+
+
+
+
+
+
+
+
+

@@ -55,14 +55,20 @@
                   "blockSpacer": {
                     "ref": "{{ModBlockSpacer}}"
                   },
-                  "blockRichText": {
-                    "ref": "{{ModBlockRichText}}"
+                  "blockTwoColGrid": {
+                    "ref": "{{TwoColumnGrid}}"
                   },
                   "blockHeader": {
                     "ref": "{{ModBlockHeader}}"
                   },
                   "blockTitle": {
                     "ref": "{{ModBlockTitle}}"
+                  },
+                  "blockRichTextTab": {
+                    "ref": "{{ModBlockRichTextTab}}"
+                  },
+                  "blockDownload": {
+                    "ref": "{{ModBlockDownload}}"
                   },
                   "blockTeaserSpot": {
                     "ref": "{{ModBlockTeaserSpot}}"
@@ -72,6 +78,9 @@
                   },
                   "blockIFrame": {
                     "ref": "{{ModBlockiFrame}}"
+                  },
+                  "blockContact": {
+                    "ref": "{{ModBlockContact}}"
                   }
                 }
               },

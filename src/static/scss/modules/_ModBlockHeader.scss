@@ -6,12 +6,32 @@ $header-border-padding-top: 20.5px;
 $header-line-width: 145px;
 $header-line-height: 2.2px;
 
+.header-container{
+  background-color: black;
+}
+
 .header-background {
+  padding-top: 100px;
   background-size: cover;
-  height: 656px;
+  //height: 656px;
   background-repeat: no-repeat;
   background-position: center;
 
+  max-width: 1600px;
+  margin: 0 auto;
+
+  .block-iframe {
+    position: relative;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   @include respond-to('small') {
     height: auto;
   }
@@ -36,3 +56,4 @@ $header-line-height: 2.2px;
   width: $header-line-width;
   border-bottom: $header-line-height solid white;
 }
+
