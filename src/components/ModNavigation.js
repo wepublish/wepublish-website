@@ -6,148 +6,149 @@ import {isNodeVisible} from '../caas/CaasHelper'
 
 export default class ModNavigation extends React.Component {
 
-  constructor(props) {
-    super(props)
+    constructor(props) {
+        super(props)
 
-    this.state = {
-      openNodeId: null
+        this.state = {
+            openNodeId: null
+        }
+
+        this.toggleNavigation = this.toggleNavigation.bind(this)
+        this.closeNavigation = this.closeNavigation.bind(this)
+        this.createNavigationNode = this.createNavigationNode.bind(this)
+        this.createLanguageNodes = this.createLanguageNodes.bind(this)
     }
 
-    this.toggleNavigation = this.toggleNavigation.bind(this)
-    this.closeNavigation = this.closeNavigation.bind(this)
-    this.createNavigationNode = this.createNavigationNode.bind(this)
-    this.createLanguageNodes = this.createLanguageNodes.bind(this)
-  }
-
-  setStateBy(replaceObjects) {
-    this.setState(
-      Object.assign({}, this.state, replaceObjects)
-    )
-  }
-
-  toggleNavigation(e) {
-    this.setStateBy({
-      openNodeId: null
-    })
-    this.props.onNavToggle(!this.props.naviOpen)
-  }
-
-  closeNavigation(e) {
-    this.props.onNavToggle(false)
-  }
-
-  createNavigationNode(nodes) {
-    if (!(nodes instanceof Array) || nodes.length < 1) {
-      return null
-    }
-
-    let navigationNode = nodes.reduce((prevItem, item, index) => {
-      if (isNodeVisible(item)) {
-        prevItem.push(
-          (
-            <li key={index} className={'navigation-item-container'}>
-              <NavLink className='navigation-top' to={item.relativeUrl} onClick={this.closeNavigation}>
-                <span>{item.label}</span>
-              </NavLink>
-            </li>
-          )
+    setStateBy(replaceObjects) {
+        this.setState(
+            Object.assign({}, this.state, replaceObjects)
         )
-      }
-      return prevItem
-    }, [])
-
-    return <ul className={"navigation-nodes"}>{navigationNode}</ul>
-  }
-
-  createLanguageNodes(nodes, currentLanguage) {
-    if (!(nodes instanceof Array)) {
-      return null
     }
 
-    let languageNodes = nodes.map((item, index) => {
-      const navLang = <NavLink className={"navigation-lag " + (currentLanguage === item.slug ? 'active' : '')}
-                               to={item.relativeUrl + "/microservices"}
-                               onClick={this.closeNavigation}>{item.label}</NavLink>
-
-      return index == 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
-
-    })
-
-    return <ul className="navigation-languages">{languageNodes}</ul>
-  }
-
-
-  render() {
-    const {navigationTree, currentLanguage} = this.props
-    if (!(navigationTree && navigationTree.children && hasContent(currentLanguage))) {
-      return null
+    toggleNavigation(e) {
+        this.setStateBy({
+            openNodeId: null
+        })
+        this.props.onNavToggle(!this.props.naviOpen)
     }
 
-    const navigationTreeWithoutLang = removeLanguageNavigationNode(navigationTree.children, currentLanguage)
-    const langNavigation = this.createLanguageNodes(navigationTree.children, currentLanguage)
+    closeNavigation(e) {
+        this.props.onNavToggle(false)
+    }
+
+    createNavigationNode(nodes) {
+        if (!(nodes instanceof Array) || nodes.length < 1) {
+            return null
+        }
+
+        let navigationNode = nodes.reduce((prevItem, item, index) => {
+            if (isNodeVisible(item)) {
+                prevItem.push(
+                    (
+                        <li key={index} className={'navigation-item-container'}>
+                            <NavLink className='navigation-top' to={item.relativeUrl} onClick={this.closeNavigation}>
+                                <span>{item.label}</span>
+                            </NavLink>
+                        </li>
+                    )
+                )
+            }
+            return prevItem
+        }, [])
+
+        return <ul className={"navigation-nodes"}>{navigationNode}</ul>
+    }
+
+    createLanguageNodes(nodes, currentLanguage) {
+        if (!(nodes instanceof Array)) {
+            return null
+        }
+
+        let languageNodes = nodes.map((item, index) => {
+            const navLang = <NavLink className={"navigation-lag " + (currentLanguage === item.slug ? 'active' : '')}
+                                     to={item.relativeUrl + "/microservices"}
+                                     onClick={this.closeNavigation}>{item.label}</NavLink>
+
+            return index == 0 ? (<li key={index}>{navLang}</li>) : (<li key={index}>/ {navLang}</li>)
+
+        })
+
+        return <ul className="navigation-languages">{languageNodes}</ul>
+    }
 
 
-    return (
-      <div id="navigation-wrappter" className="">
+    render() {
+        const {navigationTree, currentLanguage} = this.props
+        if (!(navigationTree && navigationTree.children && hasContent(currentLanguage))) {
+            return null
+        }
 
-        <a id="navigation-burger" className="navigation-burger menu-content">
-          <div className="navigation-burger-wrapper">
-            <div className="menu-content-wrapper">
-              <div id="navigation-text" href="/" className="menu-content">
-                <p id="scroll-text-small">we</p>
-                <p id="scroll-text-small" className="color-turquoise">.</p>
-                <p id="scroll-text-small">publish</p>
-              </div>
+        const navigationTreeWithoutLang = removeLanguageNavigationNode(navigationTree.children, currentLanguage)
+        const langNavigation = this.createLanguageNodes(navigationTree.children, currentLanguage)
 
-            </div>
-            <div className="navigation-icon" onClick={this.toggleNavigation}>
-              <img className="navigation-icon-open" src={require("../static/img/naviBurger.svg")}/>
-            </div>
-          </div>
-        </a>
 
-        <div id="navigation" className={this.props.naviOpen ? "is-expanded" : ""}>
-          <div className="navigation-header">
-            <NavLink to={currentLanguage} onClick={this.closeNavigation}>
-            </NavLink>
-          </div>
+        return (
+            <div id="navigation-wrappter" className="">
+                <a id="navigation-burger" className="navigation-burger menu-content">
+                    <div className="navigation-burger-wrapper">
+                        <div className="menu-content-wrapper">
+                            <div id="navigation-text" href="/" className="menu-content">
+                                <p id="scroll-text-small">we</p>
+                                <p id="scroll-text-small" className="color-turquoise">.</p>
+                                <p id="scroll-text-small">publish</p>
+                            </div>
 
-          <div className="navigation-wrapper">
-            <div className="navigation-content">
-              <div className="navigation-main">
-                <div className="navigation-title">
-
-                  <div className="navi-placholder"></div>
-
-                  <div className="naviOpen-text">
-                    <div className="navi-text-wrapper">
-                      <p id="naviOpen-text-small">we</p>
-                      <p id="scroll-text-small" className="color-turquoise">.</p>
-                      <p id="naviOpen-text-small">publish</p>
+                        </div>
+                        <div className="navigation-icon" onClick={this.toggleNavigation}>
+                            <img className="navigation-icon-open" src={require("../static/img/naviBurger.svg")}/>
+                        </div>
                     </div>
-                    <div className="navi-border-bottom"></div>
-                  </div>
+                </a>
 
-                  <div className="closeNavigation" onClick={this.closeNavigation}>
-                    <img className="navigation-icon-close" src={require("../static/img/naviBurgerClose.svg")}/>
-                  </div>
 
+                <div id="navigation" className={this.props.naviOpen ? "is-expanded" : ""}>
+                    <div className="navigation-header">
+                        <NavLink to={currentLanguage} onClick={this.closeNavigation}>
+                        </NavLink>
+                    </div>
+
+                    <div className="navigation-wrapper">
+                        <div className="navigation-content">
+                            <div className="navigation-main">
+                                <div className="navigation-title">
+
+                                    <div className="navi-placholder"></div>
+
+                                    <div className="naviOpen-text">
+                                        <div className="navi-text-wrapper">
+                                            <p id="naviOpen-text-small">we</p>
+                                            <p id="scroll-text-small" className="color-turquoise">.</p>
+                                            <p id="naviOpen-text-small">publish</p>
+                                        </div>
+                                        <div className="navi-border-bottom"></div>
+                                    </div>
+
+                                    <div className="closeNavigation" onClick={this.closeNavigation}>
+                                        <img className="navigation-icon-close"
+                                             src={require("../static/img/naviBurgerClose.svg")}/>
+                                    </div>
+
+                                </div>
+                                {this.createNavigationNode(navigationTreeWithoutLang.children, true)}
+                                <div className="navigation-meta">
+                                    {langNavigation}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {this.createNavigationNode(navigationTreeWithoutLang.children, true)}
-                <div className="navigation-meta">
-                  {langNavigation}
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
+        )
+    }
 }
 
 ModNavigation
-  .propTypes = {
-  currentLanguage: React.PropTypes.string.isRequired,
-  navigationTree: React.PropTypes.object.isRequired
+    .propTypes = {
+    currentLanguage: React.PropTypes.string.isRequired,
+    navigationTree: React.PropTypes.object.isRequired
 }

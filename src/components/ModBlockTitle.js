@@ -25,7 +25,8 @@ export default class ModBlockTitle extends React.Component {
 
     return (
       <div className={backgroundColor}>
-        <div className="title-wrapper">
+          <div id={content.anchorName}></div>
+          <div className="title-wrapper">
           {title}
           {subtitle}
         </div>

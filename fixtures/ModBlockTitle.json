@@ -109,6 +109,12 @@
                 "grey"
               ]
             }
+          },
+          "anchorName": {
+            "string": {
+              "maxLength": 40,
+              "minLength": 0
+            }
           }
         }
       }

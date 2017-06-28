@@ -136,7 +136,8 @@
           }
         ]
       },
-      "backgroundColor": "white"
+      "backgroundColor": "white",
+      "anchorName": "vision"
     }
   },
   {
@@ -298,7 +299,8 @@
           }
         }
       ],
-      "backgroundColor": "grey"
+      "backgroundColor": "grey",
+      "anchorName": ""
     }
   },
   {
@@ -539,7 +541,8 @@
       },
       "imageRight": "{{dummyDocumentRichTextImageOne}}",
       "backgroundColor": "turquoise",
-      "lineColor": "white"
+      "lineColor": "white",
+      "anchorName": "wirsind"
     }
   },
   {
@@ -637,7 +640,8 @@
           }
         ]
       },
-      "backgroundColor": "black"
+      "backgroundColor": "black",
+      "anchorName": "team"
     }
   },
   {
@@ -914,7 +918,8 @@
           }
         ]
       },
-      "backgroundColor": "grey"
+      "backgroundColor": "grey",
+      "anchorName": "download"
     }
   },
   {
@@ -1095,7 +1100,8 @@
           }
         ]
       },
-      "backgroundColor": "turquoise"
+      "backgroundColor": "turquoise",
+      "anchorName": "kontakt"
     }
   },
   {

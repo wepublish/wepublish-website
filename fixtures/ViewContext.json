@@ -698,6 +698,11 @@
                   "grey": "Grey"
                 }
               }
+            },
+            "anchorName": {
+              "text": {
+                "label": "Anchor Name"
+              }
             }
           },
           "layout": {
@@ -722,6 +727,11 @@
                 {
                   "field": {
                     "key": "backgroundColor"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "anchorName"
                   }
                 }
               ]
@@ -834,6 +844,11 @@
                   "grey": "Grey"
                 }
               }
+            },
+            "anchorName": {
+              "text": {
+                "label": "Anchor Name"
+              }
             }
           },
           "layout": {
@@ -853,6 +868,11 @@
                 {
                   "field": {
                     "key": "backgroundColor"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "anchorName"
                   }
                 }
               ]
@@ -996,6 +1016,11 @@
                   "white": "White"
                 }
               }
+            },
+            "anchorName": {
+              "text": {
+                "label": "Anchor Name"
+              }
             }
           },
           "layout": {
@@ -1035,6 +1060,11 @@
                 {
                   "field": {
                     "key": "lineColor"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "anchorName"
                   }
                 }
               ]
@@ -1521,7 +1551,7 @@
                       },
                       {
                         "key": "blockTeaserSpot",
-                        "icon": "filter 3",
+                        "icon": "filter_3",
                         "label": "TeaserSpot",
                         "type": {
                           "ref": {
@@ -1534,6 +1564,17 @@
                         "key": "blockDownload",
                         "icon": "vertical_align_bottom",
                         "label": "Download",
+                        "type": {
+                          "ref": {
+                            "allowInlineEditing": true,
+                            "maxDepth": 3
+                          }
+                        }
+                      },
+                      {
+                        "key": "blockContact",
+                        "icon": "filter_3",
+                        "label": "Contact",
                         "type": {
                           "ref": {
                             "allowInlineEditing": true,
