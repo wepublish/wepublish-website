@@ -13,10 +13,19 @@ $subtitle-padding-top: 34px;
   margin: 0 auto;
   font-family: $font-bold;
 
+  @include respond-to('small') {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   @extend .content-padding-desktop;
 }
 
 .subtitle {
   padding-top: $subtitle-padding-top;
+
+  @include respond-to('small') {
+    padding-top: 25px;
+  }
 }
 

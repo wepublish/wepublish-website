@@ -29,6 +29,7 @@ export default class ModBlockTwoColumnGrid extends React.Component {
             </div>
 
             <div className={lineColor}></div>
+            <div id="padding-line-top-mobile" className={lineColor}></div>
 
             <div className="richText-block">
               <ModImgTag imgObject={content.imageRight}/>

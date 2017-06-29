@@ -71,6 +71,9 @@
           "blockTitle": "{{dummyBlockKontaktTitle}}"
         },
         {
+          "blockSpacer": "{{dummyBlockOnlyMobile}}"
+        },
+        {
           "blockContact": "{{dummyBlockContact}}"
         }
       ],

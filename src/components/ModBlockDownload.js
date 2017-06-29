@@ -23,7 +23,9 @@ export default class ModBlockDownload extends React.Component {
               <ModAnchorTag linkObject={content.imageLinkLeft}>
                 <div className="download-img-wrapper">
                   <img className="download-arrow" src={require("../static/img/arrow_down.png")}/>
-                  <ModImgTag className="download-img" imgObject={content.imageLeft}/>
+                  <div className="download-img-div">
+                    <ModImgTag className="download-img" imgObject={content.imageLeft}/>
+                  </div>
                 </div>
               </ModAnchorTag>
             </div>
@@ -39,7 +41,9 @@ export default class ModBlockDownload extends React.Component {
               <ModAnchorTag linkObject={content.imageLinkRight}>
                 <div className="download-img-wrapper">
                   <img className="download-arrow" src={require("../static/img/arrow_down.png")}/>
-                  <ModImgTag className="download-img" imgObject={content.imageRight}/>
+                  <div className="download-img-div">
+                    <ModImgTag className="download-img" imgObject={content.imageRight}/>
+                  </div>
                 </div>
               </ModAnchorTag>
             </div>

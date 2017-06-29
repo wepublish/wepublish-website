@@ -549,6 +549,7 @@
     "definition": {
       "blockName": "Spacer White",
       "value": 120,
+      "valueMobile": 60,
       "backgroundColor": "white",
       "lineColor": "turquoise"
     }
@@ -559,6 +560,7 @@
     "definition": {
       "blockName": "Spacer Black",
       "value": 120,
+      "valueMobile": 60,
       "backgroundColor": "black",
       "lineColor": "turquoise"
     }
@@ -837,6 +839,7 @@
     "definition": {
       "blockName": "Spacer Turquoise",
       "value": 120,
+      "valueMobile": 60,
       "backgroundColor": "turquoise",
       "lineColor": "white"
     }
@@ -1108,8 +1111,20 @@
     "definition": {
       "blockName": "Spacer Black Grey",
       "value": 120,
+      "valueMobile": 60,
       "backgroundColor": "grey",
       "lineColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockOnlyMobile",
+    "target": "{{ModBlockSpacer}}",
+    "definition": {
+      "blockName": "Spacer White",
+      "value": 0,
+      "valueMobile": 60,
+      "backgroundColor": "turquoise",
+      "lineColor": "white"
     }
   },
   {

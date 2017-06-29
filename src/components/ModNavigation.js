@@ -93,13 +93,18 @@ export default class ModNavigation extends React.Component {
         {this.props.content.article.blocks.reduce((prevItem, item, index) => {
           if (item.type === this.props.config.contentTypeBlockTitle && item.content.anchorName && prevItem.length < 6) {
             prevItem.push(
-              <div key={index}>
-                <a className="anchor-link" href={this.props.pathname + "#" + item.content.anchorName.toLowerCase()}>{item.content.anchorName}</a>
+              <div key={index} className="anchor-container">
+                <a className="anchor-link"
+                   href={this.props.pathname + "#" + item.content.anchorName.toLowerCase()}>{item.content.anchorName}</a>
               </div>
             )
           }
           return prevItem
         }, [])}
+
+        <div className="languages-navigation-anchors">
+          {langNavigation}
+        </div>
       </div>
     }
 
@@ -110,17 +115,21 @@ export default class ModNavigation extends React.Component {
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
               <div id="navigation-text" href="/" className="menu-content">
-                <p id="scroll-text-small">we</p>
-                <p id="scroll-text-small" className="color-turquoise">.</p>
-                <p id="scroll-text-small">publish</p>
+                {/*<p id="scroll-text-small">we</p>*/}
+                {/*<p id="scroll-text-small" className="color-turquoise">.</p>*/}
+                {/*<p id="scroll-text-small">publish</p>*/}
+
+                <img className="navigation-logo" src={require("../static/img/wepublish_logo.svg")}/>
+
+
               </div>
             </div>
             {headerMenuPoints}
 
 
-            <div className="navigation-icon" onClick={this.toggleNavigation}>
-              <img className="navigation-icon-open" src={require("../static/img/naviBurger.svg")}/>
-            </div>
+            {/*<div className="navigation-icon" onClick={this.toggleNavigation}>*/}
+            {/*<img className="navigation-icon-open" src={require("../static/img/naviBurger.svg")}/>*/}
+            {/*</div>*/}
           </div>
         </div>
 

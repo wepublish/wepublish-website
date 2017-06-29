@@ -14,10 +14,18 @@ export default class ModBlockSpacer extends React.Component {
       height: content.value + 'px'
     }
 
+    let divStyleMobile = {
+      height: content.valueMobile + 'px'
+    }
+
     return (
       <div className={backgroundColor}>
-        <div className="block-spacer" style={divStyle}>
+        <div className="block-spacer spacer-desktop">
           <div className={lineColor} style={divStyle}></div>
+        </div>
+
+        <div className="block-spacer spacer-mobile" style={divStyleMobile}>
+          <div id="spacer-line-mobile" className={lineColor} style={divStyleMobile}></div>
         </div>
       </div>
     )

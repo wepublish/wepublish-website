@@ -614,7 +614,7 @@
               "richText": {
                 "label": "Title",
                 "controls": [
-                  "h1",
+                  "h2",
                   "bold",
                   "italic",
                   "underline",
@@ -653,7 +653,7 @@
               "richText": {
                 "label": "Subtitle",
                 "controls": [
-                  "h2",
+                  "h1",
                   "bold",
                   "italic",
                   "underline",
@@ -1342,6 +1342,11 @@
                 "label": "Space (px)"
               }
             },
+            "valueMobile": {
+              "number": {
+                "label": "Moobile Space (px)"
+              }
+            },
             "backgroundColor": {
               "select": {
                 "label": "Background Color",
@@ -1376,6 +1381,11 @@
                 {
                   "field": {
                     "key": "value"
+                  }
+                },
+                {
+                  "field": {
+                    "key": "valueMobile"
                   }
                 },
                 {
@@ -1553,7 +1563,7 @@
                       },
                       {
                         "key": "blockContact",
-                        "icon": "markunreadmailbox",
+                        "icon": "perm_identity",
                         "label": "Contact",
                         "type": {
                           "ref": {

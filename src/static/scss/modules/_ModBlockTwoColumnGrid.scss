@@ -8,7 +8,13 @@ $padding-null: 0px;
   max-width: 1600px;
   margin: 0 auto;
 
-  @extend .content-padding-desktop;
+  padding-right: 5.6%;
+  padding-left: 5.6%;
+
+  @include respond-to('small') {
+    padding-left: 14.6%;
+    padding-right: 14.6%;
+  }
 }
 
 .richText-content {
@@ -30,11 +36,11 @@ $padding-null: 0px;
 
     @include respond-to('small') {
       width: 100%;
-      padding-bottom: 30px;
-      padding-top: 30px;
+      padding-bottom: 42px;
+      padding-top: 42px;
 
       img {
-        width: 80px;
+        width: 60px;
       }
     }
 
@@ -66,9 +72,27 @@ $padding-null: 0px;
 
 #padding-line-top {
   height: 173px;
+
+  @include respond-to('small') {
+    height: 60px;
+  }
 }
 
 #padding-line-bottom {
-  height:130px;
+  height: 130px;
+
+  @include respond-to('small') {
+    height: 60px;
+  }
 }
+
+#padding-line-top-mobile {
+  display: none;
+
+  @include respond-to('small') {
+    display: flex;
+    height: 60px;
+  }
+}
+
 

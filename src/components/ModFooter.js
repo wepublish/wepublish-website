@@ -41,8 +41,8 @@ export default class ModFooter extends React.Component {
       <footer id="footer">
         <div className="footer-wrapper">
           <div className="footer-left">
+            {/*{langNavigation}*/}
             <h3>{content.textLeft}</h3>
-            {langNavigation}
           </div>
 
           <div className="footer-center">

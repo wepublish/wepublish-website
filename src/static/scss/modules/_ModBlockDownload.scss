@@ -30,8 +30,8 @@ $teaserSpot-line-height: 0.85px;
   border-radius: 100%;
 
   @include respond-to('small') {
-    width: 200px;
-    height: 200px;
+    width: 159px;
+    height: 159px;
     margin: 0 auto;
   }
 }
@@ -39,9 +39,11 @@ $teaserSpot-line-height: 0.85px;
 .download-text {
   padding-bottom: $teaserSpot-text-padding-bottom;
   padding-top: 50px;
+  line-height: 1.6;
 
   @include respond-to('small') {
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 52px;
   }
 }
 
@@ -54,9 +56,17 @@ $teaserSpot-line-height: 0.85px;
 
   @include respond-to('small') {
     img {
-      width: 50px;
+      height: 55px;
     }
   }
+}
+
+.download-img-div {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .download-arrow {
@@ -126,8 +136,20 @@ $teaserSpot-line-height: 0.85px;
     display: flex;
   }
   100% {
-    top: 40px;
+    top: 70px;
     opacity: 1;
+  }
+
+  @include respond-to('small') {
+    0% {
+      opacity: 0;
+      top: 0px;
+      display: flex;
+    }
+    100% {
+      top: 20px;
+      opacity: 1;
+    }
   }
 }
 

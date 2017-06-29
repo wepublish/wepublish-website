@@ -7,18 +7,22 @@ $header-line-width: 145px;
 $header-line-height: 2.2px;
 
 .header-container{
-  background-color: black;
+  background-color: $wepub-col-grey-black;
 }
 
 .header-background {
-  padding-top: 100px;
-  background-size: cover;
+  padding-top: 34px;
+  //background-size: cover;
   //height: 656px;
-  background-repeat: no-repeat;
-  background-position: center;
+  //background-repeat: no-repeat;
+  //background-position: center;
 
   max-width: 1600px;
   margin: 0 auto;
+
+  @include respond-to('small') {
+    padding-top: 39px;
+  }
 
   .block-iframe {
     position: relative;

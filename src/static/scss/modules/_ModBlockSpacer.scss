@@ -6,3 +6,23 @@
   width: 4px;
   margin: 0 auto;
 }
+
+.spacer-desktop {
+  display: flex;
+
+  @include respond-to('small') {
+    display: none;
+  }
+}
+
+.spacer-mobile {
+  display: none;
+
+  @include respond-to('small') {
+    display: block;
+  }
+
+  #spacer-line-mobile {
+    width: 3px !important;
+  }
+}

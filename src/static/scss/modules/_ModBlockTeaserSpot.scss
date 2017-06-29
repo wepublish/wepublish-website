@@ -1,5 +1,5 @@
 $teaserSpot-wrapper-padding-top: 73px;
-$teaserSpot-img-padding-bottom: 18.5px;
+$teaserSpot-img-padding-bottom: 33px;
 $teaserSpot-text-padding-bottom: 14px;
 
 $teaserSpot-line-width: 82.6px;
@@ -13,6 +13,10 @@ $teaserSpot-line-height: 0.85px;
   padding-top: $teaserSpot-wrapper-padding-top;
   flex-wrap: wrap;
 
+  @include respond-to('small') {
+    padding-top: 0px;
+  }
+
   @extend .content-padding-desktop;
 }
 
@@ -24,15 +28,20 @@ $teaserSpot-line-height: 0.85px;
   }
 }
 
+.teaserSpot-content:first-of-type {
+  @include respond-to('small') {
+    padding-top: 33px;
+  }
+}
+
 .teaserSpot-img {
   padding-bottom: $teaserSpot-img-padding-bottom;
 
   @include respond-to('small') {
-    padding-top: $teaserSpot-img-padding-bottom;
     padding-bottom: 30px;
 
     img {
-      width: 60%;
+      width: 159px;
     }
   }
 }
@@ -40,7 +49,11 @@ $teaserSpot-line-height: 0.85px;
 .teaserSpot-text {
   padding-bottom: $teaserSpot-text-padding-bottom;
 
+  h3 {
+    color: $wepub-col-dark-mid-grey;
+  }
+
   @include respond-to('small') {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 }
