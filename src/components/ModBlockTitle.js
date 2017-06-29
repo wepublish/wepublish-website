@@ -1,32 +1,39 @@
 import React from 'react'
 import ModRichText from  './common/ModRichText'
 import {backgroundColorSwitch} from '../common/DDUtil'
+import {hasRichTextContent} from '../common/DDUtil'
 
 export default class ModBlockTitle extends React.Component {
 
   render() {
     const {content} = this.props
-
-    console.log(content)
+    let title = null;
+    let subtitle = null;
 
     let backgroundColor = backgroundColorSwitch(content.backgroundColor)
 
-    let title = (
-      <div className="title">
-        <ModRichText richText={content.title}/>
-      </div>
-    )
+    console.log(content)
 
-    let subtitle = (
-      <div className="subtitle">
-        <ModRichText richText={content.subtitle}/>
-      </div>
-    )
+    if (hasRichTextContent(content.title)) {
+      title = (
+        <div className="title">
+          <ModRichText richText={content.title}/>
+        </div>
+      )
+    }
+
+    if (hasRichTextContent(content.subtitle)) {
+      subtitle = (
+        <div className="subtitle">
+          <ModRichText richText={content.subtitle}/>
+        </div>
+      )
+    }
 
     return (
       <div className={backgroundColor}>
-          <div id={content.anchorName}></div>
-          <div className="title-wrapper">
+        <div className="title-wrapper">
+          <a id={content.anchorName.toLowerCase()} className="anchor-padding"></a>
           {title}
           {subtitle}
         </div>

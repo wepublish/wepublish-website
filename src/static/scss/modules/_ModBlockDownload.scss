@@ -39,6 +39,10 @@ $teaserSpot-line-height: 0.85px;
 .download-text {
   padding-bottom: $teaserSpot-text-padding-bottom;
   padding-top: 50px;
+
+  @include respond-to('small') {
+    padding-bottom: 50px;
+  }
 }
 
 .download-img-wrapper {

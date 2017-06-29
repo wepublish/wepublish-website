@@ -110,28 +110,6 @@ export default class ModApp extends React.Component {
         this.setStateBy(result)
       })
     }
-
-    if (typeof window !== 'undefined') {
-      // window.addEventListener('scroll', function (e) {
-      //   let scrollPositionY = window.pageYOffset || document.documentElement.scrollTop
-      //   let app = window.document.getElementById("navigation-burger")
-      //   let naviText = window.document.getElementById("navigation-text")
-      //
-      //
-      //   if (this.lastKnownScrollPosition < scrollPositionY || scrollPositionY < 44) {
-      //     if (scrollPositionY > 100) {
-      //       addClassToElement(app, "menu-content")
-      //       addClassToElement(naviText, "menu-content")
-      //     }
-      //     else {
-      //       removeClassFromElement(app, "menu-content")
-      //       removeClassFromElement(naviText, "menu-content")
-      //     }
-      //   }
-      //
-      //   this.lastKnownScrollPosition = scrollPositionY
-      // })
-    }
   }
 
   onNavToggle(isNaviOpen) {
@@ -157,13 +135,18 @@ export default class ModApp extends React.Component {
         <ModNavigation navigationTree={this.state.navigationTree}
                        currentLanguage={currentLanguage}
                        naviOpen={this.state.naviOpen}
-                       onNavToggle={this.onNavToggle}/>
+                       onNavToggle={this.onNavToggle}
+                       pathname={this.props.location.pathname}
+                       config={this.state.config}
+                       content={this.state.content}
+        />
         <ModContent config={this.state.config}
                     content={this.state.content}
                     naviOpen={this.state.naviOpen}
                     onNavToggle={this.onNavToggle}
         />
-        <ModFooter content={this.state.footer} currentLanguage={currentLanguage} splat={this.props.params.splat} navigationTree={this.state.navigationTree}
+        <ModFooter content={this.state.footer} currentLanguage={currentLanguage} splat={this.props.params.splat}
+                   navigationTree={this.state.navigationTree}
         />
       </div>
     )

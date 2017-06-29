@@ -844,11 +844,6 @@
                   "grey": "Grey"
                 }
               }
-            },
-            "anchorName": {
-              "text": {
-                "label": "Anchor Name"
-              }
             }
           },
           "layout": {
@@ -868,11 +863,6 @@
                 {
                   "field": {
                     "key": "backgroundColor"
-                  }
-                },
-                {
-                  "field": {
-                    "key": "anchorName"
                   }
                 }
               ]
@@ -1016,11 +1006,6 @@
                   "white": "White"
                 }
               }
-            },
-            "anchorName": {
-              "text": {
-                "label": "Anchor Name"
-              }
             }
           },
           "layout": {
@@ -1060,11 +1045,6 @@
                 {
                   "field": {
                     "key": "lineColor"
-                  }
-                },
-                {
-                  "field": {
-                    "key": "anchorName"
                   }
                 }
               ]
@@ -1573,7 +1553,7 @@
                       },
                       {
                         "key": "blockContact",
-                        "icon": "filter_3",
+                        "icon": "markunreadmailbox",
                         "label": "Contact",
                         "type": {
                           "ref": {

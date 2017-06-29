@@ -8,7 +8,7 @@ import {searchNavigationNodeById} from '../caas/CaasHelper'
  * @returns {boolean}
  */
 export function hasContent(property) {
-  if (typeof property == "string") {
+  if (typeof property === "string") {
     return property !== ""
   }
 
@@ -221,6 +221,12 @@ export function lineColorSwitch(lineColor) {
   }
 
   return lineColor;
+}
+
+export function hasRichTextContent(richText) {
+  console.log('fdsfds')
+
+  return !(richText.blocks.length === 1 && !hasContent(richText.blocks[0].text))
 }
 
 

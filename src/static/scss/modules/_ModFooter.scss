@@ -41,8 +41,11 @@ $padding-null: 0px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    justify-content: flex-end;
+    width: 33%;
 
     @include respond-to('small') {
+      width: 100%;
       align-items: center;
       flex-direction: column;
       order: 1;
@@ -64,14 +67,21 @@ $padding-null: 0px;
   }
 
   .footer-center {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+
     @include respond-to('small') {
       order: 2;
+      width: 100%;
     }
   }
 
   .footer-left {
+    width: 33%;
     @include respond-to('small') {
       order: 3;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;

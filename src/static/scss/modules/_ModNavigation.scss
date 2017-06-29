@@ -173,6 +173,7 @@ $null: 0px;
     font-family: $font-bold;
     font-size: $font-33px;
     line-height: 1.3;
+    color: white;
   }
 }
 
@@ -278,7 +279,6 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
 
   ul, li {
     display: inline-block;
-    padding-right: 14px;
   }
 
   a {
@@ -335,4 +335,26 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   padding-top: $navi-line-padding-top;
   width: $navi-line-width;
   border-bottom: $navi-line-height solid black;
+}
+
+.navigation-anchors {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  .anchor-link {
+    color: $wepub-col-dark-mid-grey;
+    font-family: $font-bold;
+  }
+
+  @include respond-to('small') {
+    display: none;
+  }
+}
+
+.anchor-padding {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
