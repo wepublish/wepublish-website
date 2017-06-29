@@ -110,6 +110,9 @@ export default class ModApp extends React.Component {
         this.setStateBy(result)
       })
     }
+
+    document.addEventListener("touchstart", function () {
+    }, true);
   }
 
   onNavToggle(isNaviOpen) {
@@ -121,9 +124,6 @@ export default class ModApp extends React.Component {
 
   render() {
     let currentLanguage = getCurrentLanguageOrFallBackByPath(this.props.location.pathname)
-
-    document.addEventListener("touchstart", function () {
-    }, true);
 
     if (!this.state) {
       return (
