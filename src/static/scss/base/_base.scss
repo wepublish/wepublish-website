@@ -21,6 +21,10 @@ h1 {
   font-size: $font-60px;
   line-height: 1.2;
   font-family: $font-bold;
+
+  @include respond-to('small') {
+    font-size: $font-40px;
+  }
 }
 
 h2 {

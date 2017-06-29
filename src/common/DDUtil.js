@@ -224,8 +224,6 @@ export function lineColorSwitch(lineColor) {
 }
 
 export function hasRichTextContent(richText) {
-  console.log('fdsfds')
-
   return !(richText.blocks.length === 1 && !hasContent(richText.blocks[0].text))
 }
 

@@ -7,12 +7,10 @@ export default class ModBlockTitle extends React.Component {
 
   render() {
     const {content} = this.props
+
     let title = null;
     let subtitle = null;
-
     let backgroundColor = backgroundColorSwitch(content.backgroundColor)
-
-    console.log(content)
 
     if (hasRichTextContent(content.title)) {
       title = (
