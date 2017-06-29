@@ -11,14 +11,16 @@ $header-line-height: 2.2px;
 }
 
 .header-background {
+  //Todo maybe baby
   padding-top: 34px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+
   //background-size: cover;
   //height: 656px;
   //background-repeat: no-repeat;
   //background-position: center;
-
-  max-width: 1600px;
-  margin: 0 auto;
 
   @include respond-to('small') {
     padding-top: 39px;
