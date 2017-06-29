@@ -110,9 +110,6 @@ export default class ModApp extends React.Component {
         this.setStateBy(result)
       })
     }
-
-    document.addEventListener("touchstart", function () {
-    }, true);
   }
 
   onNavToggle(isNaviOpen) {
