@@ -220,7 +220,7 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js" defer="true"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
     <script src="${bundleJs}" defer="true"></script>
-    {gaSnippet}
+    ${gaSnippet}
     </body>
     </html>
    `
