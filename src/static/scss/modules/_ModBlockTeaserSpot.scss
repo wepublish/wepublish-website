@@ -61,8 +61,4 @@ $teaserSpot-line-height: 0.85px;
   h3 {
     color: $wepub-col-dark-mid-grey;
   }
-
-  @include respond-to('small') {
-    padding-bottom: 60px;
-  }
 }
