@@ -89,7 +89,7 @@ $magic-pixel: 1px;
 //Breakpoints
 $breakpoints: (
         'small': (max-width: 767px),
-        'medium': (min-width: 768px),
+        'medium': (max-width: 980px),
 );
 
 // Layers (z-index)

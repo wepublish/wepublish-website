@@ -16,21 +16,16 @@ export default class ModBlockContact extends React.Component {
       <div className={backgroundColor}>
         <div className="contact-wrapper">
           <div className="contact-img-content">
-
             <ModAnchorTag linkObject={content.imageLink}>
-
               <div className="contact-img-wrapper">
-
-
                 <img className="contact-arrow" src={require("../static/img/arrow-right.png")}/>
-
-
                 <ModImgTag className="contact-img" imgObject={content.image}/>
               </div>
             </ModAnchorTag>
           </div>
-
-          <ModRichText richText={content.textBlock}/>
+          <ModAnchorTag linkObject={content.imageLink}>
+            <ModRichText richText={content.textBlock}/>
+          </ModAnchorTag>
         </div>
       </div>
     )

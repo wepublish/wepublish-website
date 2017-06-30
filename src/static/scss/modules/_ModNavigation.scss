@@ -353,6 +353,10 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   .anchor-container {
     padding-left: 30px;
 
+    @include respond-to('medium') {
+      padding-left: 15px;
+    }
+
     @include respond-to('small') {
       display: none;
     }
@@ -361,6 +365,10 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   .anchor-link {
     color: $wepub-col-dark-mid-grey;
     font-family: $font-bold;
+
+    @include respond-to('medium') {
+      font-size: $font-19px;
+    }
   }
 }
 
@@ -372,11 +380,18 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
 }
 
 .languages-navigation-anchors {
-  display: inline-block;
   text-transform: uppercase;
   color: $wepub-col-dark-mid-grey;
   padding-left: 40px;
   font-family: $font-bold;
+  font-size: $font-17px;
+  display: flex;
+  align-items: flex-end;
+  line-height: 1.2;
+
+  @include respond-to('medium') {
+    padding-left: 20px;
+  }
 
   @include respond-to('small') {
     font-size: $font-15px;
@@ -393,11 +408,11 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   li:last-of-type {
     padding-right: $padding-null;
   }
-}
 
-a {
-  color: $wepub-col-dark-mid-grey !important;
-  text-decoration: none;
+  a {
+    color: $wepub-col-dark-mid-grey;
+    text-decoration: none;
+  }
 }
 
 .active {

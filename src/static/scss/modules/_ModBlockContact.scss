@@ -5,6 +5,10 @@
   align-items: center;
   padding-bottom: 135px;
 
+  a {
+    color: $theme-col-real-black;
+  }
+
   @include respond-to('small') {
     padding-top: 30px;
     padding-bottom: 40px;

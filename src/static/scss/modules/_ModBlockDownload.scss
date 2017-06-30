@@ -41,6 +41,10 @@ $teaserSpot-line-height: 0.85px;
   padding-top: 50px;
   line-height: 1.6;
 
+  a {
+    color: $theme-col-real-black;
+  }
+
   @include respond-to('small') {
     padding-top: 25px;
     padding-bottom: 52px;

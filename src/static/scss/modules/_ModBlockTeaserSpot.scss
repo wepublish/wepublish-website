@@ -23,6 +23,11 @@ $teaserSpot-line-height: 0.85px;
 .teaserSpot-content {
   text-align: center;
 
+  @include respond-to('medium') {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
   @include respond-to('small') {
     width: 100%;
   }
@@ -36,6 +41,10 @@ $teaserSpot-line-height: 0.85px;
 
 .teaserSpot-img {
   padding-bottom: $teaserSpot-img-padding-bottom;
+
+   @include respond-to('medium') {
+     padding-bottom: 20px;
+   }
 
   @include respond-to('small') {
     padding-bottom: 30px;

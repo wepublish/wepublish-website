@@ -28,7 +28,7 @@ $header-line-height: 2.2px;
       padding-top: 100px;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100.05%;
       height: 100%;
 
       @include respond-to('small') {
@@ -60,4 +60,8 @@ $header-line-height: 2.2px;
   width: $header-line-width;
   border-bottom: $header-line-height solid white;
 }
+
+  div.video-wrapper {
+    background: $theme-col-white !important;
+  }
 

@@ -9,6 +9,8 @@
 
 .spacer-desktop {
   display: flex;
+  margin-bottom: -1px;
+  margin-top: -1px;
 
   @include respond-to('small') {
     display: none;
@@ -20,6 +22,8 @@
 
   @include respond-to('small') {
     display: block;
+    margin-bottom: -1px;
+    margin-top: -1px;
   }
 
   #spacer-line-mobile {

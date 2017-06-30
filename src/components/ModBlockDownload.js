@@ -13,7 +13,6 @@ export default class ModBlockDownload extends React.Component {
     let backgroundColor = backgroundColorSwitch(content.backgroundColor)
     let lineColor = lineColorSwitch(content.lineColor)
 
-
     return (
       <div className={backgroundColor}>
         <div className="download-wrapper">
@@ -30,7 +29,9 @@ export default class ModBlockDownload extends React.Component {
               </ModAnchorTag>
             </div>
             <div className="download-text">
-              <ModRichText richText={content.textLeft}/>
+              <ModAnchorTag linkObject={content.imageLinkLeft}>
+                <ModRichText richText={content.textLeft}/>
+              </ModAnchorTag>
             </div>
           </div>
 
@@ -48,7 +49,9 @@ export default class ModBlockDownload extends React.Component {
               </ModAnchorTag>
             </div>
             <div className="download-text">
-              <ModRichText richText={content.textRight}/>
+              <ModAnchorTag linkObject={content.imageLinkLeft}>
+                <ModRichText richText={content.textRight}/>
+              </ModAnchorTag>
             </div>
           </div>
 
