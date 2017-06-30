@@ -166,6 +166,7 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
 
   const markup = `
     <html lang="${currentLanguage}">
+    ${ascii}
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <base href="${base}/">
@@ -224,5 +225,5 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     </body>
     </html>
    `
-  return "<!doctype html>" + ascii + markup
+  return "<!doctype html>" + markup
 }
