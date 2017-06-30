@@ -216,10 +216,6 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
 
     <body>
     <div id="app-wrapper">${appHtml}</div>
-    <script src="https://checkout.stripe.com/checkout.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.jquery.min.js" defer="true"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js" defer="true"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
     <script src="${bundleJs}" defer="true"></script>
     ${gaSnippet}
     </body>
