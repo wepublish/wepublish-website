@@ -565,6 +565,11 @@
                 },
                 {
                   "field": {
+                    "key": "logo"
+                  }
+                },
+                {
+                  "field": {
                     "key": "backgroundImage"
                   }
                 },

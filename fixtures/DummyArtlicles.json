@@ -3,7 +3,7 @@
     "id": "dummyArticleHome",
     "target": "{{ModelArticle}}",
     "definition": {
-      "blockName": "Home",
+      "blockName": "DE Home",
       "title": "Home",
       "description": "Home",
       "tags": [
@@ -77,7 +77,91 @@
           "blockContact": "{{dummyBlockContact}}"
         }
       ],
-      "navigationNode": "{{naviHome}}",
+      "navigationNode": "{{naviHomeDE}}",
+      "publishDate": 0,
+      "expiryDate": 0,
+      "isLive": true
+    }
+  },
+  {
+    "id": "dummyArticleHome",
+    "target": "{{ModelArticle}}",
+    "definition": {
+      "blockName": "FR Home",
+      "title": "Home",
+      "description": "Home",
+      "tags": [
+        "Home",
+        "duda group",
+        "karma"
+      ],
+      "shareImage": "{{dummyDocumentKarmaLogo}}",
+      "contents": [
+        {
+          "blockHeader": "{{dummyBlockHeaderFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerWhite}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockVisionTitleFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerWhite}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerGrey}}"
+        },
+        {
+          "blockRichTextTab": "{{dummyBlockRichTextTabFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerGrey}}"
+        },
+        {
+          "blockTwoColGrid": "{{dummyBlockTwoColumnGridFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerBlack}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockTeamTitleFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerBlack}}"
+        },
+        {
+          "blockTeaserSpot": "{{dummyBlockTeaserSpotFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerBlack}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerGrey}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockDownloadTitleFR}}"
+        },
+        {
+          "blockDownload": "{{dummyBlockDownloadFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerGrey}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockSpacerTurquoise}}"
+        },
+        {
+          "blockTitle": "{{dummyBlockKontaktTitleFR}}"
+        },
+        {
+          "blockSpacer": "{{dummyBlockOnlyMobile}}"
+        },
+        {
+          "blockContact": "{{dummyBlockContactFR}}"
+        }
+      ],
+      "navigationNode": "{{naviHomeFR}}",
       "publishDate": 0,
       "expiryDate": 0,
       "isLive": true

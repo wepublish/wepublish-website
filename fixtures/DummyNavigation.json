@@ -22,7 +22,7 @@
       "slug": "de",
       "showInMenu": true,
       "children": [
-        "{{naviHome}}",
+        "{{naviHomeDE}}",
         "{{naviFooter}}"
       ]
     }
@@ -31,21 +31,33 @@
     "id": "navigationNodeEN",
     "target": "{{ModelNavigationNode}}",
     "definition": {
-      "blockName": "EN Root",
-      "label": "EN",
-      "slug": "en",
+      "blockName": "FR Root",
+      "label": "FR",
+      "slug": "fr",
       "showInMenu": true,
       "children": [
-        "{{naviHome}}",
+        "{{naviHomeFR}}",
         "{{naviFooter}}"
       ]
     }
   },
   {
-    "id": "naviHome",
+    "id": "naviHomeDE",
     "target": "{{ModelNavigationNode}}",
     "definition": {
-      "blockName": "Home",
+      "blockName": "DE Home",
+      "label": "Home",
+      "slug": "home",
+      "showInMenu": true,
+      "children": [
+      ]
+    }
+  },
+  {
+    "id": "naviHomeFR",
+    "target": "{{ModelNavigationNode}}",
+    "definition": {
+      "blockName": "FR Home",
       "label": "Home",
       "slug": "home",
       "showInMenu": true,

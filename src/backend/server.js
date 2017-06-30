@@ -135,15 +135,58 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', '${gaPropertyId}', 'auto');
+
+    ga('create', 'UA-101928317-1', 'auto');
     ga('send', 'pageview');
+
     </script>
     <!-- End Google Analytics -->`
   }
 
   const markup = `
     <html lang="${currentLanguage}">
+    <!-- 
+                                                                                                                    
+                             :                                                                                       
+                            '                                                                                        
+                           #                                                                                         
+                          #`
+                         #,
+                        #'
+                      ,##
+                     '##
+                    ###
+              # '  ###
+             ## '#  #
+            ### '##
+           #### '###
+          ##### '####
+         ###### '#####
+        ####### '######
+       ######## '#######
+      ######### '########
+     ########## '#########
+    ###########                    ##    ##   #####      +###  ##### `####+    `#####         ###.'#     ##   #####
+   ############                    ##   ##;  ###'###.   ###'. ###'######'###  ,###'###       ###' '#     ##  ###'###
+  #############                    ##  ##;  ##     ##  '#+   '#,   +##    ##  ##    `##     ##    '#     ## '#,   +# 
+ ##############                    ## ##;   #'     ,#, ##    ##     ##    .#,;#.     +#    `#'    '#     ## ##     #'
+ ##############                    ####;   :#       ## ##    ##     ##     #'##       #:   ;#     '#     ## ##     ##
+  #############                    #####   :#`      ## ##    ##     ##     #'##      .#:   '#     '#     ## ##     ##
+   ############                    ## ###   ##     +## ##    ##     ##     #'.#'     ##:   '#     ,#.    ## ##     ##
+    ###########                    ##  ###  ##+   ;### ##    ##     ##     #' ##:   +##:   '#      ##   '#' ##     ##
+     ##########                    ##   ###  ######### ##    ##     ##     #'  ########:   '#      ;######  ##     ##
+      #########                    '#    ##   :###; #; #'    ##     #'     #.   '###: #` # .#       .###+   ##     #'
+       ########
+        #######
+         ######
+          #####
+           ####
+            ###
+             ##
+              #
+
+
+    -->
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <base href="${base}/">
@@ -151,8 +194,8 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <title>${metaFields.title}</title>
     <meta name="description" content="${metaFields.description}">
     <meta name="keywords" content="${metaFields.keywords}">
-    
-    
+
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -160,7 +203,7 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- Open graph -->
     <meta property="og:url" content="${ogUrl}" />
     <meta property="og:description" content="${metaFields.description}"/>
@@ -172,25 +215,25 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <meta property="og:image:type" content="${metaFields.shareImage_format}" />
     <meta property="og:image:width" content="${metaFields.shareImage_width}" />
     <meta property="og:image:height" content="${metaFields.shareImage_height}" />
-	
+
     <!-- Twitter summary card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@karma" />
     <meta name="twitter:title" content="${metaFields.title}" />
     <meta name="twitter:description" content="${metaFields.description}" />
     <meta name="twitter:image:src" content="${metaFields.shareImage_url}" />
-    
+
     <!-- Mobile viewport optimization -->
 	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	
+
 	  <!-- React State -->
     <script>var APP_PROPS=${JSON.stringify(setting)}</script>
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.5/css/swiper.min.css"/>
     <link rel="stylesheet" href="${css}"/>
     </head>
-    
+
     <body>
     <div id="app-wrapper">${appHtml}</div>
     <script src="https://checkout.stripe.com/checkout.js"></script>

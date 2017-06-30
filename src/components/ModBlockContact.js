@@ -23,9 +23,11 @@ export default class ModBlockContact extends React.Component {
               </div>
             </ModAnchorTag>
           </div>
-          <ModAnchorTag linkObject={content.imageLink}>
-            <ModRichText richText={content.textBlock}/>
-          </ModAnchorTag>
+          <div className="contact-text">
+            <ModAnchorTag linkObject={content.imageLink}>
+              <ModRichText richText={content.textBlock}/>
+            </ModAnchorTag>
+          </div>
         </div>
       </div>
     )

@@ -3,7 +3,7 @@
     "id": "dummyBlockHeader",
     "target": "{{ModBlockHeader}}",
     "definition": {
-      "blockName": "Header iFrame",
+      "blockName": "DE Header iFrame",
       "backgroundImage": "{{dummyDocumentHeaderImg}}",
       "logo": "{{dummyDocumentKarmaLogo}}",
       "title": {
@@ -26,7 +26,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -65,7 +65,7 @@
     "id": "dummyBlockVisionTitle",
     "target": "{{ModBlockTitle}}",
     "definition": {
-      "blockName": "Vision Title",
+      "blockName": "DE Vision Title",
       "title": {
         "entityMap": {
           "0": {
@@ -86,7 +86,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -121,7 +121,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -144,7 +144,7 @@
     "id": "dummyBlockRichTextTab",
     "target": "{{ModBlockRichTextTab}}",
     "definition": {
-      "blockName": "Block RichTextTab",
+      "blockName": "DE Block RichTextTab",
       "list": [
         {
           "title": "Das Ziel",
@@ -168,7 +168,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -206,7 +206,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -244,7 +244,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -282,7 +282,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -306,7 +306,7 @@
     "id": "dummyBlockTwoColumnGrid",
     "target": "{{TwoColumnGrid}}",
     "definition": {
-      "blockName": "Wir sind",
+      "blockName": "DE Wir sind",
       "textLeft": {
         "entityMap": {
           "0": {
@@ -327,7 +327,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -451,7 +451,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -569,7 +569,7 @@
     "id": "dummyBlockTeamTitle",
     "target": "{{ModBlockTitle}}",
     "definition": {
-      "blockName": "Team Title",
+      "blockName": "DE Team Title",
       "title": {
         "entityMap": {
           "0": {
@@ -590,7 +590,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -625,7 +625,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -648,7 +648,7 @@
     "id": "dummyBlockTeaserSpot",
     "target": "{{ModBlockTeaserSpot}}",
     "definition": {
-      "blockName": "Block TeaserSpot",
+      "blockName": "DE Block TeaserSpot",
       "list": [
         {
           "image": "{{dummyDocumentTwitterLogo}}",
@@ -675,7 +675,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -740,7 +740,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -797,7 +797,7 @@
                 "type": "LINK",
                 "mutability": "MUTABLE",
                 "data": {
-                  "navigationNode": "{{naviHome}}"
+                  "navigationNode": "{{naviHomeDE}}"
                 }
               }
             },
@@ -848,7 +848,7 @@
     "id": "dummyBlockDownloadTitle",
     "target": "{{ModBlockTitle}}",
     "definition": {
-      "blockName": "Download Title",
+      "blockName": "DE Download Title",
       "title": {
         "entityMap": {
           "0": {
@@ -869,7 +869,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -904,7 +904,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -927,7 +927,7 @@
     "id": "dummyBlockDownload",
     "target": "{{ModBlockDownload}}",
     "definition": {
-      "blockName": "Block Download",
+      "blockName": "DE Block Download",
       "imageLeft": "{{dummyDocumentAniDocument}}",
       "imageLinkLeft": {
         "url": "http://www.dudagroup.com"
@@ -952,7 +952,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -999,7 +999,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -1030,7 +1030,7 @@
     "id": "dummyBlockKontaktTitle",
     "target": "{{ModBlockTitle}}",
     "definition": {
-      "blockName": "Kontakt Title",
+      "blockName": "DE Kontakt Title",
       "title": {
         "entityMap": {
           "0": {
@@ -1051,7 +1051,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -1086,7 +1086,7 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
@@ -1131,7 +1131,7 @@
     "id": "dummyBlockContact",
     "target": "{{ModBlockContact}}",
     "definition": {
-      "blockName": "Block Contact",
+      "blockName": "DE Block Contact",
       "image": "{{dummyDocumentAniLetter}}",
       "imageLink": {
         "url": "http://www.dudagroup.com"
@@ -1156,7 +1156,1127 @@
             "type": "LINK",
             "mutability": "MUTABLE",
             "data": {
-              "navigationNode": "{{naviHome}}"
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Mail schicken",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockHeaderFR",
+    "target": "{{ModBlockHeader}}",
+    "definition": {
+      "blockName": "FR Header iFrame",
+      "backgroundImage": "{{dummyDocumentHeaderImg}}",
+      "logo": "{{dummyDocumentKarmaLogo}}",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Die Plattform für",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Medienvielfalt",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "aspectRatio": "16:9",
+      "snippet": "<iframe src='https://player.vimeo.com/video/223128477' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    }
+  },
+  {
+    "id": "dummyBlockVisionTitleFR",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "FR Vision Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Vision",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "white",
+      "anchorName": "Vision"
+    }
+  },
+  {
+    "id": "dummyBlockRichTextTabFR",
+    "target": "{{ModBlockRichTextTab}}",
+    "definition": {
+      "blockName": "FR Block RichTextTab",
+      "list": [
+        {
+          "title": "Das Ziel",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Wer heutzutage professionellen Online-Journalismus betreiben will, läuft schnell Gefahr, sich in technischen Problemen zu verlieren. Gerade kleinere Journalismus-Organisationen, die den Schritt in die Online-Publizistik wagen, kann dies überfordern. Deshalb ist eine gemeinsame Infrastruktur, auf der hochwertiger Journalismus mit guten Inhalten, neue Medienmarken und ein kompetitives und zeitgemässes Mediensystem entwickelt werden kann, sinnvoll und notwendig. Wir haben uns diesem Ziel verschrieben.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "title": "Der Weg",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Deshalb ist eine gemeinsame Infrastruktur, auf der hochwertiger Journalismus mit guten Inhalten, neue Medienmarken und ein kompetitives und zeitgemässes Mediensystem entwickelt werden kann, sinnvoll und notwendig. Wir haben uns diesem Ziel verschrieben.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "title": "Warum?",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "title": "Für wen?",
+          "text": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Wer heutzutage professionellen Online-Journalismus betreiben will, läuft schnell Gefahr, sich in technischen Problemen zu verlieren. Gerade kleinere Journalismus-Organisationen, die den Schritt in die Online-Publizistik wagen, kann dies überfordern.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        }
+      ],
+      "backgroundColor": "grey"
+    }
+  },
+  {
+    "id": "dummyBlockTwoColumnGridFR",
+    "target": "{{TwoColumnGrid}}",
+    "definition": {
+      "blockName": "FR Wir sind",
+      "textLeft": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Wir sind nicht:",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Eine Online-Publikations-Plattform,",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "ein Blog oder Meta-Portal",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Ein kommerzielles Newsportal, das selbst Inhalte erstellt oder Uber-Journalismus förder",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Eine Datenkrake mit Lock-in Effekt",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "mit Lock-in Effekt",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "imageLeft": "{{dummyDocumentRichTextImageTwo}}",
+      "textRight": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Wir sind:",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Eine hoch innovative Open-Source Plattform",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "die erlaubt Inhalte, Medienformen frei und partizipativ zu entwickeln",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "und nach eigenen Wünschen zu vermarkten.",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "imageRight": "{{dummyDocumentRichTextImageOne}}",
+      "backgroundColor": "turquoise",
+      "lineColor": "white"
+    }
+  },
+  {
+    "id": "dummyBlockTeamTitleFR",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "Team Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Team",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "A vision is a dream with a deadline.",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "black",
+      "anchorName": "Team"
+    }
+  },
+  {
+    "id": "dummyBlockTeaserSpotFR",
+    "target": "{{ModBlockTeaserSpot}}",
+    "definition": {
+      "blockName": "FR Block TeaserSpot",
+      "list": [
+        {
+          "image": "{{dummyDocumentTwitterLogo}}",
+          "imageLink": {
+            "url": "http://www.dudagroup.com"
+          },
+          "textBlock": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentTwitterLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Konzeption / Leitung",
+                "type": "header-three",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Hansi Voigt,",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Olaf Kunz",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "image": "{{dummyDocumentHinderlingVolkart}}",
+          "imageLink": {
+            "url": "http://www.dudagroup.com"
+          },
+          "textBlock": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentHinderlingVolkart}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Branding / Frontend",
+                "type": "header-three",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Hinderling Volkart",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        },
+        {
+          "image": "{{dummyDocumentKarmaLogo}}",
+          "imageLink": {
+            "url": "http://www.dudagroup.com"
+          },
+          "textBlock": {
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "document": "{{dummyDocumentKarmaLogo}}"
+                }
+              },
+              "1": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.dudagroup.com"
+                }
+              },
+              "2": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "navigationNode": "{{naviHomeDE}}"
+                }
+              }
+            },
+            "blocks": [
+              {
+                "key": "",
+                "text": "Backend / Umsetzung",
+                "type": "header-three",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              },
+              {
+                "key": "",
+                "text": "Karma.run AG",
+                "type": "header-two",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": []
+              }
+            ]
+          }
+        }
+      ],
+      "backgroundColor": "black"
+    }
+  },
+  {
+    "id": "dummyBlockDownloadTitleFR",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "FR Download Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Downloads",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "grey",
+      "anchorName": "Download"
+    }
+  },
+  {
+    "id": "dummyBlockDownloadFR",
+    "target": "{{ModBlockDownload}}",
+    "definition": {
+      "blockName": "FR Block Download",
+      "imageLeft": "{{dummyDocumentAniDocument}}",
+      "imageLinkLeft": {
+        "url": "http://www.dudagroup.com"
+      },
+      "textLeft": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentAniDocument}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Download",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Abstract",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "imageRight": "{{dummyDocumentAniFolder}}",
+      "imageLinkRight": {
+        "url": "http://www.dudagroup.com"
+      },
+      "textRight": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentAniFolder}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Download",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          },
+          {
+            "key": "",
+            "text": "Presseinformation",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "grey",
+      "lineColor": "turquoise"
+    }
+  },
+  {
+    "id": "dummyBlockKontaktTitleFR",
+    "target": "{{ModBlockTitle}}",
+    "definition": {
+      "blockName": "FR Kontakt Title",
+      "title": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Kontakt",
+            "type": "header-two",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "subtitle": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentKarmaLogo}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
+            }
+          }
+        },
+        "blocks": [
+          {
+            "key": "",
+            "text": "Unterstützen Sie das Projekt und kontaktieren Sie uns.",
+            "type": "header-one",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": []
+          }
+        ]
+      },
+      "backgroundColor": "turquoise",
+      "anchorName": "Kontakt"
+    }
+  },
+  {
+    "id": "dummyBlockContactFR",
+    "target": "{{ModBlockContact}}",
+    "definition": {
+      "blockName": "FR Block Contact",
+      "image": "{{dummyDocumentAniLetter}}",
+      "imageLink": {
+        "url": "http://www.dudagroup.com"
+      },
+      "textBlock": {
+        "entityMap": {
+          "0": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "document": "{{dummyDocumentAniDocument}}"
+            }
+          },
+          "1": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "url": "http://www.dudagroup.com"
+            }
+          },
+          "2": {
+            "type": "LINK",
+            "mutability": "MUTABLE",
+            "data": {
+              "navigationNode": "{{naviHomeDE}}"
             }
           }
         },
