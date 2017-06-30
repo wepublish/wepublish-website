@@ -120,6 +120,13 @@ $teaserSpot-line-height: 0.85px;
     animation: moveDownArrow 0.2s;
     animation-fill-mode: forwards;
     display: block;
+
+    @include respond-to('small') {
+      position: relative;
+      animation: moveDownArrowMobile 0.2s;
+      animation-fill-mode: forwards;
+      display: block;
+    }
   }
 
   .download-img {
@@ -139,18 +146,6 @@ $teaserSpot-line-height: 0.85px;
     top: 70px;
     opacity: 1;
   }
-
-  @include respond-to('small') {
-    0% {
-      opacity: 0;
-      top: 0px;
-      display: flex;
-    }
-    100% {
-      top: 20px;
-      opacity: 1;
-    }
-  }
 }
 
 @keyframes moveDownImg {
@@ -164,5 +159,17 @@ $teaserSpot-line-height: 0.85px;
   100% {
     top: 100px;
     opacity: 0;
+  }
+}
+
+@keyframes moveDownArrowMobile {
+  0% {
+    opacity: 0;
+    top: 0px;
+    display: flex;
+  }
+  100% {
+    top: 50px;
+    opacity: 1;
   }
 }

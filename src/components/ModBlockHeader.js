@@ -22,7 +22,8 @@ export default class ModBlockHeader extends React.Component {
         <div className="header-background">
 
 
-          <div className="header-background block-iframe" style={style} dangerouslySetInnerHTML={createRichtTextMarkup(content.snippet)}/>
+          <div className="header-background block-iframe" style={style}
+               dangerouslySetInnerHTML={createRichtTextMarkup(content.snippet)}/>
 
 
           {/*<div className="header-wrapper">*/}
