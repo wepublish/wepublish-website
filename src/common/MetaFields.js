@@ -2,8 +2,8 @@ import {hasContent} from '../common/DDUtil'
 
 export function createMetaFields (content) {
   const fields = {
-    "siteName": "wepublish",
-    "title": "wepublish",
+    "siteName": "we.publish",
+    "title": "we.publish",
     "description": "",
     "keywords": "",
     "shareImage_url": "",
