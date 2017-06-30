@@ -58,7 +58,7 @@ export function stripSlashes(value) {
  * @param path
  */
 export function getCurrentLanguageByPath(path) {
-  var regexp = /^\/{0,1}(de|en)/i
+  var regexp = /^\/{0,1}(de|fr)/i
   var match = regexp.exec(path)
   if (!hasContent(match)) {
     return "unknown"
