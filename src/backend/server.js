@@ -143,9 +143,8 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <!-- End Google Analytics -->`
   }
 
-  const markup = `
-    <html lang="${currentLanguage}">
-    <!-- 
+  const ascii = `
+      <!-- 
                               &                                                                          
                           &&                                                                           
                        @&&                                                                             
@@ -163,8 +162,10 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
             &&&&                                                                                       
               &&                                                                                       
 
-    -->
-    
+    -->`
+
+  const markup = `
+    <html lang="${currentLanguage}">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <base href="${base}/">
@@ -223,5 +224,5 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     </body>
     </html>
    `
-  return "<!doctype html>" + markup
+  return "<!doctype html>" + ascii + markup
 }
