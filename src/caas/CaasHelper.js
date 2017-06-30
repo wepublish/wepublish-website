@@ -168,8 +168,6 @@ export default function SaasHelper() {
       .then(json)
       .then(response)
       .then(function (footerResult) {
-        console.log(navigationTree)
-        console.log(footerResult)
         return parseFooter(navigationTree, footerResult)
       })
       .catch(function (ex) {
