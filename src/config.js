@@ -7,7 +7,7 @@ const settings = {
   pwd: process.env.KARMA_PWD,
   caasDb: process.env.KARMA_DATABASE,
   pageCacheExpirySeconds: process.env.PAGE_CACHE_EXPIRY_SECONDS || 0,
-  mediaDomain: 'https://cloudinary-media-hub.herokuapp.com/karmarun',
+  mediaDomain: 'https://media.wepublish.media/karmarun',
   reCaptchaSitekey: process.env.RECAPTCHA_SITEKEY,
 }
 
