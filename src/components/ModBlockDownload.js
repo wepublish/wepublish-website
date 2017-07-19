@@ -54,8 +54,6 @@ export default class ModBlockDownload extends React.Component {
               </ModAnchorTag>
             </div>
           </div>
-
-
         </div>
       </div>
     )

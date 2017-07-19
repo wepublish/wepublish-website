@@ -3,7 +3,6 @@ import NavLink from './common/NavLink'
 import {hasContent, removeLanguageNavigationNode} from '../common/DDUtil'
 import {isNodeVisible} from '../caas/CaasHelper'
 
-
 export default class ModNavigation extends React.Component {
 
   constructor(props) {
@@ -94,8 +93,7 @@ export default class ModNavigation extends React.Component {
           if (item.type === this.props.config.contentTypeBlockTitle && item.content.anchorName && prevItem.length < 6) {
             prevItem.push(
               <div key={index} className="anchor-container">
-                <a className="anchor-link"
-                   href={this.props.pathname + "#" + item.content.anchorName.toLowerCase()}>{item.content.anchorName}</a>
+                <a className="anchor-link" href={this.props.pathname + "#" + item.content.anchorName.toLowerCase()}>{item.content.anchorName}</a>
               </div>
             )
           }
@@ -114,22 +112,13 @@ export default class ModNavigation extends React.Component {
         <div id="navigation-burger" className="navigation-burger menu-content">
           <div className="navigation-burger-wrapper">
             <div className="menu-content-wrapper">
-              <div id="navigation-text" href="/" className="menu-content">
-                {/*<p id="scroll-text-small">we</p>*/}
-                {/*<p id="scroll-text-small" className="color-turquoise">.</p>*/}
-                {/*<p id="scroll-text-small">publish</p>*/}
-
-                <img className="navigation-logo" src={require("../static/img/wepublish_logo.svg")}/>
-
-
+              <div id="navigation-text" className="menu-content">
+                <a href="/">
+                  <img className="navigation-logo" src={require("../static/img/wepublish_logo.svg")}></img>
+                </a>
               </div>
             </div>
             {headerMenuPoints}
-
-
-            {/*<div className="navigation-icon" onClick={this.toggleNavigation}>*/}
-            {/*<img className="navigation-icon-open" src={require("../static/img/naviBurger.svg")}/>*/}
-            {/*</div>*/}
           </div>
         </div>
 

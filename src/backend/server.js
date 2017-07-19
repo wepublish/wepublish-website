@@ -145,11 +145,11 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
 
   const ascii = `
       <!-- 
-                              &                                                                          
-                          &&                                                                           
-                       @&&                                                                             
+                           &                                                                          
+                         &&                                                                           
+                       &&                                                                             
                      &&&                                                                               
-              @& &@ &&                                                                                 
+              @& &@ &&&                                                                                 
             @&&& &&&@                                                                                  
           @&&&&& &&&&&@                                                                                
         @&&&&&&& &&&&&&&@                                                                              

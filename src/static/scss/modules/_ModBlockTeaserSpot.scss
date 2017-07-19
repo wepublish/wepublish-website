@@ -24,6 +24,7 @@ $teaserSpot-line-height: 0.85px;
 
 .teaserSpot-content {
   text-align: center;
+  width: 33%;
 
   @include respond-to('medium') {
     width: 100%;
