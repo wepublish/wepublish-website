@@ -10,8 +10,10 @@
   }
 
   @include respond-to('small') {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    //padding-top: 30px;
+    //padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .contact-img-content {
@@ -49,9 +51,9 @@
 }
 
 .contact-text {
-  @include respond-to('small') {
-    display: none;
-  }
+  //@include respond-to('small') {
+  //  display: none;
+  //}
 }
 
 .contact-img-wrapper {
