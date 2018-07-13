@@ -1,8 +1,8 @@
 import React from 'react'
-import {renderToString} from 'react-dom/server'
-import {match, RouterContext} from 'react-router'
-import {createMetaFields} from '../common/MetaFields'
-import {getCurrentLanguageByPath, hasContent} from '../common/DDUtil'
+import { renderToString } from 'react-dom/server'
+import { match, RouterContext } from 'react-router'
+import { createMetaFields } from '../common/MetaFields'
+import { getCurrentLanguageByPath, hasContent } from '../common/DDUtil'
 import express from 'express'
 import compression from 'compression'
 import Routes from '../components/Router'
@@ -20,7 +20,7 @@ app.use('/build', express.static('dist/build'))
 app.use('/static', express.static('dist/static'))
 app.use('/', express.static('dist/favicon'))
 app.get('*', (req, res) => {
-  match({routes: Routes, location: req.url}, (err, redirect, props) => {
+  match({ routes: Routes, location: req.url }, (err, redirect, props) => {
 
     if (err) {
       res.status(500).send(err.message)
@@ -29,16 +29,22 @@ app.get('*', (req, res) => {
       res.redirect(redirect.pathname + redirect.search)
     }
     else if (props) {
-      // // Check Language
-      // const currentLanguage = getCurrentLanguageByPath(req.path)
-      // if (currentLanguage === 'unknown') {
-      //   res.redirect('/de')
-      //   return
-      // }
-      // if (/^\/de[\/]{0,1}$/.test(req.path)) {
-      //   res.redirect(req.path)
-      //   return
-      // }
+      // Check Language
+      const currentLanguage = getCurrentLanguageByPath(req.path)
+      if (currentLanguage === 'unknown') {
+        res.redirect('/de')
+
+        const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
+        res.send(html)
+      }
+      if (/^\/de[\/]{0,1}$/.test(req.path)) {
+        res.redirect(req.path)
+
+        const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
+        res.send(html)
+        
+        return
+      }
     }
     else {
       res.status(404).send('Not Found')
@@ -51,7 +57,7 @@ app.listen(PORT, function () {
 
 function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
   const all = Object.assign(renderProps, setting)
-  const appHtml = renderToString(<RouterContext {...all}/>)
+  const appHtml = renderToString(<RouterContext {...all} />)
   const metaFields = createMetaFields(setting)
   const base = '//' + req.get('host')
   const bundleJs = base + '/build/bundle.js'
