@@ -11,6 +11,7 @@ import config from '../config'
 
 var MemJS = require('memjs').Client
 var memjs = MemJS.create()
+var additionalProps = null
 
 var PORT = process.env.PORT || 8000
 
