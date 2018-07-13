@@ -6,8 +6,8 @@ import {getCurrentLanguageByPath, hasContent} from '../common/DDUtil'
 import express from 'express'
 import compression from 'compression'
 import Routes from '../components/Router'
-import CaasHelper from '../caas/CaasHelper'
-import config from '../config'
+// import CaasHelper from '../caas/CaasHelper'
+// import config from '../config'
 
 var MemJS = require('memjs').Client
 var memjs = MemJS.create()
@@ -71,44 +71,44 @@ app.listen(PORT, function () {
   console.log('Express server running at localhost:' + PORT)
 })
 
-function cachePage(req, html) {
-  if (isPageCacheEnabled(req)) {
-    memjs.set('page_' + req.get('host') + req.path, html, (err) => {
-      if (err) {
-        console.error(err)
-      }
-    }, config.pageCacheExpirySeconds)
-  }
-}
+// function cachePage(req, html) {
+//   if (isPageCacheEnabled(req)) {
+//     memjs.set('page_' + req.get('host') + req.path, html, (err) => {
+//       if (err) {
+//         console.error(err)
+//       }
+//     }, config.pageCacheExpirySeconds)
+//   }
+// }
 
-function fetchPage(res, req, props, currentLanguage) {
-  memjs.get('basedata', function (err, value) {
-    const caasHelper = new CaasHelper()
-    if (value) {
-      caasHelper.setCached(req.path, JSON.parse(value.toString()), (additionalProps) => {
-        const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
-        res.send(html)
-        cachePage(req, html)
-      })
-    }
-    else {
-      caasHelper.fetchAll(req.path, (additionalProps) => {
-        const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
-        res.send(html)
-        var cache = {
-          config: additionalProps.config,
-          navigationTree: additionalProps.navigationTree
-        }
-        memjs.set('basedata', JSON.stringify(cache), (err) => {
-          if (err) {
-            console.error(err)
-          }
-        })
-        cachePage(req, html)
-      })
-    }
-  })
-}
+// function fetchPage(res, req, props, currentLanguage) {
+//   memjs.get('basedata', function (err, value) {
+//     const caasHelper = new CaasHelper()
+//     if (value) {
+//       caasHelper.setCached(req.path, JSON.parse(value.toString()), (additionalProps) => {
+//         const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
+//         res.send(html)
+//         cachePage(req, html)
+//       })
+//     }
+//     else {
+//       caasHelper.fetchAll(req.path, (additionalProps) => {
+//         const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
+//         res.send(html)
+//         var cache = {
+//           config: additionalProps.config,
+//           navigationTree: additionalProps.navigationTree
+//         }
+//         memjs.set('basedata', JSON.stringify(cache), (err) => {
+//           if (err) {
+//             console.error(err)
+//           }
+//         })
+//         cachePage(req, html)
+//       })
+//     }
+//   })
+// }
 
 function isPageCacheEnabled(req) {
   if (hasContent(config.pageCachedDomains) && req) {
@@ -118,7 +118,7 @@ function isPageCacheEnabled(req) {
 }
 
 function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
-  renderProps.params = Object.assign(renderProps.params, {appState: setting})
+  // renderProps.params = Object.assign(renderProps.params, {appState: setting})
   const all = Object.assign(renderProps, setting)
   const appHtml = renderToString(<RouterContext {...all}/>)
   const metaFields = createMetaFields(setting)
@@ -185,23 +185,6 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <meta name="theme-color" content="#ffffff">
 
     <!-- Open graph -->
-    <meta property="og:url" content="${ogUrl}" />
-    <meta property="og:description" content="${metaFields.description}"/>
-    <meta property="og:title" content="${metaFields.title}"/>
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="${metaFields.siteName}"/>
-    <meta property="og:image" content="${metaFields.shareImage_url}"/>
-    <meta property="og:image:secure_url" content="${metaFields.shareImage_secureUrl}" />
-    <meta property="og:image:type" content="${metaFields.shareImage_format}" />
-    <meta property="og:image:width" content="${metaFields.shareImage_width}" />
-    <meta property="og:image:height" content="${metaFields.shareImage_height}" />
-
-    <!-- Twitter summary card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@karma" />
-    <meta name="twitter:title" content="${metaFields.title}" />
-    <meta name="twitter:description" content="${metaFields.description}" />
-    <meta name="twitter:image:src" content="${metaFields.shareImage_url}" />
 
     <!-- Mobile viewport optimization -->
 	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
