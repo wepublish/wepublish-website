@@ -40,7 +40,7 @@ app.get('*', (req, res) => {
       if (currentLanguage === 'unknown' || 'de') {
         //If no valid lang is specified, forward to an accepted language
         res.redirect('/de')
-        return
+        fetchPage(res, req, props, currentLanguage)
       }
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
       //   res.redirect(req.path)
