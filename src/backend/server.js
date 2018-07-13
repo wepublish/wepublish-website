@@ -110,12 +110,12 @@ app.listen(PORT, function () {
 //   })
 // }
 
-function isPageCacheEnabled(req) {
-  if (hasContent(config.pageCachedDomains) && req) {
-    return new RegExp(config.pageCachedDomains.join('|')).test(req.hostname)
-  }
-  return false
-}
+// function isPageCacheEnabled(req) {
+//   if (hasContent(config.pageCachedDomains) && req) {
+//     return new RegExp(config.pageCachedDomains.join('|')).test(req.hostname)
+//   }
+//   return false
+// }
 
 function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
   // renderProps.params = Object.assign(renderProps.params, {appState: setting})
