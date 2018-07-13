@@ -27,6 +27,9 @@ export default class ModApp extends React.Component {
 
     let currentLanguage = getCurrentLanguageOrFallBackByPath(this.props.location.pathname)
 
+
+    console.log(currentLanguage)
+
     let html = null  
     if(currentLanguage == 'fr') {
       html = (
