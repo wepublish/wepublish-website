@@ -42,7 +42,7 @@ app.get('*', (req, res) => {
         return
       }
       if (/^\/de[\/]{0,1}$/.test(req.path)) {
-        res.redirect(req.path + '/home/')
+        res.redirect(req.path)
         return
       }
 
