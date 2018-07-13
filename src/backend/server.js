@@ -19,7 +19,7 @@ var app = express()
 app.use(compression())
 app.use('/build', express.static('dist/build'))
 app.use('/static', express.static('dist/static'))
-// app.use('/', express.static('dist/favicon'))
+app.use('/', express.static('dist/favicon'))
 app.get('*', (req, res) => {
   match({routes: Routes, location: req.url}, (err, redirect, props) => {
 
@@ -36,11 +36,13 @@ app.get('*', (req, res) => {
       // }
       // const currentLanguage = getCurrentLanguageByPath(req.path)
       const currentLanguage = 'de'
-      if (currentLanguage === 'unknown' || currentLanguage ===  'de') {
-        //If no valid lang is specified, forward to an accepted language
-        history.pushState(null, '', '/de');
-        return
-      }
+      // if (currentLanguage === 'unknown') {
+      //   //If no valid lang is specified, forward to an accepted language
+      //   const lang = req.acceptsLanguages('de', 'fr')
+      //   // res.redirect('/' + lang + '/home')
+      //   res.redirect('/de')
+      //   return
+      // }
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
       //   res.redirect(req.path)
       //   return
@@ -180,10 +182,10 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <meta name="theme-color" content="#ffffff">
     <!-- Open graph -->
     <meta property="og:url" content="${ogUrl}" />
-    <meta property="og:description" content="${metaFields.description}"/>
-    <meta property="og:title" content="${metaFields.title}"/>
+    <meta property="og:description" content="we.publish"/>
+    <meta property="og:title" content="we.publish"/>
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="${metaFields.siteName}"/>
+    <meta property="og:site_name" content="we.publish"/>
     <meta property="og:image" content="${metaFields.shareImage_url}"/>
     <meta property="og:image:secure_url" content="${metaFields.shareImage_secureUrl}" />
     <meta property="og:image:type" content="${metaFields.shareImage_format}" />
@@ -192,8 +194,8 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <!-- Twitter summary card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@karma" />
-    <meta name="twitter:title" content="${metaFields.title}" />
-    <meta name="twitter:description" content="${metaFields.description}" />
+    <meta name="twitter:title" content="we.publish" />
+    <meta name="twitter:description" content="we.publish" />
     <meta name="twitter:image:src" content="${metaFields.shareImage_url}" />
     <!-- Mobile viewport optimization -->
 	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
