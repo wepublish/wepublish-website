@@ -19,7 +19,7 @@ var app = express()
 app.use(compression())
 app.use('/build', express.static('dist/build'))
 app.use('/static', express.static('dist/static'))
-app.use('/', express.static('dist/favicon'))
+// app.use('/', express.static('dist/favicon'))
 app.get('*', (req, res) => {
   match({routes: Routes, location: req.url}, (err, redirect, props) => {
 
