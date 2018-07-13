@@ -35,34 +35,31 @@ app.get('*', (req, res) => {
       //   memjs.flush()
       // }
       // const currentLanguage = getCurrentLanguageByPath(req.path)
-      if (currentLanguage === 'unknown') {
+      const currentLanguage = 'de'
+      if (currentLanguage === 'unknown' || currentLanguage ===  'de') {
         //If no valid lang is specified, forward to an accepted language
-        res.redirect('/de')
+        history.pushState(null, '', '/de');
         return
       }
-
-      // history.pushState(null, '', '/de')
-      fetchPage(res, req, props, currentLanguage)
-
-
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
       //   res.redirect(req.path)
       //   return
       // }
 
-      // if (isPageCacheEnabled(req)) {
-      //   // enable page cache for production
-      //   memjs.get('page_' + req.get('host') + req.path, function (err, value) {
-      //     if (value) {
-      //       res.send(value.toString())
-      //     }
-      //     else {
-      //       fetchPage(res, req, props, currentLanguage)
-      //     }
-      //   })
-      // }
-      // else {
-      // }
+      if (isPageCacheEnabled(req)) {
+        // enable page cache for production
+        memjs.get('page_' + req.get('host') + req.path, function (err, value) {
+          if (value) {
+            res.send(value.toString())
+          }
+          else {
+            fetchPage(res, req, props, currentLanguage)
+          }
+        })
+      }
+      else {
+        fetchPage(res, req, props, currentLanguage)
+      }
 
     }
     else {
