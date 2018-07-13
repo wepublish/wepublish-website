@@ -149,27 +149,31 @@ export default class WebsiteFr extends React.Component {
 
               <TabPanel>
                 <div className="rich-text">
-                  <p>
-                    In vielen Verlagshäusern wird massiv gespart. Fundierte Recherche bleibt aus ökonomischen Gründen oft auf der Strecke. Erfreulicherweise entstehen zwar neue journalistische Online-Angebote, diese müssen jedoch überproportional viel Geld in technische Voraussetzungen investieren. Geld, das damit nicht für Content-Erstellung zur Verfügung steht.
-                  </p>
+                  <p>D’importantes économies sont faites dans beaucoup de maisons d’édition aux frais d’analyses approfondies et de sujets en dehors du courant dominant.</p>
                   <br />
-                  <p>
-                    Eine gemeinsame Infrastruktur, auf der neue Medienmarken aufsetzen können, ist notwendig und sinnvoll. Dadurch können journalistische Angebote ihre Ressourcen auf die Produktion von Inhalten konzentrieren und sich gegenseitig unterstützen.
-                  </p>
+                  <p>De nouveaux fournisseurs de contenus se risquent à la publication en ligne, mais doivent en supporter les coûts d’investissements techniques disproportionnés pour réussir. </p>
                   <br />
-                  <p>
-                    So entsteht ein kollaboratives und gleichzeitig kompetitives Mediensystem.
-                  </p>
+                  <p>De l’argent qui manquera à la fabrication de contenus. C’est pourquoi une infrastructure commune pouvant accueillir de nouvelles marques de médias est nécessaire et significative. </p>
+                  <br />
+                  <p>Le but étant que les nouveaux labels journalistiques concentrent leurs ressources à la fabrication de contenus de haute qualité et qu’ils puissent en plus se soutenir mutuellement, notamment pour des projets d’analyses et de recherches plus ambitieux. </p>
+                  <br />
+                  <p>C’est ainsi que doit se créer un système médiatique participatif et en même temps compétitif répondant aux besoins de notre époque.</p>
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="rich-text">Die Produktion, Distribution und Vermarktung von journalistischen Inhalten muss grundsätzlich neu organisiert werden. WePublish bietet eine Lösung, die den Anforderungen der vier wichtigsten Anspruchsgruppen in einer umfassenden Lösung zusammenbringt - Leser, Journalisten, Medienmarken und Werbetreibende. Gerade die Kombination aus journalistischer Open-Source-Plattform mit Gemeinschaftscharakter, technischer Infrastruktur und neuem Geschäftsmodell ist eine echte Alternative zur etablierten Branchenlogik und dem überholten Geschäftsmodell vieler Medien.  WePublish ermöglicht, von Synergieeffekten zu profitieren, neue Initiativen oder Geschäftsanforderungen schnell und einfach umzusetzen und so einen Beitrag dazu leisten, dass unabhängiger Journalismus und Medienvielfalt langfristig eine Chance haben. </div>
+                <div className="rich-text">
+                  <p>Production, distribution et commercialisation de contenus journalistiques doivent être fondamentalement réorganisés. WePublish répond aux exigences des quatre principales parties prenantes - lecteurs, journalistes, marques de médias et annonceurs en proposant une solution globale qui les réunit : Une plateforme Open-Source commune qui offre en même temps une infrastructure technique complète et représente un nouveau modèle d’affaires innovant - c’est la véritable alternative à tous les modèles d’affaires obsolètes de beaucoup de médias. WePublish crée un effet synergique parce que plusieurs facteurs agissent ensemble permettant de répondre rapidement à de nouvelles initiatives ou  besoins du marché et ainsi contribuer à donner à long terme une chance au journalisme indépendant et à la diversité des médias.</p>
+                </div>
               </TabPanel>
               <TabPanel>
-                <div className="rich-text">WePublish ist eine Content Intelligence Base für neue digitale Medienmarken. Journalisten und Medienschaffende können unter eigenem Brand Inhalte partizipativ erstellen und nach publizistischen Regeln veröffentlichen. Sie haben Zugang zu einer gemeinsamen, digitalen Infrastruktur mit Newsfeed, Advertising- und Zahlungssystem, Analyse-Tools und modernster Content-Distribution-Technologie. Die Kosteneinsparungen und der kollaborative Wissenstransfer, kommen zudem der Qualität und Diversität der Medienmarken, ihrer Inhalte und damit den Lesern zugute.</div>
+                <div className="rich-text">
+                  <p>WePublish est une base de contenus pour de nouvelles marques de médias numériques.  Journalistes et professionnels des médias peuvent y produire des contenus de manière participative sous leur propre marque et les publier selon des règles éditoriales définies. Ils ont accès à une infrastructure offrant une palette d’outils et prestations des plus modernes : newsfeed, système de publicité et de paiement, outils d’analyse, technologie de distribution de contenu, etc. De plus, les économies de coûts et de transfert de connaissances ainsi réalisées vont directement à l’avantage de la qualité et de la diversité des marques de médias, de leurs contenus et ainsi du lecteur. </p>
+                </div>
               </TabPanel>
               <TabPanel>
-                <div className="rich-text">Das Angebot richtet sich an Journalisten, die selber Publisher werden wollen - ob alleine oder mit anderen zusammen, an neue Medienmarken, sowie an kleinere und mittlere Medienhäuser, die ihre Online Präsenz ausbauen oder neu entwickeln möchten. Der Einstieg in das Online-Geschäft soll vereinfacht, die Kosten minimiert und Inhalte einem grösseren Publikum Zugänglich gemacht werden können. User profitieren von der Vielfalt und Qualität redaktioneller Inhalte, die über diverse Kanäle zugänglich gemacht werden können. Die Entscheidung darüber welche Inhalte erstellt oder welche Produkte bzw. Dienstleistungen den Usern angeboten werden sollen, obliegt den Medienmarken selbst. </div>
+                <div className="rich-text">
+                  <p>WePublish s’adresse à des journalistes qui veulent eux-mêmes devenir des éditeurs - seuls ou à plusieurs, à des nouvelles marques de médias, ainsi qu’aux petites et moyennes maisons d’édition qui souhaitent étendre leur présence en ligne ou la développer. L’idée est de simplifier l’accès au business en ligne, de minimiser les coûts et de mettre à disposition des contenus s’adressant à un public plus large. Les utilisateurs profitent de la diversité et de la qualité des contenus rédactionnels à travers différents canaux. La décision sur le choix des contenus, des produits ou prestations offerts aux utilisateurs restent néanmoins la propriété des marques de médias elles-mêmes.</p>
+                </div>
               </TabPanel>
             </Tabs>
           </div>
@@ -226,7 +230,7 @@ export default class WebsiteFr extends React.Component {
                   <p>WePublish n’est pas non plus un magazine singulier comme republik.ch.</p>
                   <br />
                   <p>WePublish est la plateforme pour un réseau collectif et participatif de plusieurs offres médias.</p>
-                  <br/>
+                  <br />
                   <p>WePublish n’est pas une structure en silo et pas une black box sans visibilité sur son mode de fonctionnement, mais un système ouvert qui permet à l’utilisateur d’avoir une vision claire de ce qui se passe derrière l’interface de programmation.</p>
                 </div>
               </div>

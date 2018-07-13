@@ -15,6 +15,8 @@ var additionalProps = null
 
 var PORT = process.env.PORT || 8000
 
+const currentLanguage = 'de'
+
 var app = express()
 app.use(compression())
 app.use('/build', express.static('dist/build'))
@@ -35,14 +37,11 @@ app.get('*', (req, res) => {
       //   memjs.flush()
       // }
       // const currentLanguage = getCurrentLanguageByPath(req.path)
-      const currentLanguage = 'de'
-      // if (currentLanguage === 'unknown') {
-      //   //If no valid lang is specified, forward to an accepted language
-      //   const lang = req.acceptsLanguages('de', 'fr')
-      //   // res.redirect('/' + lang + '/home')
-      //   res.redirect('/de')
-      //   return
-      // }
+      if (currentLanguage === 'unknown' || 'de') {
+        //If no valid lang is specified, forward to an accepted language
+        res.redirect('/de')
+        return
+      }
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
       //   res.redirect(req.path)
       //   return
