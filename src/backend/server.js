@@ -29,16 +29,16 @@ app.get('*', (req, res) => {
       res.redirect(redirect.pathname + redirect.search)
     }
     else if (props) {
-      // Check Language
-      const currentLanguage = getCurrentLanguageByPath(req.path)
-      if (currentLanguage === 'unknown') {
-        res.redirect('/de')
-        return
-      }
-      if (/^\/de[\/]{0,1}$/.test(req.path)) {
-        res.redirect(req.path)
-        return
-      }
+      // // Check Language
+      // const currentLanguage = getCurrentLanguageByPath(req.path)
+      // if (currentLanguage === 'unknown') {
+      //   res.redirect('/de')
+      //   return
+      // }
+      // if (/^\/de[\/]{0,1}$/.test(req.path)) {
+      //   res.redirect(req.path)
+      //   return
+      // }
     }
     else {
       res.status(404).send('Not Found')
