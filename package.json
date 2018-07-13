@@ -69,7 +69,6 @@
     "worker-loader": "^0.7.1"
   },
   "devDependencies": {
-    "karma-tools": "git+https://github.com/dudagroup/karma-tools.git",
     "webpack-dev-server": "^1.14.1"
   }
 }
