@@ -1,16 +1,16 @@
 import React from 'react'
-import ModNavigation from './ModNavigation'
-import ModContent from './ModContent'
-import ModFooter from './ModFooter'
+// import ModNavigation from './ModNavigation'
+// import ModContent from './ModContent'
+// import ModFooter from './ModFooter'
 import WebsiteDe from './WebsiteDe'
 import WebsiteFr from './WebsiteFr'
 import CaasHelper from '../caas/CaasHelper'
-import { searchNavigationNodeByUrl } from '../caas/CaasHelper'
+// import { searchNavigationNodeByUrl } from '../caas/CaasHelper'
 import VoConfig from '../vo/VoConfig'
 import { createMetaFields } from '../common/MetaFields'
 import { getCurrentLanguageOrFallBackByPath, addClassToElement, removeClassFromElement, backgroundColorSwitch, lineColorSwitch } from '../common/DDUtil'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import NavLink from './common/NavLink'
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import NavLink from './common/NavLink'
 
 
 if (WEBPACK_FRONTEND_BUILD) {
@@ -45,48 +45,48 @@ export default class ModApp extends React.Component {
       }
     }
 
-    this.setStateBy = this.setStateBy.bind(this)
-    this.setHeadMetaInformation = this.setHeadMetaInformation.bind(this)
-    this.fetchFooter = this.fetchFooter.bind(this)
-    this.onGotoHome = this.onGotoHome.bind(this)
-    this.hasUpdatedLocation = this.hasUpdatedLocation.bind(this)
-    this.onNavToggle = this.onNavToggle.bind(this)
+    // this.setStateBy = this.setStateBy.bind(this)
+    // this.setHeadMetaInformation = this.setHeadMetaInformation.bind(this)
+    // this.fetchFooter = this.fetchFooter.bind(this)
+    // this.onGotoHome = this.onGotoHome.bind(this)
+    // this.hasUpdatedLocation = this.hasUpdatedLocation.bind(this)
+    // this.onNavToggle = this.onNavToggle.bind(this)
     this.backToTop = this.backToTop.bind(this)
   }
 
-  setHeadMetaInformation() {
-    const metaFields = createMetaFields(this.state.content)
-    document.title = metaFields.title
-  }
+  // setHeadMetaInformation() {
+  //   const metaFields = createMetaFields(this.state.content)
+  //   document.title = metaFields.title
+  // }
 
-  async fetchFooter(nextLanguage) {
-    let footer = await this.caasHelper.fetchFooter(this.state.navigationTree, nextLanguage)
-    this.setStateBy({ footer: footer })
-  }
+  // async fetchFooter(nextLanguage) {
+  //   let footer = await this.caasHelper.fetchFooter(this.state.navigationTree, nextLanguage)
+  //   this.setStateBy({ footer: footer })
+  // }
 
-  setStateBy(replaceObjects) {
-    this.setState(
-      Object.assign({}, this.state, replaceObjects)
-    )
-  }
+  // setStateBy(replaceObjects) {
+  //   this.setState(
+  //     Object.assign({}, this.state, replaceObjects)
+  //   )
+  // }
 
-  onGotoHome() {
-    this.props.history.goBack()
-  }
+  // onGotoHome() {
+  //   this.props.history.goBack()
+  // }
 
   backToTop() {
     window.scrollTo(0, 0);
   }
 
-  hasUpdatedLocation(lastProps, nextProps) {
-    try {
-      if (lastProps.location.pathname !== nextProps.location.pathname) {
-        return true
-      }
-    } catch (e) {
-    }
-    return false
-  }
+  // hasUpdatedLocation(lastProps, nextProps) {
+  //   try {
+  //     if (lastProps.location.pathname !== nextProps.location.pathname) {
+  //       return true
+  //     }
+  //   } catch (e) {
+  //   }
+  //   return false
+  // }
 
   // componentWillUpdate(nextProps, nextState) {
   //   if (this.hasUpdatedLocation(this.props, nextProps)) {
@@ -121,12 +121,12 @@ export default class ModApp extends React.Component {
   //   }
   // }
 
-  onNavToggle(isNaviOpen) {
-    this.setState({
-      naviOpen: isNaviOpen
-    }
-    )
-  }
+  // onNavToggle(isNaviOpen) {
+  //   this.setState({
+  //     naviOpen: isNaviOpen
+  //   }
+  //   )
+  // }
 
   render() {
 
@@ -142,9 +142,7 @@ export default class ModApp extends React.Component {
     //   )
     // }
 
-    let html = null
-    console.log(currentLanguage)
-  
+    let html = null  
     if(currentLanguage == 'fr') {
       html = (
         <WebsiteFr />
