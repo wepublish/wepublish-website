@@ -18,7 +18,7 @@ $teaserSpot-line-height: 0.85px;
 .download-content {
   text-align: center;
 
-  @include respond-to('small') {
+  @include respond-to("small") {
     width: 100%;
   }
 }
@@ -29,7 +29,7 @@ $teaserSpot-line-height: 0.85px;
   background-color: $wepub-col-light-grey;
   border-radius: 100%;
 
-  @include respond-to('small') {
+  @include respond-to("small") {
     width: 159px;
     height: 159px;
     margin: 0 auto;
@@ -45,7 +45,7 @@ $teaserSpot-line-height: 0.85px;
     color: $theme-col-real-black;
   }
 
-  @include respond-to('small') {
+  @include respond-to("small") {
     padding-top: 25px;
     padding-bottom: 52px;
   }
@@ -58,7 +58,7 @@ $teaserSpot-line-height: 0.85px;
   justify-content: center;
   height: 100%;
 
-  @include respond-to('small') {
+  @include respond-to("small") {
     img {
       height: 55px;
     }
@@ -91,6 +91,16 @@ $teaserSpot-line-height: 0.85px;
     animation: moveUpImg 0.2s;
     animation-fill-mode: forwards;
   }
+
+  .document {
+    width: 75px;
+    height: 102.9px;
+  }
+
+  .folder {
+    width: 96.5px;
+    height: 78.9px;
+  }
 }
 
 @keyframes moveUpArrow {
@@ -98,6 +108,7 @@ $teaserSpot-line-height: 0.85px;
     opacity: 0;
     top: 1px;
   }
+
   0% {
     top: 100px;
     opacity: 1;
@@ -109,9 +120,11 @@ $teaserSpot-line-height: 0.85px;
     opacity: 1;
     top: 1px;
   }
+
   40% {
     opacity: 0;
   }
+
   0% {
     top: 100px;
     opacity: 0;
@@ -125,7 +138,7 @@ $teaserSpot-line-height: 0.85px;
     animation-fill-mode: forwards;
     display: block;
 
-    @include respond-to('small') {
+    @include respond-to("small") {
       position: relative;
       animation: moveDownArrowMobile 0.2s;
       animation-fill-mode: forwards;
@@ -146,6 +159,7 @@ $teaserSpot-line-height: 0.85px;
     top: 0px;
     display: flex;
   }
+
   100% {
     top: 70px;
     opacity: 1;
@@ -157,9 +171,11 @@ $teaserSpot-line-height: 0.85px;
     opacity: 1;
     top: 1px;
   }
+
   30% {
     opacity: 0;
   }
+
   100% {
     top: 100px;
     opacity: 0;
@@ -172,6 +188,7 @@ $teaserSpot-line-height: 0.85px;
     top: 0px;
     display: flex;
   }
+
   100% {
     top: 50px;
     opacity: 1;
