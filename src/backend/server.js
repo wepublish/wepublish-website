@@ -120,7 +120,7 @@ function isPageCacheEnabled(req) {
 }
 
 function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
-  renderProps.params = Object.assign(renderProps.params, {appState: setting})
+  // renderProps.params = Object.assign(renderProps.params, {appState: setting})
   const all = Object.assign(renderProps, setting)
   const appHtml = renderToString(<RouterContext {...all}/>)
   const metaFields = createMetaFields(setting)
