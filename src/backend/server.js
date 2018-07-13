@@ -41,7 +41,7 @@ app.get('*', (req, res) => {
         return
       }
 
-      history.pushState(null, '', '/de')
+      // history.pushState(null, '', '/de')
       fetchPage(res, req, props, currentLanguage)
 
 
