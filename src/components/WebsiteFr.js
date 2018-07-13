@@ -1,42 +1,12 @@
 import React from 'react'
-import CaasHelper from '../caas/CaasHelper'
-import VoConfig from '../vo/VoConfig'
 import { backgroundColorSwitch, lineColorSwitch } from '../common/DDUtil'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import NavLink from './common/NavLink'
-
-
-if (WEBPACK_FRONTEND_BUILD) {
-  require("../static/fonts/iconfont/Iconfont.font.js");
-  require("../static/scss/index.scss")
-}
 
 export default class WebsiteFr extends React.Component {
 
   constructor(props) {
     super(props)
-
-    this.caasHelper = new CaasHelper()
-    this.lastKnownScrollPosition = 0
-
-    if (typeof window !== 'undefined') {
-      if (window.APP_PROPS) {
-        this.state = { ...window.APP_PROPS, naviOpen: false }
-        this.caasHelper.injectConfig(Object.assign(new VoConfig(), this.state.config))
-      }
-    }
-    else if (this.props.params.appState) {
-      this.state = this.props.params.appState
-    }
-    else {
-      this.state = {
-        config: null,
-        navigationTree: null,
-        footer: null,
-        content: null,
-        naviOpen: false
-      }
-    }
 
     this.backToTop = this.backToTop.bind(this)
   }
@@ -46,17 +16,6 @@ export default class WebsiteFr extends React.Component {
   }
 
   render() {
-    // let currentLanguage = getCurrentLanguageOrFallBackByPath(this.props.location.pathname)
-
-    // if (!this.state) {
-    //   return (
-    //     <div id="app">
-    //       <p className="loading">loading</p>
-    //     </div>
-    //   )
-    // }
-
-
     // BlockHome
     const createRichtTextMarkup = (content) => {
       return { __html: content };
