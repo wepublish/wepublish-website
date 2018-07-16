@@ -217,6 +217,7 @@ div.icon-naviBurger:before, div.icon-naviBurgerClose:before {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  backface-visibility: hidden;
 }
 
 .is-expanded .navigation-burger {

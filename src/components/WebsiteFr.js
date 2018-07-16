@@ -162,17 +162,23 @@ export default class WebsiteFr extends React.Component {
               </TabPanel>
               <TabPanel>
                 <div className="rich-text">
-                  <p>Production, distribution et commercialisation de contenus journalistiques doivent être fondamentalement réorganisés. WePublish répond aux exigences des quatre principales parties prenantes - lecteurs, journalistes, marques de médias et annonceurs en proposant une solution globale qui les réunit : Une plateforme Open-Source commune qui offre en même temps une infrastructure technique complète et représente un nouveau modèle d’affaires innovant - c’est la véritable alternative à tous les modèles d’affaires obsolètes de beaucoup de médias. WePublish crée un effet synergique parce que plusieurs facteurs agissent ensemble permettant de répondre rapidement à de nouvelles initiatives ou  besoins du marché et ainsi contribuer à donner à long terme une chance au journalisme indépendant et à la diversité des médias.</p>
+                  <p>Production, distribution et commercialisation de contenus journalistiques doivent être fondamentalement réorganisés. WePublish répond aux exigences des quatre principales parties prenantes - lecteurs, journalistes, marques de médias et annonceurs en proposant une solution globale qui les réunit : <br /> Une plateforme Open-Source commune qui offre en même temps une infrastructure technique complète et représente un nouveau modèle d’affaires innovant - c’est la véritable alternative à tous les modèles d’affaires obsolètes de beaucoup de médias.</p>
+                  <br/>
+                  <p>WePublish crée un effet synergique parce que plusieurs facteurs agissent ensemble permettant de répondre rapidement à de nouvelles initiatives ou  besoins du marché et ainsi contribuer à donner à long terme une chance au journalisme indépendant et à la diversité des médias.</p>
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className="rich-text">
-                  <p>WePublish est une base de contenus pour de nouvelles marques de médias numériques.  Journalistes et professionnels des médias peuvent y produire des contenus de manière participative sous leur propre marque et les publier selon des règles éditoriales définies. Ils ont accès à une infrastructure offrant une palette d’outils et prestations des plus modernes : newsfeed, système de publicité et de paiement, outils d’analyse, technologie de distribution de contenu, etc. De plus, les économies de coûts et de transfert de connaissances ainsi réalisées vont directement à l’avantage de la qualité et de la diversité des marques de médias, de leurs contenus et ainsi du lecteur. </p>
+                  <p>WePublish est une base de contenus pour de nouvelles marques de médias numériques.  Journalistes et professionnels des médias peuvent y produire des contenus de manière participative sous leur propre marque et les publier selon des règles éditoriales définies.</p>
+                  <br />
+                  <p>Ils ont accès à une infrastructure offrant une palette d’outils et prestations des plus modernes : newsfeed, système de publicité et de paiement, outils d’analyse, technologie de distribution de contenu, etc. De plus, les économies de coûts et de transfert de connaissances ainsi réalisées vont directement à l’avantage de la qualité et de la diversité des marques de médias, de leurs contenus et ainsi du lecteur.</p>
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className="rich-text">
-                  <p>WePublish s’adresse à des journalistes qui veulent eux-mêmes devenir des éditeurs - seuls ou à plusieurs, à des nouvelles marques de médias, ainsi qu’aux petites et moyennes maisons d’édition qui souhaitent étendre leur présence en ligne ou la développer. L’idée est de simplifier l’accès au business en ligne, de minimiser les coûts et de mettre à disposition des contenus s’adressant à un public plus large. Les utilisateurs profitent de la diversité et de la qualité des contenus rédactionnels à travers différents canaux. La décision sur le choix des contenus, des produits ou prestations offerts aux utilisateurs restent néanmoins la propriété des marques de médias elles-mêmes.</p>
+                  <p>WePublish s’adresse à des journalistes qui veulent eux-mêmes devenir des éditeurs - seuls ou à plusieurs, à des nouvelles marques de médias, ainsi qu’aux petites et moyennes maisons d’édition qui souhaitent étendre leur présence en ligne ou la développer.</p>
+                  <br />
+                  <p>L’idée est de simplifier l’accès au business en ligne, de minimiser les coûts et de mettre à disposition des contenus s’adressant à un public plus large. Les utilisateurs profitent de la diversité et de la qualité des contenus rédactionnels à travers différents canaux. La décision sur le choix des contenus, des produits ou prestations offerts aux utilisateurs restent néanmoins la propriété des marques de médias elles-mêmes.</p>
                 </div>
               </TabPanel>
             </Tabs>
@@ -527,7 +533,7 @@ export default class WebsiteFr extends React.Component {
         <footer id="footer">
           <div className="footer-wrapper">
             <div className="footer-left">
-              <h3>© Copyright 2017 | we.publish</h3>
+              <h3>© Copyright 2018 | we.publish</h3>
             </div>
 
             <div className="footer-center">

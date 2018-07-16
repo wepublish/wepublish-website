@@ -42,7 +42,7 @@ export default class ModApp extends React.Component {
     }
 
     return (
-      <div id="app">
+      <div>
         {html}
       </div>
     )

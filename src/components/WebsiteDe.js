@@ -542,7 +542,7 @@ export default class WebsiteDe extends React.Component {
         <footer id="footer">
           <div className="footer-wrapper">
             <div className="footer-left">
-              <h3>© Copyright 2017 | we.publish</h3>
+              <h3>© Copyright 2018 | we.publish</h3>
             </div>
 
             <div className="footer-center">
