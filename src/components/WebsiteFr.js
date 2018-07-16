@@ -44,19 +44,19 @@ export default class WebsiteFr extends React.Component {
 
               <div className="navigation-anchors">
                 <div className="anchor-container">
-                  <a className="anchor-link" href={"de/#" + "Vision".toLowerCase()}>Vision</a>
+                  <a className="anchor-link" href={"fr/#" + "Vision".toLowerCase()}>Vision</a>
                 </div>
 
                 <div className="anchor-container">
-                  <a className="anchor-link" href={"de/#" + "team".toLowerCase()}>Team</a>
+                  <a className="anchor-link" href={"fr/#" + "team".toLowerCase()}>Team</a>
                 </div>
 
                 <div className="anchor-container">
-                  <a className="anchor-link" href={"de/#" + "Downloads".toLowerCase()}>Downloads</a>
+                  <a className="anchor-link" href={"fr/#" + "Downloads".toLowerCase()}>Downloads</a>
                 </div>
 
                 <div className="anchor-container">
-                  <a className="anchor-link" href={"de/#" + "kontakt".toLowerCase()}>Contact</a>
+                  <a className="anchor-link" href={"fr/#" + "kontakt".toLowerCase()}>Contact</a>
                 </div>
 
                 <div className="languages-navigation-anchors">
