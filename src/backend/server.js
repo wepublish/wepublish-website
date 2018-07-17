@@ -40,7 +40,6 @@ app.get('*', (req, res) => {
         //If no valid lang is specified, forward to an accepted language
         const lang = req.acceptsLanguages('de', 'fr')
         res.redirect('/' + lang)
-        // res.redirect('/de')
         return
       }
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
@@ -170,9 +169,9 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <base href="${base}/">
     <!-- req.protocol ${req.protocol} -->
-    <title>${metaFields.title}</title>
-    <meta name="description" content="${metaFields.description}">
-    <meta name="keywords" content="${metaFields.keywords}">
+    <title>we.publish</title>
+    <meta name="description" content="we.publish">
+    <meta name="keywords" content="we.publish">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -186,17 +185,17 @@ function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
     <meta property="og:title" content="we.publish"/>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="we.publish"/>
-    <meta property="og:image" content="${metaFields.shareImage_url}"/>
-    <meta property="og:image:secure_url" content="${metaFields.shareImage_secureUrl}" />
-    <meta property="og:image:type" content="${metaFields.shareImage_format}" />
-    <meta property="og:image:width" content="${metaFields.shareImage_width}" />
-    <meta property="og:image:height" content="${metaFields.shareImage_height}" />
+    <meta property="og:image" content="https://karmarun-res.cloudinary.com/image/upload/v1531816694/wepublish/We.Publish--Logo--RGB--pos.png"/>
+    <meta property="og:image:secure_url" content="https://karmarun-res.cloudinary.com/image/upload/v1531816694/wepublish/We.Publish--Logo--RGB--pos.png" />
+    <meta property="og:image:type" content="png" />
+    <meta property="og:image:width" content="866" />
+    <meta property="og:image:height" content="120" />
     <!-- Twitter summary card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@karma" />
     <meta name="twitter:title" content="we.publish" />
     <meta name="twitter:description" content="we.publish" />
-    <meta name="twitter:image:src" content="${metaFields.shareImage_url}" />
+    <meta name="twitter:image:src" content="https://karmarun-res.cloudinary.com/image/upload/v1531816694/wepublish/We.Publish--Logo--RGB--pos.png" />
     <!-- Mobile viewport optimization -->
 	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	  <!-- React State -->
