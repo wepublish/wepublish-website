@@ -48,20 +48,20 @@ app.get('*', (req, res) => {
       //   return
       // }
 
-      if (isPageCacheEnabled(req)) {
-        // enable page cache for production
-        memjs.get('page_' + req.get('host') + req.path, function (err, value) {
-          if (value) {
-            res.send(value.toString())
-          }
-          else {
-            fetchPage(res, req, props, currentLanguage)
-          }
-        })
-      }
-      else {
+      // if (isPageCacheEnabled(req)) {
+      //   // enable page cache for production
+      //   memjs.get('page_' + req.get('host') + req.path, function (err, value) {
+      //     if (value) {
+      //       res.send(value.toString())
+      //     }
+      //     else {
+      //       fetchPage(res, req, props, currentLanguage)
+      //     }
+      //   })
+      // }
+      // else {
         fetchPage(res, req, props, currentLanguage)
-      }
+      // }
 
     }
     else {
