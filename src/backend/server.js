@@ -12,6 +12,7 @@ import config from '../config'
 var MemJS = require('memjs').Client
 var memjs = MemJS.create()
 var additionalProps = null
+var gaProperty = null
 
 var PORT = process.env.PORT || 8000
 
@@ -72,32 +73,32 @@ app.listen(PORT, function () {
   console.log('Express server running at localhost:' + PORT)
 })
 
-function cachePage(req, html) {
-  if (isPageCacheEnabled(req)) {
-    memjs.set('page_' + req.get('host') + req.path, html, (err) => {
-      if (err) {
-        console.error(err)
-      }
-    }, config.pageCacheExpirySeconds)
-  }
-}
+// function cachePage(req, html) {
+//   if (isPageCacheEnabled(req)) {
+//     memjs.set('page_' + req.get('host') + req.path, html, (err) => {
+//       if (err) {
+//         console.error(err)
+//       }
+//     }, config.pageCacheExpirySeconds)
+//   }
+// }
 
 function fetchPage(res, req, props, currentLanguage) {
   memjs.get('basedata', function (err, value) {
     const caasHelper = new CaasHelper()
     if (value) {
       // caasHelper.setCached(req.path, JSON.parse(value.toString()), (additionalProps) => {
-        const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
+        const html = renderPage(props, additionalProps, currentLanguage, req, gaProperty)
         res.send(html)
-        cachePage(req, html)
+        // cachePage(req, html)
       // })
     }
     else {
       // caasHelper.fetchAll(req.path, (additionalProps) => {
-        const html = renderPage(props, additionalProps, currentLanguage, req, config.gaProperty)
+        const html = renderPage(props, additionalProps, currentLanguage, req, gaProperty)
         res.send(html)
         var cache = {
-          config: additionalProps.config,
+          // config: additionalProps.config,
           navigationTree: additionalProps.navigationTree
         }
         memjs.set('basedata', JSON.stringify(cache), (err) => {
@@ -105,18 +106,18 @@ function fetchPage(res, req, props, currentLanguage) {
             console.error(err)
           }
         })
-        cachePage(req, html)
+        // cachePage(req, html)
       // })
     }
   })
 }
 
-function isPageCacheEnabled(req) {
-  if (hasContent(config.pageCachedDomains) && req) {
-    return new RegExp(config.pageCachedDomains.join('|')).test(req.hostname)
-  }
-  return false
-}
+// function isPageCacheEnabled(req) {
+//   if (hasContent(config.pageCachedDomains) && req) {
+//     return new RegExp(config.pageCachedDomains.join('|')).test(req.hostname)
+//   }
+//   return false
+// }
 
 function renderPage(renderProps, setting, currentLanguage, req, gaPropertyId) {
   // renderProps.params = Object.assign(renderProps.params, {appState: setting})
