@@ -99,7 +99,7 @@ function fetchPage(res, req, props, currentLanguage) {
         res.send(html)
         var cache = {
           // config: additionalProps.config,
-          navigationTree: additionalProps.navigationTree
+          // navigationTree: additionalProps.navigationTree
         }
         memjs.set('basedata', JSON.stringify(cache), (err) => {
           if (err) {
