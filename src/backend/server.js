@@ -35,15 +35,12 @@ app.get('*', (req, res) => {
       //   memjs.flush()
       // }
       const currentLanguage = getCurrentLanguageByPath(req.path)
-      // const currentLanguage = 'de'
-
-      console.log(currentLanguage)
 
       if (currentLanguage === 'unknown') {
         //If no valid lang is specified, forward to an accepted language
         const lang = req.acceptsLanguages('de', 'fr')
-        // res.redirect('/' + lang + '/home')
-        res.redirect('/de')
+        res.redirect('/' + lang)
+        // res.redirect('/de')
         return
       }
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
