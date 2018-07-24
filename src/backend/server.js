@@ -37,10 +37,20 @@ app.get('*', (req, res) => {
       // }
       const currentLanguage = getCurrentLanguageByPath(req.path)
 
+      console.log(currentLanguage)
+
       if (currentLanguage === 'unknown') {
         //If no valid lang is specified, forward to an accepted language
         const lang = req.acceptsLanguages('de', 'fr')
-        res.redirect('/' + lang)
+
+        console.log(lang)
+
+        if(lang === 'unknown') {
+          res.redirect('/de')
+        }else{
+          res.redirect('/' + lang)
+        }
+
         return
       }
       // if (/^\/de[\/]{0,1}$/.test(req.path)) {
