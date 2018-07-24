@@ -45,7 +45,7 @@ app.get('*', (req, res) => {
 
         console.log(lang)
 
-        if(lang === 'unknown') {
+        if(lang === false) {
           res.redirect('/de')
         }else{
           res.redirect('/' + lang)
