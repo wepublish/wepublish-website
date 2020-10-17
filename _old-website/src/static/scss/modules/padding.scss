@@ -1,9 +1,0 @@
-.content-padding-desktop {
-  padding-left: $content-padding-desktop-l-r;
-  padding-right: $content-padding-desktop-l-r;
-
-  @include respond-to('small') {
-    padding-right: $content-padding-mobile-l-r;
-    padding-left: $content-padding-mobile-l-r;
-  }
-}
